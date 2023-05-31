@@ -1,0 +1,11 @@
+framework module NaverAdsServices {
+  umbrella header "NaverAdsServices.h"
+
+  export *
+  module * { export * }
+}
+
+module NaverAdsServices.Swift {
+  header "NaverAdsServices-Swift.h"
+  requires objc
+}

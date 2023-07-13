@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name NaverAdsServices
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import CoreLocation
@@ -28,6 +28,7 @@ import _StringProcessing
   @objc public class func originalFrame(_ aView: UIKit.UIView?) -> CoreFoundation.CGRect
   @objc public class func isVisibility(_ aView: UIKit.UIView?) -> Swift.Bool
   @objc public class func isViewableOnScreen(_ aView: UIKit.UIView?) -> Swift.Bool
+  @objc public class func isTouchedOnScreenCenter(_ aView: UIKit.UIView) -> Swift.Bool
   @objc public class func isAtLeastHalfViewable(_ aView: UIKit.UIView?) -> Swift.Bool
   @objc public class func exposedPercentage(_ aView: UIKit.UIView?) -> CoreFoundation.CGFloat
   @objc public class func visibleRectangle(_ aView: UIKit.UIView?) -> CoreFoundation.CGRect
@@ -255,7 +256,7 @@ extension NaverAdsServices.GFPLog {
   @objc public static var errorMessageKey: Swift.String {
     @objc get
   }
-  @objc weak public static var delegate: (any NaverAdsServices.GFPErrorCodeProviderDelegate)?
+  @objc weak public static var delegate: NaverAdsServices.GFPErrorCodeProviderDelegate?
   @objc convenience public init(code: Swift.Int)
   @objc convenience public init(code: Swift.Int, userInfo: [Swift.String : Any]?)
   @objc public class func error(withCode code: Swift.Int, userInfo dict: [Swift.String : Any]?) -> NaverAdsServices.GFPError

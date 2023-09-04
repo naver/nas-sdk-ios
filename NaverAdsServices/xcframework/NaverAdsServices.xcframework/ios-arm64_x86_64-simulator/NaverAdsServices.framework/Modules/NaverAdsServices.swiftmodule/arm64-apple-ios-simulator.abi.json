@@ -1097,6 +1097,78 @@
             "funcSelfKind": "NonMutating"
           },
           {
+            "kind": "Function",
+            "name": "hideViewWhileTouchable",
+            "printedName": "hideViewWhileTouchable(view:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewUtils(cm)hideViewWhileTouchableWithView:",
+            "mangledName": "$s16NaverAdsServices12GFPViewUtilsC22hideViewWhileTouchable4viewySo6UIViewCSg_tFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "hideViewWhileTouchable",
+            "printedName": "hideViewWhileTouchable(label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UILabel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UILabel",
+                    "printedName": "UIKit.UILabel",
+                    "usr": "c:objc(cs)UILabel"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewUtils(cm)hideViewWhileTouchableWithLabel:",
+            "mangledName": "$s16NaverAdsServices12GFPViewUtilsC22hideViewWhileTouchable5labelySo7UILabelCSg_tFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -2979,6 +3051,214 @@
         "declKind": "Enum",
         "usr": "c:@M@NaverAdsServices@E@GFPOriginType",
         "mangledName": "$s16NaverAdsServices13GFPOriginTypeO",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPHexCodeType",
+        "printedName": "GFPHexCodeType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "rgba",
+            "printedName": "rgba",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPHexCodeType.Type) -> NaverAdsServices.GFPHexCodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPHexCodeType",
+                    "printedName": "NaverAdsServices.GFPHexCodeType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPHexCodeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPHexCodeType",
+                        "printedName": "NaverAdsServices.GFPHexCodeType",
+                        "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType@GFPHexCodeTypeRgba",
+            "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO4rgbayA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "argb",
+            "printedName": "argb",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPHexCodeType.Type) -> NaverAdsServices.GFPHexCodeType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPHexCodeType",
+                    "printedName": "NaverAdsServices.GFPHexCodeType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPHexCodeType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPHexCodeType",
+                        "printedName": "NaverAdsServices.GFPHexCodeType",
+                        "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType@GFPHexCodeTypeArgb",
+            "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO4argbyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPHexCodeType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPHexCodeType",
+                    "printedName": "NaverAdsServices.GFPHexCodeType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices14GFPHexCodeTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices14GFPHexCodeTypeO8rawValueSivp",
+            "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO8rawValueSivp",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices14GFPHexCodeTypeO8rawValueSivg",
+                "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO8rawValueSivg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType",
+        "mangledName": "$s16NaverAdsServices14GFPHexCodeTypeO",
         "moduleName": "NaverAdsServices",
         "declAttributes": [
           "AccessControl",
@@ -8762,6 +9042,93 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gfpColor",
+            "printedName": "gfpColor(hexString:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NaverAdsServices@@objc(cs)UIColor(cm)colorWithHexStringWith:",
+            "mangledName": "$sSo7UIColorC16NaverAdsServicesE8gfpColor9hexStringABSgSS_tFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "objc_name": "colorWithHexStringWith:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "gfpColor",
+            "printedName": "gfpColor(hexString:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIColor?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIColor",
+                    "printedName": "UIKit.UIColor",
+                    "usr": "c:objc(cs)UIColor"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPHexCodeType",
+                "printedName": "NaverAdsServices.GFPHexCodeType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@NaverAdsServices@E@GFPHexCodeType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NaverAdsServices@@objc(cs)UIColor(cm)colorWithHexStringWith:type:",
+            "mangledName": "$sSo7UIColorC16NaverAdsServicesE8gfpColor9hexString4typeABSgSS_AC14GFPHexCodeTypeOtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "objc_name": "colorWithHexStringWith:type:",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -12126,57 +12493,71 @@
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 415,
+      "offset": 414,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 425,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 415,
+      "offset": 414,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 426,
+      "offset": 425,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 498,
+      "offset": 496,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 487,
+      "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 498,
+      "offset": 496,
       "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 4,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "kind": "IntegerLiteral",
+      "offset": 563,
+      "length": 4,
       "value": "1"
     },
     {

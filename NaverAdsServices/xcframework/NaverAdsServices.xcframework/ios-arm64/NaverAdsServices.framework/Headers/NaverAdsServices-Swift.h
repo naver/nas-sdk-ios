@@ -359,6 +359,11 @@ SWIFT_PROTOCOL("_TtP16NaverAdsServices28GFPErrorCodeProviderDelegate_")
 - (NSString * _Nonnull)errorMessageKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
+typedef SWIFT_ENUM(NSInteger, GFPHexCodeType, open) {
+  GFPHexCodeTypeRgba = 0,
+  GFPHexCodeTypeArgb = 1,
+};
+
 enum GFPLogLevel : NSInteger;
 
 SWIFT_CLASS_NAMED("GFPLog")
@@ -506,6 +511,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices11GFPURLUtils")
 @end
 
 @class UIView;
+@class UILabel;
 
 SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")
 @interface GFPViewUtils : NSObject
@@ -530,6 +536,8 @@ SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")
 + (void)removeArrangeConstraintsOnSuperview:(UIView * _Nullable)aView;
 + (void)removeArrangeConstraintsOnSuperviewSafeLayoutGuide:(UIView * _Nullable)aView;
 + (void)removeSizeConstraintOnSelf:(UIView * _Nullable)aView;
++ (void)hideViewWhileTouchableWithView:(UIView * _Nullable)view;
++ (void)hideViewWhileTouchableWithLabel:(UILabel * _Nullable)label;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -570,6 +578,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kAttachedChec
 + (UIColor * _Nonnull)colorWithRGBIntWith:(uint64_t)rgbInt SWIFT_WARN_UNUSED_RESULT;
 + (UIColor * _Nonnull)colorWithRGBIntWith:(uint64_t)rgbInt alpha:(CGFloat)alpha SWIFT_WARN_UNUSED_RESULT;
 + (UIColor * _Nonnull)colorWithRedWith:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nullable)colorWithHexStringWith:(NSString * _Nonnull)hexString SWIFT_WARN_UNUSED_RESULT;
++ (UIColor * _Nullable)colorWithHexStringWith:(NSString * _Nonnull)hexString type:(enum GFPHexCodeType)type SWIFT_WARN_UNUSED_RESULT;
 @end
 
 

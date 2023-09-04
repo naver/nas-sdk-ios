@@ -45,6 +45,8 @@ import _StringProcessing
   @objc public class func removeArrangeConstraintsOnSuperview(_ aView: UIKit.UIView?)
   @objc public class func removeArrangeConstraintsOnSuperviewSafeLayoutGuide(_ aView: UIKit.UIView?)
   @objc public class func removeSizeConstraintOnSelf(_ aView: UIKit.UIView?)
+  @objc public class func hideViewWhileTouchable(view: UIKit.UIView?)
+  @objc public class func hideViewWhileTouchable(label: UIKit.UILabel?)
   @objc override dynamic public init()
   @objc deinit
 }
@@ -119,10 +121,21 @@ import _StringProcessing
     get
   }
 }
+@objc public enum GFPHexCodeType : Swift.Int {
+  case rgba
+  case argb
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc extension UIKit.UIColor {
   @objc(colorWithRGBIntWith:) dynamic public class func gfpColor(rgbInt: Swift.UInt64) -> UIKit.UIColor
   @objc(colorWithRGBIntWith:alpha:) dynamic public class func gfpColor(rgbInt: Swift.UInt64, alpha: CoreFoundation.CGFloat) -> UIKit.UIColor
   @objc(colorWithRedWith:green:blue:alpha:) dynamic public class func gfpColor(red: CoreFoundation.CGFloat, green: CoreFoundation.CGFloat, blue: CoreFoundation.CGFloat, alpha: CoreFoundation.CGFloat) -> UIKit.UIColor
+  @objc(colorWithHexStringWith:) dynamic public class func gfpColor(hexString: Swift.String) -> UIKit.UIColor?
+  @objc(colorWithHexStringWith:type:) dynamic public class func gfpColor(hexString: Swift.String, type: NaverAdsServices.GFPHexCodeType = .rgba) -> UIKit.UIColor?
 }
 @objc extension UIKit.UIView {
   @objc(frameWith:) @_Concurrency.MainActor(unsafe) dynamic public class func frame(_ frame: CoreFoundation.CGRect) -> Swift.String
@@ -376,5 +389,8 @@ extension NaverAdsServices.GFPSizeType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPOriginType : Swift.Equatable {}
 extension NaverAdsServices.GFPOriginType : Swift.Hashable {}
 extension NaverAdsServices.GFPOriginType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPHexCodeType : Swift.Equatable {}
+extension NaverAdsServices.GFPHexCodeType : Swift.Hashable {}
+extension NaverAdsServices.GFPHexCodeType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPLogLevel : Swift.Hashable {}
 extension NaverAdsServices.GFPLogLevel : Swift.RawRepresentable {}

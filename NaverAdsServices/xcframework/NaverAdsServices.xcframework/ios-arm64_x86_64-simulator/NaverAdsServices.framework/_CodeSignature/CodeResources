@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/NaverAdsServices-Swift.h</key>
 		<data>
-		DS229bs+92+t/d0e+IdLpKlnI1w=
+		QrObMl0vBJQS9DK6wk4oVuYywAA=
 		</data>
 		<key>Headers/NaverAdsServices.h</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kF3n4JfNmQd5jAFueJq4bRlnrxo=
+		02eORrPP1BR0hbEgYmq0GIWABRg=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SHAAi76K+xHIY45j2IUky+utAWQ=
+		HzkT0b0fhxuA+Ej1JNWTlye8wsQ=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -42,19 +42,19 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SHAAi76K+xHIY45j2IUky+utAWQ=
+		HzkT0b0fhxuA+Ej1JNWTlye8wsQ=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wrnLcD+la5KreiGsLuSXMu23rrE=
+		rRoB4sEEc04fa/WS1DlVUG+/8LM=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kF3n4JfNmQd5jAFueJq4bRlnrxo=
+		02eORrPP1BR0hbEgYmq0GIWABRg=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Jvp7L4xJqUbfwwdzoSvOM+rVF9g=
+		/6e7TPrtmFkA+CHVdl0FYx9j2G4=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Jvp7L4xJqUbfwwdzoSvOM+rVF9g=
+		/6e7TPrtmFkA+CHVdl0FYx9j2G4=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VagpY83AgTH/eeip85l2MdAEkqE=
+		KGV2DadAZ3y+fJJtqS3AeIpefMQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4LQDIpBgisk8adr8HMsXE6H6UC/DQZD4b4Z0OvvAvDQ=
+			h+d/hRxinZQPa6asLhR/Mk6MpUNxuXbKoj7ZnjuTOjI=
 			</data>
 		</dict>
 		<key>Headers/NaverAdsServices.h</key>
@@ -114,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kcT/oVnPT5HfYfKn3pHzNYeCOZKrbu5fL0p/ZP+3rjE=
+			dXNKLOJDZBlrSiE4zLQnK3KOoULbpb7SJtTdGSoyQBo=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CapR6QknTcXTPTEYrJs8rEd0GjqAhSW63u+anlO7Gts=
+			PPfWdd2G7zvzNmuv90b6MfrO0EQsMnugF0zgImzLxuE=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -135,28 +135,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			CapR6QknTcXTPTEYrJs8rEd0GjqAhSW63u+anlO7Gts=
+			PPfWdd2G7zvzNmuv90b6MfrO0EQsMnugF0zgImzLxuE=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8OUQlRp2DHD/9Yy+9TYbr8TQTe3REAJm7jpEqNxvBkE=
+			b1kjAfgmvzD7mMO/dBo0/x8FM9zUyjtiGcAgapbiM4c=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kcT/oVnPT5HfYfKn3pHzNYeCOZKrbu5fL0p/ZP+3rjE=
+			dXNKLOJDZBlrSiE4zLQnK3KOoULbpb7SJtTdGSoyQBo=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvqbNWbBRPq0ocAVAu1+rgkQlndbV0EkHvMEwpP4NGU=
+			lPgs5qEa71/425W5Vv0+4la9VqyI5UkDLstBPohqOO0=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -170,14 +170,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zvqbNWbBRPq0ocAVAu1+rgkQlndbV0EkHvMEwpP4NGU=
+			lPgs5qEa71/425W5Vv0+4la9VqyI5UkDLstBPohqOO0=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FQPuWbnniuBNi5m0R/eP+nsk/eFRDqwdNcLr8TRwtTs=
+			/x90cSCybA7bdZvucxxX+IfW70cb8H030XjsmvKy5u0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

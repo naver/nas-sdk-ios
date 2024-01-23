@@ -1,7 +1,7 @@
 framework module NaverAdsServices {
   umbrella header "NaverAdsServices.h"
-
   export *
+
   module * { export * }
 }
 

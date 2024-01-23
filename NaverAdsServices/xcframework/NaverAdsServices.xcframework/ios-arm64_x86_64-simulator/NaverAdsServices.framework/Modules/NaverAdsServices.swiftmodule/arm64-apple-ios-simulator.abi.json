@@ -4154,9 +4154,160 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "SKStoreViewControllerCloseDelegate",
+        "printedName": "SKStoreViewControllerCloseDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "storeViewControllerClosed",
+            "printedName": "storeViewControllerClosed()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(pl)SKStoreViewControllerCloseDelegate(im)storeViewControllerClosed",
+            "mangledName": "$s16NaverAdsServices34SKStoreViewControllerCloseDelegateP05storeeF6ClosedyyF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.SKStoreViewControllerCloseDelegate>",
+            "sugared_genericSig": "<Self where Self : NaverAdsServices.SKStoreViewControllerCloseDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@NaverAdsServices@objc(pl)SKStoreViewControllerCloseDelegate",
+        "mangledName": "$s16NaverAdsServices34SKStoreViewControllerCloseDelegateP",
+        "moduleName": "NaverAdsServices",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "GFPStoreProductHelper",
         "printedName": "GFPStoreProductHelper",
         "children": [
+          {
+            "kind": "Var",
+            "name": "closeDelegate",
+            "printedName": "closeDelegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "NaverAdsServices.SKStoreViewControllerCloseDelegate?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPStoreProductHelper(py)closeDelegate",
+            "mangledName": "$s16NaverAdsServices21GFPStoreProductHelperC13closeDelegateAA026SKStoreViewControllerCloseH0_pSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NaverAdsServices.SKStoreViewControllerCloseDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SKStoreViewControllerCloseDelegate",
+                        "printedName": "NaverAdsServices.SKStoreViewControllerCloseDelegate",
+                        "usr": "c:@M@NaverAdsServices@objc(pl)SKStoreViewControllerCloseDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPStoreProductHelper(im)closeDelegate",
+                "mangledName": "$s16NaverAdsServices21GFPStoreProductHelperC13closeDelegateAA026SKStoreViewControllerCloseH0_pSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NaverAdsServices.SKStoreViewControllerCloseDelegate?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "SKStoreViewControllerCloseDelegate",
+                        "printedName": "NaverAdsServices.SKStoreViewControllerCloseDelegate",
+                        "usr": "c:@M@NaverAdsServices@objc(pl)SKStoreViewControllerCloseDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPStoreProductHelper(im)setCloseDelegate:",
+                "mangledName": "$s16NaverAdsServices21GFPStoreProductHelperC13closeDelegateAA026SKStoreViewControllerCloseH0_pSgvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices21GFPStoreProductHelperC13closeDelegateAA026SKStoreViewControllerCloseH0_pSgvM",
+                "mangledName": "$s16NaverAdsServices21GFPStoreProductHelperC13closeDelegateAA026SKStoreViewControllerCloseH0_pSgvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -10335,6 +10486,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -10530,6 +10688,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "__DefaultCustomPlaygroundQuickLookable",
             "printedName": "__DefaultCustomPlaygroundQuickLookable",
             "usr": "s:s38__DefaultCustomPlaygroundQuickLookableP",
@@ -10641,7 +10806,9 @@
                 "moduleName": "NaverAdsServices",
                 "static": true,
                 "implicit": true,
+                "intro_iOS": "6.0",
                 "declAttributes": [
+                  "Available",
                   "Final"
                 ],
                 "isFromExtension": true,
@@ -10744,6 +10911,13 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "UITraitChangeObservable",
+            "printedName": "UITraitChangeObservable",
+            "usr": "s:5UIKit23UITraitChangeObservableP",
+            "mangledName": "$s5UIKit23UITraitChangeObservableP"
           }
         ]
       },
@@ -12302,434 +12476,434 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPTimeUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPTimeUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 375,
       "length": 2,
-      "value": "1"
+      "value": "-1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 404,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 372,
       "length": 8,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 390,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 404,
       "length": 8,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 507,
       "length": 2,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
       "length": 2,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 483,
       "length": 2,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 495,
       "length": 2,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 507,
       "length": 2,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "IntegerLiteral",
       "offset": 519,
       "length": 2,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 638,
       "length": 8,
       "value": "\"isWifi\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 703,
       "length": 12,
       "value": "\"isCellular\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 772,
       "length": 12,
       "value": "\"isEthernet\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 839,
       "length": 8,
       "value": "\"status\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 905,
       "length": 13,
       "value": "\"isExpensive\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 971,
       "length": 9,
       "value": "\"hasIPv4\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 1033,
       "length": 9,
       "value": "\"hasIPv6\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
       "kind": "StringLiteral",
       "offset": 1094,
       "length": 11,
       "value": "\"hasNewDNS\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 335,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 335,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 346,
       "length": 10,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 414,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 425,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 414,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 425,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 496,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 485,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 496,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
       "offset": 563,
       "length": 4,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 443,
+      "offset": 542,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 768,
+      "offset": 867,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
       "kind": "StringLiteral",
-      "offset": 892,
+      "offset": 991,
       "length": 21,
       "value": "\"NaverAdsServices.GFPStoreProductHelper\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 19,
       "value": "\"com.gfpsdk.logger\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 847,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 858,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 873,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 887,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 902,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 4,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 847,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 858,
       "length": 5,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 873,
       "length": 4,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 887,
       "length": 5,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 902,
       "length": 8,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "IntegerLiteral",
       "offset": 920,
       "length": 4,
       "value": "5"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "BooleanLiteral",
       "offset": 3559,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 536,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 573,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 16,
       "value": "\"NaverAdsServices.GFPDeviceLocInfo\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 867,
       "length": 9,
       "value": "\"pdp_ip0\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 911,
       "length": 5,
       "value": "\"en0\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 955,
       "length": 6,
       "value": "\"ipv4\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 1000,
       "length": 6,
       "value": "\"ipv6\""
     },
     {
-      "filePath": "\/Users\/user\/actions-runner-nas\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/NSTimer+GFPUtils.swift",
+      "filePath": "\/Users\/user\/actions-runner-shared-gfp\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/NSTimer+GFPUtils.swift",
       "kind": "FloatLiteral",
       "offset": 338,
       "length": 3,

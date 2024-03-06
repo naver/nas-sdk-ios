@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/NaverAdsServices-Swift.h</key>
 		<data>
-		NXsqUokDQ3yIp4UbljKmt9thivc=
+		ozBVVinH4wt7y41qetiALcLkt5A=
 		</data>
 		<key>Headers/NaverAdsServices.h</key>
 		<data>
@@ -26,47 +26,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uqCGH/TCqMPtoNXMsnAq/Mi1oXk=
+		UxeDInKX7F4iw56mPXCkOkgAFto=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		a0D9h6Wrd1jyIJ35hE33qJLG+NU=
+		UmK6DlRyy9zyvECDw2DDX3rHMWo=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		yMlm8xhWWGodwWFNrum7Vdxd2ow=
+		o0FVnIl8aycnywAZRW0PXtqCTHg=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8FEfwPrCM2RvEzldiyJy8j63BeQ=
+		MFcnYV0BEz2Yl2z6PIsu8xnESj8=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		yMlm8xhWWGodwWFNrum7Vdxd2ow=
+		o0FVnIl8aycnywAZRW0PXtqCTHg=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		aye30lo0ueNaf7K2DaODvimDO/4=
+		y1AXEgVHaWiAoewM5c8EpzA+7E0=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		a0D9h6Wrd1jyIJ35hE33qJLG+NU=
+		UmK6DlRyy9zyvECDw2DDX3rHMWo=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		c/tvQmoLc1Agy1POSxWo3dOXiKw=
+		pXqWgLmwf4VysSXgXyN0R0CUXvw=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		o8pXIvfnrCePmiT3UeiYn8Pm6To=
+		HrzCe1VrV2aoQIeKiwps7gIcSwE=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		c/tvQmoLc1Agy1POSxWo3dOXiKw=
+		pXqWgLmwf4VysSXgXyN0R0CUXvw=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rivEWJjtAjuFOqVU9lT5egmMQ8g=
+		94B15yxd8Nocu3UXBWSWzY1g80A=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -100,7 +100,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4l2htzeFCBHKfE09C352gXTIHzaNv9N0q3VNKOXhjwE=
+			Uwt1m03120pIZQ00+BVYLm1nAW75OnhddLKg+/p+Kss=
 			</data>
 		</dict>
 		<key>Headers/NaverAdsServices.h</key>
@@ -114,70 +114,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8N3aKzN+eSTx2HcPxParChoJQTRDboK+tuNA7lw6xnQ=
+			tQbVPUG/gtaOrsilyY7mzSs4hymeXs/65u47ELb2H/o=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jTRIRWmkUbKK2NKkFWM6y3OHx93ghbsrESEJg8mcjig=
+			5HjLkcK20GQpOxfgVoYmp2o7HfAgoS2m8qKtwyxBQrE=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XojGDul7oHGjEcEIKUAVwYpG1XQl7l+x0Tv5CdDtQFI=
+			BfpW45XGa3kPeza7X+ZLcXXATgO4UV9AXqm9+TlydP4=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jTRIRWmkUbKK2NKkFWM6y3OHx93ghbsrESEJg8mcjig=
+			5HjLkcK20GQpOxfgVoYmp2o7HfAgoS2m8qKtwyxBQrE=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2qmvcfyl3X9tUmVyTt/XH+W1wEf8jB/CIG9JthuLkLw=
+			kpCJ3YDGEiqlkLQjcoE9V16Y4Jpv7vl8F77rChANPO4=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8N3aKzN+eSTx2HcPxParChoJQTRDboK+tuNA7lw6xnQ=
+			tQbVPUG/gtaOrsilyY7mzSs4hymeXs/65u47ELb2H/o=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69MHumRanI/iI9DUqj6GbXxv/KtU4qBEnsk8fxr9FjI=
+			1XiAjvnvW3e18iR0QVA8MRhuwZTWaIOGjVV6EEl5YWY=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pYwZoRxXXa45xSm5+nS652hQhNGhq3oVfTRY0XLE7a8=
+			t0TfsPeuPjbGJDuMy8eSgCU7HOUweRaVBf3DMXp+MtA=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			69MHumRanI/iI9DUqj6GbXxv/KtU4qBEnsk8fxr9FjI=
+			1XiAjvnvW3e18iR0QVA8MRhuwZTWaIOGjVV6EEl5YWY=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			77EDH86dQ/n0MMZVxZ9xU4AD1STtorh4Qs+Vb10NiKE=
+			4Gf+p7FTONZOhi9Aq4rpnTw6uMHsFRsrR6OxhuW1T/o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

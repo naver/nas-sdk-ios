@@ -4357,6 +4357,28 @@
           },
           {
             "kind": "Function",
+            "name": "isLoadProductEnabled",
+            "printedName": "isLoadProductEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPStoreProductHelper(im)isLoadProductEnabled",
+            "mangledName": "$s16NaverAdsServices21GFPStoreProductHelperC06isLoadE7EnabledSbyF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "loadProductWith",
             "printedName": "loadProductWith(_:)",
             "children": [

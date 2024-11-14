@@ -10,6 +10,7 @@
 
 #import <Foundation/Foundation.h>
 #import <NaverAdsServices/NASEnum-Swift.h>
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define GFPLogTrace(fmt,...) \

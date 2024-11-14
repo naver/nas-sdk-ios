@@ -13,7 +13,14 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_OPTIONS(NSInteger, GFPLogLevel);
+typedef NS_ENUM(NSInteger, GFPLogLevel) {
+    GFPLogLevelTrace = 0,
+    GFPLogLevelDebug,
+    GFPLogLevelInfo,
+    GFPLogLevelError,
+    GFPLogLevelCritical,
+    GFPLogLevelNone
+};
 
 typedef NS_OPTIONS(NSInteger, GFPAlignment) {
     GFPAlignmentLeft = 1,

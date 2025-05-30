@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NaverAdsServices
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NaverAdsServices
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -11,6 +12,7 @@ import QuartzCore
 import StoreKit
 import Swift
 import UIKit
+import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -138,41 +140,41 @@ import _SwiftConcurrencyShims
   @objc(colorWithHexStringWith:type:) dynamic public class func gfpColor(hexString: Swift.String, type: NaverAdsServices.GFPHexCodeType = .rgba) -> UIKit.UIColor?
 }
 @objc extension UIKit.UIView {
-  @objc(frameWith:) @_Concurrency.MainActor(unsafe) dynamic public class func frame(_ frame: CoreFoundation.CGRect) -> Swift.String
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func printSize(functionName: [Swift.CChar])
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func printOrigin(functionName: [Swift.CChar])
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func sideSafeAreaInsets() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func sizeWidth() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func sizeHeight() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func leftSafeInsets() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func rightSafeInsets() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func topSafeInsets() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func topBottomSafeAreaInsets() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func maxY() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func maxX() -> CoreFoundation.CGFloat
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func showDebugBorderWithColorWith(color: UIKit.UIColor)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func addConstraintCenterWith(aItem: UIKit.UIView?, toItem: UIKit.UIView?, attribute: UIKit.NSLayoutConstraint.Attribute)
-  @objc(moveWith:) @_Concurrency.MainActor(unsafe) dynamic public func moveWith(type: NaverAdsServices.GFPAlignmentCenter)
-  @objc(moveWith:margin:) @_Concurrency.MainActor(unsafe) dynamic public func moveWith(type: NaverAdsServices.GFPAlignmentCenter, margin: CoreFoundation.CGFloat)
-  @objc(moveToTypeWith:margin:) @_Concurrency.MainActor(unsafe) dynamic public func moveToTypeWith(type: NaverAdsServices.GFPAlignment, margin: CoreFoundation.CGFloat)
-  @objc(moveToTypeWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func moveToTypeWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
-  @objc(alignWith:withView:) @_Concurrency.MainActor(unsafe) dynamic public func alignWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?)
-  @objc(alignWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func alignWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
-  @objc(alignCenterWith:withView:) @_Concurrency.MainActor(unsafe) dynamic public func alignCenter(type: NaverAdsServices.GFPAlignmentCenter, view: UIKit.UIView?)
-  @objc(alignCenterWith:withView:gap:) @_Concurrency.MainActor(unsafe) dynamic public func alignCenter(type: NaverAdsServices.GFPAlignmentCenter, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
-  @objc(updateSizeWith:value:) @_Concurrency.MainActor(unsafe) dynamic public func updateSizeWith(type: NaverAdsServices.GFPSizeType, value: CoreFoundation.CGFloat)
-  @objc(updateSizeWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateSizeWith(aSize: CoreFoundation.CGSize)
-  @objc(updateOriginWith:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginWith(aOrigin: CoreFoundation.CGPoint)
-  @objc(updateOriginTypeWith:value:) @_Concurrency.MainActor(unsafe) dynamic public func updateOriginTypeWith(aType: NaverAdsServices.GFPOriginType, aValue: CoreFoundation.CGFloat)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func enableAccessibilityForImageSubviews()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForImageSubviews()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func disableAccessibilityForSubviews()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public class func loadWithBundle(aBundle: Foundation.Bundle?, nibName: Swift.String?) -> UIKit.UIView?
+  @objc(frameWith:) @_Concurrency.MainActor @preconcurrency dynamic public class func frame(_ frame: CoreFoundation.CGRect) -> Swift.String
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func printSize(functionName: [Swift.CChar])
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func printOrigin(functionName: [Swift.CChar])
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func sideSafeAreaInsets() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func sizeWidth() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func sizeHeight() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func leftSafeInsets() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func rightSafeInsets() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func topSafeInsets() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func topBottomSafeAreaInsets() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func maxY() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func maxX() -> CoreFoundation.CGFloat
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func showDebugBorderWithColorWith(color: UIKit.UIColor)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func addConstraintCenterWith(aItem: UIKit.UIView?, toItem: UIKit.UIView?, attribute: UIKit.NSLayoutConstraint.Attribute)
+  @objc(moveWith:) @_Concurrency.MainActor @preconcurrency dynamic public func moveWith(type: NaverAdsServices.GFPAlignmentCenter)
+  @objc(moveWith:margin:) @_Concurrency.MainActor @preconcurrency dynamic public func moveWith(type: NaverAdsServices.GFPAlignmentCenter, margin: CoreFoundation.CGFloat)
+  @objc(moveToTypeWith:margin:) @_Concurrency.MainActor @preconcurrency dynamic public func moveToTypeWith(type: NaverAdsServices.GFPAlignment, margin: CoreFoundation.CGFloat)
+  @objc(moveToTypeWith:withView:gap:) @_Concurrency.MainActor @preconcurrency dynamic public func moveToTypeWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
+  @objc(alignWith:withView:) @_Concurrency.MainActor @preconcurrency dynamic public func alignWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?)
+  @objc(alignWith:withView:gap:) @_Concurrency.MainActor @preconcurrency dynamic public func alignWith(type: NaverAdsServices.GFPAlignment, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
+  @objc(alignCenterWith:withView:) @_Concurrency.MainActor @preconcurrency dynamic public func alignCenter(type: NaverAdsServices.GFPAlignmentCenter, view: UIKit.UIView?)
+  @objc(alignCenterWith:withView:gap:) @_Concurrency.MainActor @preconcurrency dynamic public func alignCenter(type: NaverAdsServices.GFPAlignmentCenter, view: UIKit.UIView?, gap: CoreFoundation.CGFloat)
+  @objc(updateSizeWith:value:) @_Concurrency.MainActor @preconcurrency dynamic public func updateSizeWith(type: NaverAdsServices.GFPSizeType, value: CoreFoundation.CGFloat)
+  @objc(updateSizeWith:) @_Concurrency.MainActor @preconcurrency dynamic public func updateSizeWith(aSize: CoreFoundation.CGSize)
+  @objc(updateOriginWith:) @_Concurrency.MainActor @preconcurrency dynamic public func updateOriginWith(aOrigin: CoreFoundation.CGPoint)
+  @objc(updateOriginTypeWith:value:) @_Concurrency.MainActor @preconcurrency dynamic public func updateOriginTypeWith(aType: NaverAdsServices.GFPOriginType, aValue: CoreFoundation.CGFloat)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func enableAccessibilityForImageSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func disableAccessibilityForImageSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func disableAccessibilityForSubviews()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public class func loadWithBundle(aBundle: Foundation.Bundle?, nibName: Swift.String?) -> UIKit.UIView?
 }
 @objc extension UIKit.UIImageView {
-  @objc(startSpinningWith:) @_Concurrency.MainActor(unsafe) dynamic public func startSpinningWith(duration: Swift.Double)
-  @objc @_Concurrency.MainActor(unsafe) dynamic public func stopSpinning()
-  @objc @_Concurrency.MainActor(unsafe) dynamic public class func imageWithImage(image: UIKit.UIImage?, scaleSize: CoreFoundation.CGSize) -> UIKit.UIImage?
+  @objc(startSpinningWith:) @_Concurrency.MainActor @preconcurrency dynamic public func startSpinningWith(duration: Swift.Double)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public func stopSpinning()
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public class func imageWithImage(image: UIKit.UIImage?, scaleSize: CoreFoundation.CGSize) -> UIKit.UIImage?
 }
 public typealias ImageDownloadCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
 public typealias DownloadCompletionHandler = (Foundation.Data?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
@@ -197,8 +199,8 @@ public typealias ImageFullCompletionHandler = (UIKit.UIImage?, Foundation.URL?, 
   @objc func storeViewControllerClosed()
 }
 @objc extension StoreKit.SKStoreProductViewController {
-  @objc @_Concurrency.MainActor(unsafe) public static var canUse: Swift.Bool
-  @objc @_Concurrency.MainActor(unsafe) dynamic public class func canUseStoreProduct() -> Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency public static var canUse: Swift.Bool
+  @objc @_Concurrency.MainActor @preconcurrency dynamic public class func canUseStoreProduct() -> Swift.Bool
 }
 @objc @objcMembers public class GFPStoreProductHelper : ObjectiveC.NSObject, StoreKit.SKStoreProductViewControllerDelegate {
   @objc weak public var closeDelegate: (any NaverAdsServices.SKStoreViewControllerCloseDelegate)?
@@ -248,6 +250,24 @@ extension NaverAdsServices.GFPLog {
   public static func error(_ message: Any, _ method: Any = #function, _ arguments: Any...)
   public static func critical(_ message: Any, _ method: Any = #function, _ arguments: Any...)
 }
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: NaverAdsServices.GFPBundle
+  @objc public static var appVersion: Swift.String {
+    @objc get
+  }
+  @objc public static var appName: Swift.String {
+    @objc get
+  }
+  @objc public static var identifier: Swift.String {
+    @objc get
+  }
+  @objc public func skAdNetworkList() -> [Swift.String]
+  @objc override dynamic public init()
+  @objc public func setup()
+  @objc public class func sdkResource(with aPath: Swift.String?, type aType: Swift.String?) -> Swift.String?
+  @objc public class func isExistImage(bundle: Foundation.Bundle?, name: Swift.String) -> Swift.Bool
+  @objc deinit
+}
 @objc extension Foundation.NSDictionary {
   @objc(objectWithKey:) dynamic public func object(key: Any?) -> Any?
   @objc(objectWithKey:returnType:) dynamic public func object(key: Any?, classType: Swift.AnyClass) -> Any?
@@ -270,6 +290,83 @@ extension NaverAdsServices.GFPLog {
   @objc public func codeName() -> Swift.String?
   @objc override dynamic public init(domain: Swift.String, code: Swift.Int, userInfo dict: [Swift.String : Any]? = nil)
   @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+@objc @objcMembers public class GFPUADeviceInfo : ObjectiveC.NSObject {
+  @objc public var systemVersion: Swift.String
+  @objc public var deviceType: Swift.String
+  @objc(initWith:deviceType:) public init(_ aSystemVersion: Swift.String, deviceType aDeviceType: Swift.String)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPServiceInfo : ObjectiveC.NSObject {
+  @objc public var appName: Swift.String
+  @objc public var appVersion: Swift.String
+  @objc override dynamic public init()
+  @objc public static func create() -> NaverAdsServices.GFPServiceInfo
+  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc public var appVersionDict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPDeviceInfo : ObjectiveC.NSObject {
+  @objc public var uaInfo: NaverAdsServices.GFPUADeviceInfo
+  @objc public var serviceInfo: NaverAdsServices.GFPServiceInfo
+  @objc public var systemName: Swift.String {
+    get
+  }
+  @objc public var systemVersion: Swift.String {
+    get
+  }
+  @objc public var sdkVersion: Swift.String? {
+    get
+  }
+  @objc public var deviceType: Swift.String {
+    get
+  }
+  @objc public var deviceModel: Swift.String {
+    get
+  }
+  @objc public var bundleIdentifier: Swift.String {
+    get
+  }
+  @objc public var appName: Swift.String {
+    @objc get
+  }
+  @objc public var appVersion: Swift.String {
+    @objc get
+  }
+  @objc public var sdkName: Swift.String {
+    @objc get
+  }
+  @objc public var os: Swift.String {
+    @objc get
+  }
+  @objc public var density: Swift.String {
+    @objc get
+  }
+  @objc public var screenWidth: Swift.String {
+    @objc get
+  }
+  @objc public var screenHeight: Swift.String {
+    @objc get
+  }
+  @objc public var locale: Swift.String? {
+    @objc get
+  }
+  @objc public var networkType: Swift.String {
+    @objc get
+  }
+  @objc convenience public init(_ version: Swift.String)
+  @objc override dynamic public init()
+  @objc public var dict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
+  @objc public var initializeDict: Swift.Dictionary<Swift.String, Swift.String> {
+    @objc get
+  }
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPMergeUtils : ObjectiveC.NSObject {
@@ -367,6 +464,70 @@ extension Swift.String {
   @objc public static let kAttachedCheckDefaultFrequency: Swift.Double
   @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool) -> Foundation.Timer
   @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool, mode: Foundation.RunLoop.Mode) -> Foundation.Timer
+}
+public struct GFPWebViewAppEnvSkadn : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GFPWebViewAppEnvDevice : Swift.Codable {
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GFPWebViewAppEnvironment : Swift.Codable {
+  public var sdkName: Swift.String {
+    get
+  }
+  public var sdkVersion: Swift.String {
+    get
+  }
+  public var limitAdTracking: Swift.Bool {
+    get
+  }
+  public var adid: Swift.String? {
+    get
+  }
+  public var nac: Swift.String? {
+    get
+  }
+  public var device: NaverAdsServices.GFPWebViewAppEnvDevice? {
+    get
+  }
+  public var appVersion: Swift.String {
+    get
+  }
+  public var skadn: NaverAdsServices.GFPWebViewAppEnvSkadn? {
+    get
+  }
+  public init(sdkName: Swift.String, sdkVersion: Swift.String, limitAdTracking: Swift.Bool, adId: Swift.String? = nil, nac: Swift.String? = nil, device: NaverAdsServices.GFPWebViewAppEnvDevice? = nil)
+  public init?()
+  public func jsonString() -> Swift.String?
+  public static var nac: Swift.String? {
+    get
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc public protocol GFPWebViewAppEnvDelegate {
+  @objc var web_env_sdkVersion: Swift.String { get }
+  @objc var web_env_sdkName: Swift.String { get }
+  @objc var web_env_limitAdTracking: Swift.Bool { get }
+  @objc var web_env_adId: Swift.String? { get }
+  @objc var web_env_nac: Swift.String? { get }
+  @objc func web_env_updateNac(nac: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPWebViewManager : ObjectiveC.NSObject {
+  @objc public static let shared: NaverAdsServices.GFPWebViewManager
+  @objc weak public var delegate: (any NaverAdsServices.GFPWebViewAppEnvDelegate)? {
+    get
+  }
+  @objc public static func registerDelegate(_ delegate: (any NaverAdsServices.GFPWebViewAppEnvDelegate)?)
+  @objc public static func registerWebView(_ webView: WebKit.WKWebView)
+  @objc public static func examineWebViewStatus(webView: WebKit.WKWebView, result: @escaping ((any Swift.Error)?, [Swift.String : Any]?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension NaverAdsServices.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage, replyHandler: @escaping @_Concurrency.MainActor (Any?, Swift.String?) -> Swift.Void)
 }
 extension NaverAdsServices.GFPNetworkType : Swift.Equatable {}
 extension NaverAdsServices.GFPNetworkType : Swift.Hashable {}

@@ -11,6 +11,9 @@
 #import <Foundation/Foundation.h>
 #import <NaverAdsServices/NASEnum-Swift.h>
 
+#ifndef GFPLogWrapper_h
+#define GFPLogWrapper_h
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define GFPLogTrace(fmt,...) \
@@ -48,3 +51,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

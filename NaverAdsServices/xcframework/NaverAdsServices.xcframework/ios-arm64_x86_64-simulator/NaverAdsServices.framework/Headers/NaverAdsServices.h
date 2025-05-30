@@ -24,3 +24,6 @@ FOUNDATION_EXPORT const unsigned char NaverAdsServicesVersionString[];
 #import <NaverAdsServices/GFPLogWrapper.h>
 #import <NaverAdsServices/GFPLogReqInfo.h>
 
+#import <NaverAdsServices/GFPSKAdNetworkInfo.h>
+#import <NaverAdsServices/GFPSKAdNetworkUtils.h>
+

@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "NaverAdsServices",
+    "printedName": "NaverAdsServices",
     "children": [
       {
         "kind": "Import",
@@ -199,6 +199,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -1212,6 +1226,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1546,6 +1574,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -1875,6 +1917,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -2406,6 +2462,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2644,6 +2714,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2850,6 +2934,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -3060,6 +3158,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -3266,6 +3378,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4079,6 +4205,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4191,6 +4331,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4485,6 +4641,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -4827,6 +4997,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5570,6 +5754,492 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPBundle",
+        "printedName": "GFPBundle",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPBundle",
+                "printedName": "NaverAdsServices.GFPBundle",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)sharedInstance",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC14sharedInstanceACvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPBundle",
+                    "printedName": "NaverAdsServices.GFPBundle",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)sharedInstance",
+                "mangledName": "$s16NaverAdsServices9GFPBundleC14sharedInstanceACvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersion",
+            "printedName": "appVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)appVersion",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC10appVersionSSvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)appVersion",
+                "mangledName": "$s16NaverAdsServices9GFPBundleC10appVersionSSvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appName",
+            "printedName": "appName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)appName",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC7appNameSSvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)appName",
+                "mangledName": "$s16NaverAdsServices9GFPBundleC7appNameSSvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "identifier",
+            "printedName": "identifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)identifier",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC10identifierSSvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)identifier",
+                "mangledName": "$s16NaverAdsServices9GFPBundleC10identifierSSvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "skAdNetworkList",
+            "printedName": "skAdNetworkList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)skAdNetworkList",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC15skAdNetworkListSaySSGyF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPBundle",
+                "printedName": "NaverAdsServices.GFPBundle",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)init",
+            "mangledName": "$s16NaverAdsServices9GFPBundleCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)setup",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC5setupyyF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sdkResource",
+            "printedName": "sdkResource(with:type:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)sdkResourceWith:type:",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC11sdkResource4with4typeSSSgAG_AGtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isExistImage",
+            "printedName": "isExistImage(bundle:name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Foundation.Bundle?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bundle",
+                    "printedName": "Foundation.Bundle",
+                    "usr": "c:objc(cs)NSBundle"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)isExistImageWithBundle:name:",
+            "mangledName": "$s16NaverAdsServices9GFPBundleC12isExistImage6bundle4nameSbSo8NSBundleCSg_SStFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle",
+        "mangledName": "$s16NaverAdsServices9GFPBundleC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5743,6 +6413,22 @@
         "declAttributes": [
           "AccessControl",
           "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -6221,6 +6907,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6274,6 +6974,2008 @@
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPUADeviceInfo",
+        "printedName": "GFPUADeviceInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "systemVersion",
+            "printedName": "systemVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(py)systemVersion",
+            "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC13systemVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)systemVersion",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC13systemVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)setSystemVersion:",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC13systemVersionSSvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices15GFPUADeviceInfoC13systemVersionSSvM",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC13systemVersionSSvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceType",
+            "printedName": "deviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(py)deviceType",
+            "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC10deviceTypeSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)deviceType",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC10deviceTypeSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)setDeviceType:",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC10deviceTypeSSvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices15GFPUADeviceInfoC10deviceTypeSSvM",
+                "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC10deviceTypeSSvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:deviceType:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPUADeviceInfo",
+                "printedName": "NaverAdsServices.GFPUADeviceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)initWith:deviceType:",
+            "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC_10deviceTypeACSS_SStcfc",
+            "moduleName": "NaverAdsServices",
+            "objc_name": "initWith:deviceType:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPUADeviceInfo",
+                "printedName": "NaverAdsServices.GFPUADeviceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo(im)init",
+            "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo",
+        "mangledName": "$s16NaverAdsServices15GFPUADeviceInfoC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPServiceInfo",
+        "printedName": "GFPServiceInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "appName",
+            "printedName": "appName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(py)appName",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoC7appNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)appName",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC7appNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)setAppName:",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC7appNameSSvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices14GFPServiceInfoC7appNameSSvM",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC7appNameSSvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersion",
+            "printedName": "appVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(py)appVersion",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoC10appVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)appVersion",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC10appVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)setAppVersion:",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC10appVersionSSvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices14GFPServiceInfoC10appVersionSSvM",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC10appVersionSSvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPServiceInfo",
+                "printedName": "NaverAdsServices.GFPServiceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)init",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "AccessControl",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "create",
+            "printedName": "create()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPServiceInfo",
+                "printedName": "NaverAdsServices.GFPServiceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(cm)create",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoC6createACyFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "dict",
+            "printedName": "dict",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(py)dict",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoC4dictSDyS2SGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)dict",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC4dictSDyS2SGvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersionDict",
+            "printedName": "appVersionDict",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(py)appVersionDict",
+            "mangledName": "$s16NaverAdsServices14GFPServiceInfoC14appVersionDictSDyS2SGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo(im)appVersionDict",
+                "mangledName": "$s16NaverAdsServices14GFPServiceInfoC14appVersionDictSDyS2SGvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo",
+        "mangledName": "$s16NaverAdsServices14GFPServiceInfoC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPDeviceInfo",
+        "printedName": "GFPDeviceInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "uaInfo",
+            "printedName": "uaInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPUADeviceInfo",
+                "printedName": "NaverAdsServices.GFPUADeviceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)uaInfo",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC02uaE0AA011GFPUADeviceE0Cvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPUADeviceInfo",
+                    "printedName": "NaverAdsServices.GFPUADeviceInfo",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)uaInfo",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC02uaE0AA011GFPUADeviceE0Cvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPUADeviceInfo",
+                    "printedName": "NaverAdsServices.GFPUADeviceInfo",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPUADeviceInfo"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)setUaInfo:",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC02uaE0AA011GFPUADeviceE0Cvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices13GFPDeviceInfoC02uaE0AA011GFPUADeviceE0CvM",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC02uaE0AA011GFPUADeviceE0CvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "serviceInfo",
+            "printedName": "serviceInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPServiceInfo",
+                "printedName": "NaverAdsServices.GFPServiceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)serviceInfo",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC07serviceE0AA010GFPServiceE0Cvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPServiceInfo",
+                    "printedName": "NaverAdsServices.GFPServiceInfo",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)serviceInfo",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC07serviceE0AA010GFPServiceE0Cvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPServiceInfo",
+                    "printedName": "NaverAdsServices.GFPServiceInfo",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPServiceInfo"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)setServiceInfo:",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC07serviceE0AA010GFPServiceE0Cvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices13GFPDeviceInfoC07serviceE0AA010GFPServiceE0CvM",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC07serviceE0AA010GFPServiceE0CvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "systemName",
+            "printedName": "systemName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)systemName",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10systemNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)systemName",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10systemNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "systemVersion",
+            "printedName": "systemVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)systemVersion",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC13systemVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)systemVersion",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC13systemVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)sdkVersion",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10sdkVersionSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)sdkVersion",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10sdkVersionSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceType",
+            "printedName": "deviceType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)deviceType",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10deviceTypeSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)deviceType",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10deviceTypeSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deviceModel",
+            "printedName": "deviceModel",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)deviceModel",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11deviceModelSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)deviceModel",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11deviceModelSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "bundleIdentifier",
+            "printedName": "bundleIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)bundleIdentifier",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC16bundleIdentifierSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)bundleIdentifier",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC16bundleIdentifierSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appName",
+            "printedName": "appName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)appName",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7appNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)appName",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7appNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersion",
+            "printedName": "appVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)appVersion",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10appVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)appVersion",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC10appVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkName",
+            "printedName": "sdkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)sdkName",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7sdkNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)sdkName",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7sdkNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "os",
+            "printedName": "os",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)os",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC2osSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)os",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC2osSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "density",
+            "printedName": "density",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)density",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7densitySSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)density",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC7densitySSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenWidth",
+            "printedName": "screenWidth",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)screenWidth",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11screenWidthSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)screenWidth",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11screenWidthSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenHeight",
+            "printedName": "screenHeight",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)screenHeight",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC12screenHeightSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)screenHeight",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC12screenHeightSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "locale",
+            "printedName": "locale",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)locale",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC6localeSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)locale",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC6localeSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "networkType",
+            "printedName": "networkType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)networkType",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11networkTypeSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)networkType",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC11networkTypeSSvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPDeviceInfo",
+                "printedName": "NaverAdsServices.GFPDeviceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)init:",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoCyACSScfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPDeviceInfo",
+                "printedName": "NaverAdsServices.GFPDeviceInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)init",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "dict",
+            "printedName": "dict",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)dict",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC4dictSDyS2SGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)dict",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC4dictSDyS2SGvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "initializeDict",
+            "printedName": "initializeDict",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(py)initializeDict",
+            "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC14initializeDictSDyS2SGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo(im)initializeDict",
+                "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC14initializeDictSDyS2SGvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceInfo",
+        "mangledName": "$s16NaverAdsServices13GFPDeviceInfoC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -6526,6 +9228,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6706,6 +9422,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -6832,6 +9562,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7596,6 +10340,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -7909,6 +10667,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -8618,6 +11390,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8675,6 +11461,1735 @@
         "moduleName": "NaverAdsServices",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "WebKit",
+        "printedName": "WebKit",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPWebViewAppEnvSkadn",
+        "printedName": "GFPWebViewAppEnvSkadn",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewAppEnvSkadn",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvSkadn",
+                "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NaverAdsServices21GFPWebViewAppEnvSkadnV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NaverAdsServices21GFPWebViewAppEnvSkadnV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV",
+        "mangledName": "$s16NaverAdsServices21GFPWebViewAppEnvSkadnV",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPWebViewAppEnvDevice",
+        "printedName": "GFPWebViewAppEnvDevice",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewAppEnvDevice",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice",
+                "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NaverAdsServices22GFPWebViewAppEnvDeviceV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NaverAdsServices22GFPWebViewAppEnvDeviceV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV",
+        "mangledName": "$s16NaverAdsServices22GFPWebViewAppEnvDeviceV",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPWebViewAppEnvironment",
+        "printedName": "GFPWebViewAppEnvironment",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkName",
+            "printedName": "sdkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkNameSSvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkNameSSvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV10sdkVersionSSvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV10sdkVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV10sdkVersionSSvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV10sdkVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "limitAdTracking",
+            "printedName": "limitAdTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV15limitAdTrackingSbvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV15limitAdTrackingSbvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV15limitAdTrackingSbvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV15limitAdTrackingSbvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "adid",
+            "printedName": "adid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV4adidSSSgvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV4adidSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV4adidSSSgvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV4adidSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "nac",
+            "printedName": "nac",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "device",
+            "printedName": "device",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewAppEnvDevice",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice",
+                    "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV6deviceAA0deF9EnvDeviceVSgvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV6deviceAA0deF9EnvDeviceVSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPWebViewAppEnvDevice",
+                        "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice",
+                        "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV6deviceAA0deF9EnvDeviceVSgvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV6deviceAA0deF9EnvDeviceVSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "appVersion",
+            "printedName": "appVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV10appVersionSSvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV10appVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV10appVersionSSvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV10appVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "skadn",
+            "printedName": "skadn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvSkadn?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewAppEnvSkadn",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvSkadn",
+                    "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV5skadnAA0deF8EnvSkadnVSgvp",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV5skadnAA0deF8EnvSkadnVSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvSkadn?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPWebViewAppEnvSkadn",
+                        "printedName": "NaverAdsServices.GFPWebViewAppEnvSkadn",
+                        "usr": "s:16NaverAdsServices21GFPWebViewAppEnvSkadnV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV5skadnAA0deF8EnvSkadnVSgvg",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV5skadnAA0deF8EnvSkadnVSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(sdkName:sdkVersion:limitAdTracking:adId:nac:device:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewAppEnvironment",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvironment",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewAppEnvDevice",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvDevice",
+                    "usr": "s:16NaverAdsServices22GFPWebViewAppEnvDeviceV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkName0H7Version15limitAdTracking4adId3nac6deviceACSS_SSSbSSSgAjA0deF9EnvDeviceVSgtcfc",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV7sdkName0H7Version15limitAdTracking4adId3nac6deviceACSS_SSSbSSSgAjA0deF9EnvDeviceVSgtcfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvironment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewAppEnvironment",
+                    "printedName": "NaverAdsServices.GFPWebViewAppEnvironment",
+                    "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentVACSgycfc",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentVACSgycfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "jsonString",
+            "printedName": "jsonString()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV10jsonStringSSSgyF",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV10jsonStringSSSgyF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "nac",
+            "printedName": "nac",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvpZ",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvgZ",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV3nacSSSgvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewAppEnvironment",
+                "printedName": "NaverAdsServices.GFPWebViewAppEnvironment",
+                "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV6encode2toys7Encoder_p_tKF",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:16NaverAdsServices24GFPWebViewAppEnvironmentV",
+        "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvironmentV",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPWebViewAppEnvDelegate",
+        "printedName": "GFPWebViewAppEnvDelegate",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "web_env_sdkVersion",
+            "printedName": "web_env_sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(py)web_env_sdkVersion",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP18web_env_sdkVersionSSvp",
+            "moduleName": "NaverAdsServices",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_sdkVersion",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP18web_env_sdkVersionSSvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "web_env_sdkName",
+            "printedName": "web_env_sdkName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(py)web_env_sdkName",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP15web_env_sdkNameSSvp",
+            "moduleName": "NaverAdsServices",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_sdkName",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP15web_env_sdkNameSSvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "web_env_limitAdTracking",
+            "printedName": "web_env_limitAdTracking",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(py)web_env_limitAdTracking",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP23web_env_limitAdTrackingSbvp",
+            "moduleName": "NaverAdsServices",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_limitAdTracking",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP23web_env_limitAdTrackingSbvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "web_env_adId",
+            "printedName": "web_env_adId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(py)web_env_adId",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP12web_env_adIdSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_adId",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP12web_env_adIdSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "web_env_nac",
+            "printedName": "web_env_nac",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(py)web_env_nac",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP11web_env_nacSSSgvp",
+            "moduleName": "NaverAdsServices",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_nac",
+                "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP11web_env_nacSSSgvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "web_env_updateNac",
+            "printedName": "web_env_updateNac(nac:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate(im)web_env_updateNacWithNac:",
+            "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP17web_env_updateNac3nacySSSg_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0 where τ_0_0 : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+            "sugared_genericSig": "<Self where Self : NaverAdsServices.GFPWebViewAppEnvDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate",
+        "mangledName": "$s16NaverAdsServices24GFPWebViewAppEnvDelegateP",
+        "moduleName": "NaverAdsServices",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPWebViewManager",
+        "printedName": "GFPWebViewManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewManager",
+                "printedName": "NaverAdsServices.GFPWebViewManager",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(cpy)shared",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC6sharedACvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewManager",
+                    "printedName": "NaverAdsServices.GFPWebViewManager",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(cm)shared",
+                "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC6sharedACvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any NaverAdsServices.GFPWebViewAppEnvDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(py)delegate",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC8delegateAA0dE14AppEnvDelegate_pSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any NaverAdsServices.GFPWebViewAppEnvDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPWebViewAppEnvDelegate",
+                        "printedName": "any NaverAdsServices.GFPWebViewAppEnvDelegate",
+                        "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(im)delegate",
+                "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC8delegateAA0dE14AppEnvDelegate_pSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "registerDelegate",
+            "printedName": "registerDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any NaverAdsServices.GFPWebViewAppEnvDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPWebViewAppEnvDelegate",
+                    "printedName": "any NaverAdsServices.GFPWebViewAppEnvDelegate",
+                    "usr": "c:@M@NaverAdsServices@objc(pl)GFPWebViewAppEnvDelegate"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(cm)registerDelegate:",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC16registerDelegateyyAA0de6AppEnvH0_pSgFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "registerWebView",
+            "printedName": "registerWebView(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(cm)registerWebView:",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC011registerWebE0yySo05WKWebE0CFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "examineWebViewStatus",
+            "printedName": "examineWebViewStatus(webView:result:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKWebView",
+                "printedName": "WebKit.WKWebView",
+                "usr": "c:objc(cs)WKWebView"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "((any Swift.Error)?, [Swift.String : Any]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "((any Swift.Error)?, [Swift.String : Any]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "(any Swift.Error)?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Error",
+                            "printedName": "any Swift.Error",
+                            "usr": "s:s5ErrorP"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[Swift.String : Any]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Dictionary",
+                            "printedName": "[Swift.String : Any]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              },
+                              {
+                                "kind": "TypeNominal",
+                                "name": "ProtocolComposition",
+                                "printedName": "Any"
+                              }
+                            ],
+                            "usr": "s:SD"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(cm)examineWebViewStatusWithWebView:result:",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC010examineWebE6Status03webE06resultySo05WKWebE0C_ys5Error_pSg_SDySSypGSgtctFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPWebViewManager",
+                "printedName": "NaverAdsServices.GFPWebViewManager",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager(im)init",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "userContentController",
+            "printedName": "userContentController(_:didReceive:replyHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKUserContentController",
+                "printedName": "WebKit.WKUserContentController",
+                "usr": "c:objc(cs)WKUserContentController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WKScriptMessage",
+                "printedName": "WebKit.WKScriptMessage",
+                "usr": "c:objc(cs)WKScriptMessage"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(Any?, Swift.String?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(Any?, Swift.String?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Any?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "ProtocolComposition",
+                            "printedName": "Any"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@NaverAdsServices@objc(cs)GFPWebViewManager(im)userContentController:didReceiveScriptMessage:replyHandler:",
+            "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC21userContentController_10didReceive12replyHandlerySo06WKUserhI0C_So15WKScriptMessageCyypSg_SSSgtctF",
+            "moduleName": "NaverAdsServices",
+            "objc_name": "userContentController:didReceiveScriptMessage:replyHandler:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Preconcurrency",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPWebViewManager",
+        "mangledName": "$s16NaverAdsServices17GFPWebViewManagerC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
         ]
       },
       {
@@ -8920,6 +13435,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -9007,6 +13536,7 @@
             "objc_name": "frameWith:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9045,6 +13575,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9083,6 +13614,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9108,6 +13640,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9133,6 +13666,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9158,6 +13692,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9183,6 +13718,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9208,6 +13744,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9233,6 +13770,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9258,6 +13796,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9283,6 +13822,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9308,6 +13848,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9338,6 +13879,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9396,6 +13938,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9427,6 +13970,7 @@
             "objc_name": "moveWith:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9464,6 +14008,7 @@
             "objc_name": "moveWith:margin:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9501,6 +14046,7 @@
             "objc_name": "moveToTypeWith:margin:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9552,6 +14098,7 @@
             "objc_name": "moveToTypeWith:withView:gap:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9597,6 +14144,7 @@
             "objc_name": "alignWith:withView:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9648,6 +14196,7 @@
             "objc_name": "alignWith:withView:gap:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9693,6 +14242,7 @@
             "objc_name": "alignCenterWith:withView:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9744,6 +14294,7 @@
             "objc_name": "alignCenterWith:withView:gap:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9781,6 +14332,7 @@
             "objc_name": "updateSizeWith:value:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9812,6 +14364,7 @@
             "objc_name": "updateSizeWith:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9843,6 +14396,7 @@
             "objc_name": "updateOriginWith:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9880,6 +14434,7 @@
             "objc_name": "updateOriginTypeWith:value:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9904,6 +14459,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9928,6 +14484,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -9952,6 +14509,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10014,6 +14572,7 @@
             "static": true,
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10029,6 +14588,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -10043,6 +14603,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10137,6 +14711,7 @@
             "objc_name": "startSpinningWith:",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10161,6 +14736,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10215,6 +14791,7 @@
             "static": true,
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -10230,6 +14807,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIImageView",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -10245,6 +14823,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10336,6 +14928,7 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -10443,6 +15036,7 @@
             "static": true,
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "ObjC"
             ],
@@ -10457,6 +15051,7 @@
         "intro_iOS": "6.0",
         "objc_name": "SKStoreProductViewController",
         "declAttributes": [
+          "Preconcurrency",
           "Custom",
           "Available",
           "ObjC",
@@ -10471,6 +15066,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -10584,6 +15193,20 @@
         "enumRawTypeName": "Int",
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "RawRepresentable",
@@ -10841,6 +15464,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -11167,6 +15804,20 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Decodable",
@@ -11815,6 +16466,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12138,6 +16803,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -12218,55 +16897,6 @@
       "offset": 404,
       "length": 8,
       "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 372,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 390,
-      "length": 4,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 404,
-      "length": 8,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 483,
-      "length": 2,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 495,
-      "length": 2,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 507,
-      "length": 2,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
-      "kind": "IntegerLiteral",
-      "offset": 519,
-      "length": 2,
-      "value": "4"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPNetworkUtils.swift",
@@ -12369,34 +16999,6 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 335,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 346,
-      "length": 10,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 414,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 425,
-      "length": 5,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
       "offset": 414,
       "length": 1,
       "value": "0"
@@ -12425,30 +17027,30 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
       "kind": "IntegerLiteral",
-      "offset": 485,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 496,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
       "offset": 563,
       "length": 4,
       "value": "1"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
-      "kind": "IntegerLiteral",
-      "offset": 563,
-      "length": 4,
-      "value": "1"
+      "kind": "FloatLiteral",
+      "offset": 1302,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "kind": "FloatLiteral",
+      "offset": 1322,
+      "length": 5,
+      "value": "255.0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/UIView+GFPCommon.swift",
+      "kind": "FloatLiteral",
+      "offset": 1340,
+      "length": 5,
+      "value": "255.0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
@@ -12465,13 +17067,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPStoreKitUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 991,
-      "length": 21,
-      "value": "\"NaverAdsServices.GFPStoreProductHelper\""
-    },
-    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPLog.swift",
       "kind": "StringLiteral",
       "offset": 308,
@@ -12486,6 +17081,104 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPBundle.swift",
+      "kind": "Array",
+      "offset": 432,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/GFPError.swift",
+      "kind": "StringLiteral",
+      "offset": 693,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 330,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 368,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 714,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 752,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 1996,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2032,
+      "length": 5,
+      "value": "\"ios\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2073,
+      "length": 37,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2109,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2150,
+      "length": 41,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2190,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2232,
+      "length": 42,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 2273,
+      "length": 3,
+      "value": "\"\""
+    },
+    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
       "kind": "StringLiteral",
       "offset": 536,
@@ -12498,13 +17191,6 @@
       "offset": 573,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
-      "kind": "StringLiteral",
-      "offset": 474,
-      "length": 16,
-      "value": "\"NaverAdsServices.GFPDeviceLocInfo\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPDeviceUtils.swift",
@@ -12540,6 +17226,118 @@
       "offset": 338,
       "length": 3,
       "value": "0.1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 318,
+      "length": 17,
+      "value": "\"namAppSDKBridge\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 378,
+      "length": 19,
+      "value": "\"getAppEnvironment\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 11,
+      "value": "\"updateNAC\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 478,
+      "length": 11,
+      "value": "\"adWasSeen\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 527,
+      "length": 14,
+      "value": "\"adWasClicked\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 16,
+      "value": "\"internal error\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 684,
+      "length": 36,
+      "value": "\"unregistered message name received\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 751,
+      "length": 22,
+      "value": "\"invalid message body\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 811,
+      "length": 38,
+      "value": "\"unregistered message method received\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 884,
+      "length": 43,
+      "value": "\"failed to parse parameter in message body\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 962,
+      "length": 40,
+      "value": "\"no nac cookie string in body.parameter\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1035,
+      "length": 34,
+      "value": "\"empty nac cookie string received\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1100,
+      "length": 33,
+      "value": "\"no skadn data in body.parameter\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1162,
+      "length": 20,
+      "value": "\"invalid skadn data\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 1219,
+      "length": 28,
+      "value": "\"already presented storeKit\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Bridge\/GFPWebViewManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2900,
+      "length": 7,
+      "value": "\"Apple\""
     }
   ]
 }

@@ -12,6 +12,9 @@
 
 #import <NaverAdsServices/GFPLogWrapper.h>
 
+#ifndef GFPLogReqInfo_h
+#define GFPLogReqInfo_h
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GFPLogReqInfoDelegate <NSObject>
@@ -23,13 +26,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GFPLogReqInfo : NSObject
 
 @property (nonatomic, readonly, strong, nullable) NSData *data;
+@property (nonatomic, readwrite, strong, nullable) NSMutableDictionary *extraParams;
 @property (nonatomic, class, weak) id<GFPLogReqInfoDelegate> delegate;
 
-- (instancetype)initWith:(NSString *)aDomain message:(NSString *)aDomain extraInfo:(NSDictionary * _Nullable)aExtra;
-- (instancetype)initWith:(GFPLogLevel)level domain:(NSString *)aDomain message:(NSString *)aDomain extraInfo:(NSDictionary * _Nullable)aExtra;
+- (instancetype)initWith:(NSString *)domain message:(NSString *)message extraInfo:(NSDictionary * _Nullable)extraInfo;
+- (instancetype)initWith:(NSString *)domain message:(NSString *)message extraInfo:(NSDictionary * _Nullable)extraInfo extraParams:(NSDictionary *_Nullable)extraParams;
+- (instancetype)initWith:(GFPLogLevel)level domain:(NSString *)domain message:(NSString *)message extraInfo:(NSDictionary * _Nullable)extraInfo;
+- (instancetype)initWith:(GFPLogLevel)level domain:(NSString *)domain message:(NSString *)message extraInfo:(NSDictionary * _Nullable)extraInfo extraParams:(NSDictionary *_Nullable)extraParams;
 
 @end
 
-
-
 NS_ASSUME_NONNULL_END
+
+#endif

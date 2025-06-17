@@ -5829,8 +5829,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "GFPBundle",
-        "printedName": "GFPBundle",
+        "name": "GFPBundleUtils",
+        "printedName": "GFPBundleUtils",
         "children": [
           {
             "kind": "Var",
@@ -5839,14 +5839,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GFPBundle",
-                "printedName": "NaverAdsServices.GFPBundle",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+                "name": "GFPBundleUtils",
+                "printedName": "NaverAdsServices.GFPBundleUtils",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils"
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)sharedInstance",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC14sharedInstanceACvpZ",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cpy)sharedInstance",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC14sharedInstanceACvpZ",
             "moduleName": "NaverAdsServices",
             "static": true,
             "declAttributes": [
@@ -5866,14 +5866,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "GFPBundle",
-                    "printedName": "NaverAdsServices.GFPBundle",
-                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+                    "name": "GFPBundleUtils",
+                    "printedName": "NaverAdsServices.GFPBundleUtils",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)sharedInstance",
-                "mangledName": "$s16NaverAdsServices9GFPBundleC14sharedInstanceACvgZ",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cm)sharedInstance",
+                "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC14sharedInstanceACvgZ",
                 "moduleName": "NaverAdsServices",
                 "static": true,
                 "implicit": true,
@@ -5898,8 +5898,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)appVersion",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC10appVersionSSvpZ",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cpy)appVersion",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC10appVersionSSvpZ",
             "moduleName": "NaverAdsServices",
             "static": true,
             "declAttributes": [
@@ -5921,8 +5921,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)appVersion",
-                "mangledName": "$s16NaverAdsServices9GFPBundleC10appVersionSSvgZ",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cm)appVersion",
+                "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC10appVersionSSvgZ",
                 "moduleName": "NaverAdsServices",
                 "static": true,
                 "declAttributes": [
@@ -5946,8 +5946,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)appName",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC7appNameSSvpZ",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cpy)appName",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC7appNameSSvpZ",
             "moduleName": "NaverAdsServices",
             "static": true,
             "declAttributes": [
@@ -5969,8 +5969,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)appName",
-                "mangledName": "$s16NaverAdsServices9GFPBundleC7appNameSSvgZ",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cm)appName",
+                "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC7appNameSSvgZ",
                 "moduleName": "NaverAdsServices",
                 "static": true,
                 "declAttributes": [
@@ -5994,8 +5994,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cpy)identifier",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC10identifierSSvpZ",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cpy)identifier",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC10identifierSSvpZ",
             "moduleName": "NaverAdsServices",
             "static": true,
             "declAttributes": [
@@ -6017,8 +6017,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)identifier",
-                "mangledName": "$s16NaverAdsServices9GFPBundleC10identifierSSvgZ",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cm)identifier",
+                "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC10identifierSSvgZ",
                 "moduleName": "NaverAdsServices",
                 "static": true,
                 "declAttributes": [
@@ -6050,8 +6050,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)skAdNetworkList",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC15skAdNetworkListSaySSGyF",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(im)skAdNetworkList",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC15skAdNetworkListSaySSGyF",
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "AccessControl",
@@ -6066,14 +6066,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GFPBundle",
-                "printedName": "NaverAdsServices.GFPBundle",
-                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle"
+                "name": "GFPBundleUtils",
+                "printedName": "NaverAdsServices.GFPBundleUtils",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils"
               }
             ],
             "declKind": "Constructor",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)init",
-            "mangledName": "$s16NaverAdsServices9GFPBundleCACycfc",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(im)init",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsCACycfc",
             "moduleName": "NaverAdsServices",
             "overriding": true,
             "objc_name": "init",
@@ -6097,68 +6097,9 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(im)setup",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC5setupyyF",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(im)setup",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC5setupyyF",
             "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sdkResource",
-            "printedName": "sdkResource(with:type:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)sdkResourceWith:type:",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC11sdkResource4with4typeSSSgAG_AGtFZ",
-            "moduleName": "NaverAdsServices",
-            "static": true,
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -6198,8 +6139,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle(cm)isExistImageWithBundle:name:",
-            "mangledName": "$s16NaverAdsServices9GFPBundleC12isExistImage6bundle4nameSbSo8NSBundleCSg_SStFZ",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils(cm)isExistImageWithBundle:name:",
+            "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC12isExistImage6bundle4nameSbSo8NSBundleCSg_SStFZ",
             "moduleName": "NaverAdsServices",
             "static": true,
             "declAttributes": [
@@ -6210,8 +6151,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundle",
-        "mangledName": "$s16NaverAdsServices9GFPBundleC",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPBundleUtils",
+        "mangledName": "$s16NaverAdsServices14GFPBundleUtilsC",
         "moduleName": "NaverAdsServices",
         "declAttributes": [
           "AccessControl",
@@ -17081,9 +17022,9 @@
       "value": "false"
     },
     {
-      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPBundle.swift",
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPBundleUtils.swift",
       "kind": "Array",
-      "offset": 432,
+      "offset": 402,
       "length": 2,
       "value": "[]"
     },
@@ -17125,56 +17066,56 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 1996,
+      "offset": 2006,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2032,
+      "offset": 2042,
       "length": 5,
       "value": "\"ios\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2073,
+      "offset": 2083,
       "length": 37,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2109,
+      "offset": 2119,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2150,
+      "offset": 2160,
       "length": 41,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2190,
+      "offset": 2200,
       "length": 3,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2232,
+      "offset": 2242,
       "length": 42,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",
       "kind": "StringLiteral",
-      "offset": 2273,
+      "offset": 2283,
       "length": 3,
       "value": "\"\""
     },

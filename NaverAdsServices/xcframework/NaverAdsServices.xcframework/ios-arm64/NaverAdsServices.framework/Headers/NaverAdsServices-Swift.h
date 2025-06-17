@@ -317,10 +317,10 @@ typedef SWIFT_ENUM(NSInteger, GFPAlignmentCenter, open) {
 @class NSString;
 @class NSBundle;
 
-SWIFT_CLASS("_TtC16NaverAdsServices9GFPBundle")
-@interface GFPBundle : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundle * _Nonnull sharedInstance;)
-+ (GFPBundle * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC16NaverAdsServices14GFPBundleUtils")
+@interface GFPBundleUtils : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPBundleUtils * _Nonnull sharedInstance;)
++ (GFPBundleUtils * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appVersion;)
 + (NSString * _Nonnull)appVersion SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull appName;)
@@ -330,7 +330,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (NSArray<NSString *> * _Nonnull)skAdNetworkList SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)setup;
-+ (NSString * _Nullable)sdkResourceWith:(NSString * _Nullable)aPath type:(NSString * _Nullable)aType SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isExistImageWithBundle:(NSBundle * _Nullable)bundle name:(NSString * _Nonnull)name SWIFT_WARN_UNUSED_RESULT;
 @end
 

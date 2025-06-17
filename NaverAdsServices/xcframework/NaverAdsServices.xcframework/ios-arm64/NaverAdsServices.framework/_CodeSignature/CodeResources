@@ -26,7 +26,7 @@
 		</data>
 		<key>Headers/NaverAdsServices-Swift.h</key>
 		<data>
-		3lL2E7ASXoLs9ZnlaNyv1Nx7xjs=
+		zGumpG13fWna9jtBu6PNg8uvFPA=
 		</data>
 		<key>Headers/NaverAdsServices.h</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		EyHTU+n5m2S/Ot98eBmDYA4iQ3E=
+		W29aP5V4Kf3rfAv2pRnzgKsvw20=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		jSHmO/Lk4ycGL1lRhkNdsm2DRsg=
+		s506IZpKEmMJMMcDmRe57U2KQ8U=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		jSHmO/Lk4ycGL1lRhkNdsm2DRsg=
+		s506IZpKEmMJMMcDmRe57U2KQ8U=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		plgCqE+NcOup2kvtkSjL0CazVxY=
+		KpKdlyE5xJT/IH4Gof5mCACR7zk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8j+7iNsl+H2obKBpWO2sq5fLlw4/fMnWIj+F5VmplyU=
+			7fGshUw0uT+jW07CFYeFuhH2DNbUDhBzzGmIRRhS1Hg=
 			</data>
 		</dict>
 		<key>Headers/NaverAdsServices.h</key>
@@ -116,14 +116,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LQYPQBh+tLeR++IB9xLCXdLmP6DTq+oyq4VfBNk88cY=
+			QR4olJeqrT2919OSrXfqzZPnJJ2JSqRDZ8Ulj4ElHzQ=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sW6+QtUWtFShswAr3NIkCWTUV97NdBJsqOK92s28VRY=
+			G6a9/EPiiFIBr9d16HcFwtFmw4xrRgMWnQ8dD5Ae5AM=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sW6+QtUWtFShswAr3NIkCWTUV97NdBJsqOK92s28VRY=
+			G6a9/EPiiFIBr9d16HcFwtFmw4xrRgMWnQ8dD5Ae5AM=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tT4O3Sf/CVlsho/lO3nRDebkqKQEnpiAL9qh8wh+7NE=
+			u8EOBSGmEhFcH8mKyKLq1GKr3ATuWu1uoUUeI2BJVvE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

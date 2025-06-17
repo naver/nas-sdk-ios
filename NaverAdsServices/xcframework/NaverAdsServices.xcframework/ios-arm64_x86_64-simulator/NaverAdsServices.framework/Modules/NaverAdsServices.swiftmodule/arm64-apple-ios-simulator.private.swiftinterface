@@ -250,8 +250,8 @@ extension NaverAdsServices.GFPLog {
   public static func error(_ message: Any, _ method: Any = #function, _ arguments: Any...)
   public static func critical(_ message: Any, _ method: Any = #function, _ arguments: Any...)
 }
-@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundle : ObjectiveC.NSObject {
-  @objc public static let sharedInstance: NaverAdsServices.GFPBundle
+@objc @_inheritsConvenienceInitializers @objcMembers public class GFPBundleUtils : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: NaverAdsServices.GFPBundleUtils
   @objc public static var appVersion: Swift.String {
     @objc get
   }
@@ -264,7 +264,6 @@ extension NaverAdsServices.GFPLog {
   @objc public func skAdNetworkList() -> [Swift.String]
   @objc override dynamic public init()
   @objc public func setup()
-  @objc public class func sdkResource(with aPath: Swift.String?, type aType: Swift.String?) -> Swift.String?
   @objc public class func isExistImage(bundle: Foundation.Bundle?, name: Swift.String) -> Swift.Bool
   @objc deinit
 }

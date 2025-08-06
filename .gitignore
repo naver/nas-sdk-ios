@@ -1,0 +1,4 @@
+*.xcuserstate
+.build/
+.swiftpm/
+Package.pins

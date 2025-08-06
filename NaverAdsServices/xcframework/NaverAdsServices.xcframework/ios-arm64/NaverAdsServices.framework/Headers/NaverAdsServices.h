@@ -20,7 +20,7 @@ FOUNDATION_EXPORT const unsigned char NaverAdsServicesVersionString[];
 
 
 #import <NaverAdsServices/NASEnum-Swift.h>
-
+#import <NaverAdsServices/GFPOMIDInfoProtocol.h>
 #import <NaverAdsServices/GFPLogWrapper.h>
 #import <NaverAdsServices/GFPLogReqInfo.h>
 

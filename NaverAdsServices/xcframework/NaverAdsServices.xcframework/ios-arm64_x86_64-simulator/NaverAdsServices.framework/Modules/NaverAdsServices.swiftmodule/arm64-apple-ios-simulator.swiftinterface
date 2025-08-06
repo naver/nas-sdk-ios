@@ -2,6 +2,7 @@
 // swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name NaverAdsServices
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import AdSupport
 import CoreLocation
 import CoreTelephony
 import Foundation
@@ -16,6 +17,43 @@ import WebKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc public protocol NASVastMacroDataSource : ObjectiveC.NSObjectProtocol {
+  @objc func getCurrentMediaTimeString() -> Swift.String?
+  @objc func getUserAgent() -> Swift.String?
+  @objc func getUniversalAdId() -> Swift.String?
+  @objc func getPodSequence() -> Swift.String?
+  @objc func getAssetURI() -> Swift.String?
+}
+public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
+  case IFA
+  case IFATYPE
+  case LIMITADTRACKING
+  case DEVICEUA
+  case SERVERSIDE
+  case TIMESTAMP
+  case CACHEBUSTING
+  case RANDOM
+  case RANDOM_LOWERCASE
+  case ASSETURI
+  case ADPLAYHEAD
+  case UNIVERSALADID
+  case PODSEQUENCE
+  case ADTYPE
+  case ERRORCODE
+  public init?(rawValue: Swift.String)
+  public typealias AllCases = [NaverAdsServices.NASVASTMacro]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [NaverAdsServices.NASVASTMacro] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMacroHelper : ObjectiveC.NSObject {
+  @objc weak public var macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPTimeUtils : ObjectiveC.NSObject {
   @objc public class var currentUptime: Foundation.NSNumber {
     @objc get
@@ -175,6 +213,29 @@ import _SwiftConcurrencyShims
   @objc(startSpinningWith:) @_Concurrency.MainActor @preconcurrency dynamic public func startSpinningWith(duration: Swift.Double)
   @objc @_Concurrency.MainActor @preconcurrency dynamic public func stopSpinning()
   @objc @_Concurrency.MainActor @preconcurrency dynamic public class func imageWithImage(image: UIKit.UIImage?, scaleSize: CoreFoundation.CGSize) -> UIKit.UIImage?
+}
+@objc public enum GFPVastIconType : Swift.Int {
+  case provider = 0
+  case postAdAleart = 1
+  case iconSearchKeyword = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class GFPNASVastControlInfo : ObjectiveC.NSObject {
+  @objc public var isSkippable: Swift.Bool
+  @objc public var skipOffset: Foundation.TimeInterval
+  @objc public var duration: Foundation.TimeInterval
+  @objc public var iconList: [NaverAdsServices.GFPVastIcon]
+  @objc public init(skipOffset: Swift.String, duration: Foundation.TimeInterval, skipInfo: NaverAdsServices.GFPVastAdSkipInfo?, iconList: [NaverAdsServices.GFPVastIcon])
+  @objc public func adChoiceIcon() -> NaverAdsServices.GFPVastIcon?
+  @objc public func providerIcon() -> NaverAdsServices.GFPVastIcon?
+  @objc public func postAdAlertIcon() -> NaverAdsServices.GFPVastIcon?
+  @objc public func canShow(iconType: NaverAdsServices.GFPVastIconType, currentTime: Foundation.TimeInterval) -> Swift.Bool
+  @objc public func canShowKeywords(_ currentTime: Foundation.TimeInterval) -> Swift.Bool
+  @objc deinit
 }
 public typealias ImageDownloadCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
 public typealias DownloadCompletionHandler = (Foundation.Data?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
@@ -374,6 +435,36 @@ extension NaverAdsServices.GFPLog {
   @objc public class func merge(dict1: [Swift.String : [Swift.String]], dict2: [Swift.String : [Swift.String]]) -> [Swift.String : [Swift.String]]
   @objc deinit
 }
+@objc @objcMembers public class GFPVastAdSkipData : ObjectiveC.NSObject {
+  @objc public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @objcMembers public class GFPVastAdSkipInfo : ObjectiveC.NSObject {
+  @objc final public let useVastSkip: Swift.Bool
+  @objc(initWithVastSkippable:data:) public init(vastSkippable: Swift.Bool, data: NaverAdsServices.GFPVastAdSkipData?)
+  @objc public var skipMin: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var skipAfter: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var isValidSkip: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public protocol GFPVastLoaderDelegate {
+  @objc func vastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didLoadVast vast: NaverAdsServices.GFPVast)
+  @objc func vastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didFailWithError error: (any Swift.Error)?)
+}
+@objc @objcMembers public class GFPVastLoader : ObjectiveC.NSObject {
+  @objc public static let kVastTagTimeOutTimeInterval: Swift.Double
+  @objc weak public var delegate: (any NaverAdsServices.GFPVastLoaderDelegate)?
+  @objc weak public var macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?
+  @objc public init(maxDirect: Swift.Int, vastTimeout: CoreFoundation.CFTimeInterval, skipInfo: NaverAdsServices.GFPVastAdSkipInfo?, dataSource: (any NaverAdsServices.NASVastMacroDataSource)?)
+  @objc public func loadWith(vastString: Swift.String)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPSizeUtils : ObjectiveC.NSObject {
   @objc(isSquareWith:) public class func isSquare(_ size: CoreFoundation.CGSize) -> Swift.Bool
   @objc(ratioWith:) public class func ratio(_ size: CoreFoundation.CGSize) -> CoreFoundation.CGFloat
@@ -383,6 +474,475 @@ extension NaverAdsServices.GFPLog {
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPRectUtils : ObjectiveC.NSObject {
   @objc(isContainsNaN:) public class func isContainsNaN(_ rect: CoreFoundation.CGRect) -> Swift.Bool
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastVideoClicks : ObjectiveC.NSObject {
+  @objc public var clickThrough: NaverAdsServices.GFPVastImpression?
+  @objc public var clickTracking: [NaverAdsServices.GFPVastImpression]
+  @objc public var customClick: [NaverAdsServices.GFPVastImpression]
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPVastExecutableResource : NaverAdsServices.GFPVastBaseAdverificationResource {
+  @objc public var type: Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPVastJavaScriptResource : NaverAdsServices.GFPVastBaseAdverificationResource {
+  @objc public var browserOptional: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseAdverificationResource : ObjectiveC.NSObject {
+  @objc public var value: Swift.String?
+  @objc public var apiFramework: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdParameters : ObjectiveC.NSObject {
+  @objc public var metaData: Swift.String?
+  public var xmlEncoded: Swift.Bool?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastLinear : ObjectiveC.NSObject {
+  @objc public var duration: Swift.String?
+  @objc public var mediaFiles: NaverAdsServices.GFPVastMediaFiles?
+  @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
+  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
+  @objc public var videoClicks: NaverAdsServices.GFPVastVideoClicks?
+  @objc public var icons: [NaverAdsServices.GFPVastIcon]?
+  @objc public var skipOffset: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCreative : ObjectiveC.NSObject {
+  @objc public var universalAdId: NaverAdsServices.GFPVastUniversalAdId?
+  @objc public var creativeExtensions: [NaverAdsServices.GFPVastExtension]
+  @objc public var linear: NaverAdsServices.GFPVastLinear?
+  @objc public var nonLinearAds: NaverAdsServices.GFPVastNonLinearAds?
+  @objc public var companionAds: NaverAdsServices.GFPVastCompanionAds?
+  @objc public var id: Swift.String?
+  @objc public var adId: Swift.String?
+  public var sequence: Swift.Int?
+  @objc public var apiFramework: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastInteractiveCreativeFile : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCategory : ObjectiveC.NSObject {
+  @objc public var categoryCode: Swift.String?
+  @objc public var authority: Swift.String?
+  @objc deinit
+}
+@objc public enum GFPExtensionCreativeType : Swift.Int {
+  case none = 0
+  case nonLinear = 1
+  case loudness = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastExtension : ObjectiveC.NSObject {
+  @objc public static let kNASLoudnessNormalization: Swift.String
+  @objc public static let kNASNonLinearRemind: Swift.String
+  @objc public static let kNASLoudnessEnbaleKey: Swift.String
+  @objc public static let kNASLoudnessVersionKey: Swift.String
+  @objc public static let kNASLoudnessContentKey: Swift.String
+  @objc public static let kNASLoudnessContentTypeKey: Swift.String
+  @objc public static let kNASLoudnessDataKey: Swift.String
+  @objc public static let kNASLoudnessPropertiesKey: Swift.String
+  @objc public var value: Swift.String?
+  @objc public var type: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var creativeDict: [Swift.String : Any]
+  @objc public var creativeType: NaverAdsServices.GFPExtensionCreativeType
+  @objc public var loudness: NaverAdsServices.GFPNASLoudnessNormalization?
+  @objc public var nonLinear: NaverAdsServices.GFPNasNonLinearRemind?
+  @objc deinit
+}
+@objc public enum GFPNASLoudnessMode : Swift.Int {
+  case gaudio = 0
+  case transparent = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class GFPNASLoudnessProperties : ObjectiveC.NSObject {
+  @objc public var targetLoudness: Swift.Float
+  @objc public var mode: NaverAdsServices.GFPNASLoudnessMode
+  @objc public init(propertyDict: [Swift.String : Swift.String])
+  @objc deinit
+}
+@objc @objcMembers public class GFPNASLoudnessNormalization : ObjectiveC.NSObject {
+  @objc public var enabled: Swift.Bool
+  @objc public var version: Swift.String
+  @objc public var contentType: Swift.String
+  @objc public var contentEncoding: Swift.String
+  @objc public var dataString: Swift.String
+  @objc public var referDict: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public init?(loudnessDict: [Swift.String : Swift.String]?)
+  @objc deinit
+}
+@objc @objcMembers public class GFPNasNonLinearRemind : ObjectiveC.NSObject {
+  @objc public var targetID: Swift.String
+  @objc public var offset: Swift.Int
+  @objc public var duration: Foundation.TimeInterval
+  @objc public var isplayOnce: Swift.Bool
+  @objc public init?(nonLinearDict: [Swift.String : Swift.String]?)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFile : ObjectiveC.NSObject {
+  @objc public var value: Swift.String?
+  @objc public var url: Foundation.URL?
+  @objc public var deliveryType: Swift.String? {
+    @objc get
+  }
+  @objc public var type: Swift.String?
+  @objc public var width: Swift.Float
+  @objc public var height: Swift.Float
+  @objc public var codec: Swift.String?
+  @objc public var mediaFileId: Swift.String?
+  @objc public var bitrate: Swift.String?
+  @objc public var maxBitrate: Swift.String?
+  @objc public var minBitrate: Swift.String?
+  public var scalable: Swift.Bool?
+  public var maintainAspectRatio: Swift.Bool?
+  @objc public var apiFramework: Swift.String?
+  public var fileSize: Swift.Int?
+  @objc public var mediaType: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastClosedCaptionFile : ObjectiveC.NSObject {
+  @objc public var content: Swift.String?
+  @objc public var mimeType: Swift.String?
+  @objc public var language: Swift.String?
+  @objc deinit
+}
+@objc public enum GFPVastRemindType : Swift.Int {
+  case none = 0
+  case banner = 1
+  case text = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc public enum GFPVastResourceCode : Swift.Int {
+  case none = 0
+  case election = 1
+  case providerNotice = 2
+  case adProviderNotice = 3
+  case alert = 4
+  case searchKeyword = 5
+  case adChoices = 6
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class RemindCreativeTypes : ObjectiveC.NSObject {
+  @objc public static let banner: [Swift.String]
+  @objc public static let image: [Swift.String]
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseResource : ObjectiveC.NSObject {
+  @objc public var remindType: NaverAdsServices.GFPVastRemindType
+  @objc public var content: Swift.String?
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPVastStaticResource : NaverAdsServices.GFPVastBaseResource {
+  @objc public var creativeType: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdSystem : ObjectiveC.NSObject {
+  @objc public var adServerName: Swift.String?
+  @objc public var version: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastSurvey : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFiles : ObjectiveC.NSObject {
+  @objc public var mediaFiles: [NaverAdsServices.GFPVastMediaFile]?
+  @objc public var mezzanine: [NaverAdsServices.GFPVastMezzanine]?
+  @objc public var interactiveCreativeFile: [NaverAdsServices.GFPVastInteractiveCreativeFile]?
+  @objc public var closedCaptionFiles: [NaverAdsServices.GFPVastClosedCaptionFile]?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastInline : ObjectiveC.NSObject {
+  @objc public var adSystem: NaverAdsServices.GFPVastAdSystem?
+  @objc public var adTitle: Swift.String?
+  @objc public var impressions: [NaverAdsServices.GFPVastImpression]
+  @objc public var adServingId: Swift.String?
+  @objc public var categories: [NaverAdsServices.GFPVastCategory]
+  @objc public var inlineDescription: Swift.String?
+  @objc public var advertiser: NaverAdsServices.GFPVastAdvertiser?
+  @objc public var pricing: NaverAdsServices.GFPVastPricing?
+  @objc public var survey: NaverAdsServices.GFPVastSurvey?
+  @objc public var errors: [Swift.String]
+  @objc public var extensions: [NaverAdsServices.GFPVastExtension]
+  @objc public var viewableImpression: NaverAdsServices.GFPVastViewbleImpression?
+  @objc public var adVerification: [NaverAdsServices.GFPVastAdVerification]
+  @objc public var creatives: [NaverAdsServices.GFPVastCreative]
+  public var expires: Swift.Int?
+  @objc public var followAdditionalWrappers: Swift.Bool
+  @objc public var allowMultipleAds: Swift.Bool
+  public var fallbackOnNoAd: Swift.Bool?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIcon : ObjectiveC.NSObject {
+  @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
+  @objc public var iframeResource: NaverAdsServices.GFPVastBaseResource?
+  @objc public var htmlResource: NaverAdsServices.GFPVastBaseResource?
+  @objc public var iconClicks: NaverAdsServices.GFPVastIconClicks?
+  @objc public var iconViewTracking: [Swift.String]?
+  @objc public var program: Swift.String?
+  @objc public var width: Swift.String?
+  @objc public var height: Swift.String?
+  @objc public var xPosition: Swift.String?
+  @objc public var yPosition: Swift.String?
+  @objc public var duration: Swift.String?
+  @objc public var offset: Swift.String?
+  @objc public var apiFramework: Swift.String?
+  @objc public var pxratio: Swift.String?
+  @objc public var altText: Swift.String?
+  @objc public var hoverText: Swift.String?
+  @objc public var resourceValue: Swift.String?
+  @objc public var resourceCode: NaverAdsServices.GFPVastResourceCode
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastViewbleImpression : ObjectiveC.NSObject {
+  @objc public var viewable: [Swift.String]?
+  @objc public var notViewable: [Swift.String]?
+  @objc public var viewUndeterminded: [Swift.String]?
+  @objc public var impressionId: Swift.String?
+  @objc public func addImpressions(object: NaverAdsServices.GFPVastViewbleImpression?)
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAd : ObjectiveC.NSObject {
+  @objc public var vastInline: NaverAdsServices.GFPVastInline?
+  @objc public var wrapper: NaverAdsServices.GFPVastWrapper?
+  @objc public var id: Swift.String?
+  public var sequence: Swift.Int?
+  @objc public var podSequence: Swift.Int {
+    @objc get
+  }
+  public var conditionalAd: Swift.Bool?
+  @objc public var adTypeValue: Swift.String? {
+    @objc get
+  }
+  @objc public var vastTrackingInfo: NaverAdsServices.GFPVastTrackingInfo?
+  @objc public var vastControlInfo: NaverAdsServices.GFPNASVastControlInfo?
+  @objc public func setUpVastControlInfo(skipInfo: NaverAdsServices.GFPVastAdSkipInfo?)
+  @objc public func setUpVastTrackingInfo(macroHelper: NaverAdsServices.GFPVastMacroHelper) throws
+  @objc public func setUpVastCompanionTrackingInfo(dataSource: (any NaverAdsServices.NASVastMacroDataSource)?) throws
+  @objc public var mediaCreative: NaverAdsServices.GFPVastCreative? {
+    @objc get
+  }
+  @objc public var videoDuration: Swift.Double {
+    @objc get
+  }
+  @objc public var mediaFiles: NaverAdsServices.GFPVastMediaFiles? {
+    @objc get
+  }
+  @objc public var creativeExtensions: [NaverAdsServices.GFPVastExtension] {
+    @objc get
+  }
+  @objc public var loudness: [NaverAdsServices.GFPNASLoudnessNormalization] {
+    @objc get
+  }
+  @objc public var nonLinearAds: NaverAdsServices.GFPVastNonLinearAds? {
+    @objc get
+  }
+  @objc public var adVerifications: [NaverAdsServices.GFPVastAdVerification] {
+    @objc get
+  }
+  @objc public var icons: [NaverAdsServices.GFPVastIcon] {
+    @objc get
+  }
+  @objc public var companionAds: NaverAdsServices.GFPVastCompanionAds? {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastMezzanine : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVast : ObjectiveC.NSObject {
+  @objc public var firstInlineAd: NaverAdsServices.GFPVastAd? {
+    @objc get
+  }
+  @objc public var error: [Swift.String]
+  @objc public var ads: [NaverAdsServices.GFPVastAd]
+  @objc public var version: Swift.String?
+  @objc public func mergeWithOther(vast: NaverAdsServices.GFPVast?, prevWrapperAd: NaverAdsServices.GFPVastAd?)
+  @objc deinit
+}
+public enum GFPVastError : Swift.Error {
+  case emptyValue(Swift.String)
+  case invalidXML(Swift.String)
+  case invalidValue(Swift.String)
+  case wrapperNetworkError(Swift.String)
+  case maxRedirectCountReached(Swift.String)
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClicks : ObjectiveC.NSObject {
+  @objc public var iconClickThrough: Swift.String?
+  @objc public var iconClickTracking: [NaverAdsServices.GFPVastImpression]?
+  @objc public var iconClickTrackingValues: [Swift.String]? {
+    @objc get
+  }
+  @objc public var IconClickFallbackImages: [NaverAdsServices.GFPVastIconClickFallbackImage]?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdvertiser : ObjectiveC.NSObject {
+  @objc public var name: Swift.String?
+  @objc public var advertiserId: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAd : ObjectiveC.NSObject {
+  @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
+  @objc public var iframeResource: NaverAdsServices.GFPVastBaseResource?
+  @objc public var htmlResource: NaverAdsServices.GFPVastBaseResource?
+  @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
+  @objc public var nonLinearClickThrough: Swift.String?
+  @objc public var nonLinearClickTracking: [NaverAdsServices.GFPVastImpression]
+  @objc public var ID: Swift.String?
+  @objc public var width: Swift.Float
+  @objc public var height: Swift.Float
+  public var expandedWidth: Swift.Float?
+  public var expandedHeight: Swift.Float?
+  public var scaleable: Swift.Bool?
+  public var maintainAspectRatio: Swift.Bool?
+  @objc public var apiFramework: Swift.String?
+  @objc public var minSuggestedDuration: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPNASVastCompanionAd : ObjectiveC.NSObject {
+  @objc public var staticResources: [NaverAdsServices.GFPVastStaticResource]
+  @objc public var iframeResources: [Swift.String]
+  @objc public var htmlResources: [Swift.String]
+  @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
+  @objc public var altText: Swift.String?
+  @objc public var companionClickThrough: Swift.String?
+  @objc public var companionClickTrackings: [NaverAdsServices.GFPVastImpression]
+  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
+  @objc public var width: Swift.Float
+  @objc public var height: Swift.Float
+  @objc public var id: Swift.String?
+  @objc public var assetWidth: Swift.String?
+  @objc public var assetHeight: Swift.String?
+  @objc public var expandedWidth: Swift.String?
+  @objc public var expandedHeight: Swift.String?
+  @objc public var apiFramework: Swift.String?
+  @objc public var adSlotId: Swift.String?
+  @objc public var pxratio: Swift.String?
+  @objc public var renderingModeType: Swift.String? {
+    @objc get
+  }
+  @objc public var vastTrackingInfo: NaverAdsServices.GFPVastTrackingInfo?
+  @objc public func setUpVastCompanionTrackingInfo(dataSource: (any NaverAdsServices.NASVastMacroDataSource)?) throws
+  @objc public func getBestScore(containerSize: CoreFoundation.CGSize) -> Swift.Float
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastWrapper : ObjectiveC.NSObject {
+  @objc public var impressions: [NaverAdsServices.GFPVastImpression]
+  @objc public var vastAdTagURI: Swift.String?
+  @objc public var adSystem: NaverAdsServices.GFPVastAdSystem?
+  @objc public var pricing: NaverAdsServices.GFPVastPricing?
+  @objc public var errors: [Swift.String]
+  @objc public var viewableImpression: NaverAdsServices.GFPVastViewbleImpression?
+  @objc public var extensions: [NaverAdsServices.GFPVastExtension]
+  @objc public var adVerifications: [NaverAdsServices.GFPVastAdVerification]
+  @objc public var creatives: [NaverAdsServices.GFPVastCreative]
+  @objc public var followAdditionalWrappers: Swift.Bool
+  @objc public var allowMultipleAds: Swift.Bool
+  public var fallbackOnNoAd: Swift.Bool?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdVerification : ObjectiveC.NSObject, NaverAdsServices.GFPOMIDInfoPresentable {
+  @objc public var javaScriptResources: [NaverAdsServices.GFPVastJavaScriptResource]?
+  @objc public var executableResources: [NaverAdsServices.GFPVastBaseAdverificationResource]?
+  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]?
+  @objc public var vendor: Swift.String?
+  @objc public var verificationUrl: Swift.String? {
+    @objc get
+  }
+  @objc public var verificationParams: Swift.String?
+  @objc public var verificationNotExecutedUrls: [Swift.String]? {
+    @objc get
+  }
+  @objc public func isValid() -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastTracking : ObjectiveC.NSObject {
+  @objc public var url: Swift.String?
+  @objc public var eventName: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPProgressTrackingEvent : ObjectiveC.NSObject {
+  @objc public var progressSeconds: Foundation.TimeInterval
+  @objc public var eventURL: Swift.String
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastTrackingInfo : ObjectiveC.NSObject {
+  @objc public var duration: Foundation.TimeInterval
+  @objc public var progressTrackingEvent: [NaverAdsServices.GFPProgressTrackingEvent]
+  @objc public var errorTrackings: [Swift.String]
+  @objc public var videoClicks: NaverAdsServices.GFPVastVideoClicks?
+  @objc public func setMacroDataSource(_ macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?)
+  @objc public func impressionEvent() -> [Swift.String]
+  @objc public func clickTrackings() -> [Swift.String]
+  @objc public func loaded() -> [Swift.String]
+  @objc public func start() -> [Swift.String]
+  @objc public func firstQuartile() -> [Swift.String]
+  @objc public func midpoint() -> [Swift.String]
+  @objc public func thirdQuartile() -> [Swift.String]
+  @objc public func complete() -> [Swift.String]
+  @objc public func skip() -> [Swift.String]
+  @objc public func mute() -> [Swift.String]
+  @objc public func unmute() -> [Swift.String]
+  @objc public func pause() -> [Swift.String]
+  @objc public func resume() -> [Swift.String]
+  @objc public func rewind() -> [Swift.String]
+  @objc public func otherAdInteraction() -> [Swift.String]
+  @objc public func creativeView() -> [Swift.String]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAds : ObjectiveC.NSObject {
+  @objc public var nonlinear: [NaverAdsServices.GFPVastNonLinearAd]
+  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCompanionAds : ObjectiveC.NSObject {
+  @objc public var companionAds: [NaverAdsServices.GFPNASVastCompanionAd]
+  @objc public var required: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastPricing : ObjectiveC.NSObject {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastUniversalAdId : ObjectiveC.NSObject {
+  @objc public var value: Swift.String?
+  @objc public var idRegistry: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastImpression : ObjectiveC.NSObject {
+  @objc public var value: Swift.String?
+  @objc public var impressionId: Swift.String?
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClickFallbackImage : ObjectiveC.NSObject {
+  @objc public var altText: Swift.String?
+  @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
+  public var width: Swift.Float?
+  public var height: Swift.Float?
   @objc deinit
 }
 extension Swift.String {
@@ -528,6 +1088,9 @@ public struct GFPWebViewAppEnvironment : Swift.Codable {
 extension NaverAdsServices.GFPWebViewManager : WebKit.WKScriptMessageHandlerWithReply {
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func userContentController(_ userContentController: WebKit.WKUserContentController, didReceive message: WebKit.WKScriptMessage, replyHandler: @escaping @_Concurrency.MainActor (Any?, Swift.String?) -> Swift.Void)
 }
+extension NaverAdsServices.NASVASTMacro : Swift.Equatable {}
+extension NaverAdsServices.NASVASTMacro : Swift.Hashable {}
+extension NaverAdsServices.NASVASTMacro : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPNetworkType : Swift.Equatable {}
 extension NaverAdsServices.GFPNetworkType : Swift.Hashable {}
 extension NaverAdsServices.GFPNetworkType : Swift.RawRepresentable {}
@@ -546,3 +1109,18 @@ extension NaverAdsServices.GFPOriginType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPHexCodeType : Swift.Equatable {}
 extension NaverAdsServices.GFPHexCodeType : Swift.Hashable {}
 extension NaverAdsServices.GFPHexCodeType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPVastIconType : Swift.Equatable {}
+extension NaverAdsServices.GFPVastIconType : Swift.Hashable {}
+extension NaverAdsServices.GFPVastIconType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.Equatable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.Hashable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.Equatable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.Hashable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPVastRemindType : Swift.Equatable {}
+extension NaverAdsServices.GFPVastRemindType : Swift.Hashable {}
+extension NaverAdsServices.GFPVastRemindType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPVastResourceCode : Swift.Equatable {}
+extension NaverAdsServices.GFPVastResourceCode : Swift.Hashable {}
+extension NaverAdsServices.GFPVastResourceCode : Swift.RawRepresentable {}

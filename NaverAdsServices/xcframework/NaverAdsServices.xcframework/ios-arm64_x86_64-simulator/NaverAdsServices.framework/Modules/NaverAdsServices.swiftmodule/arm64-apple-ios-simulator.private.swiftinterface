@@ -664,6 +664,24 @@ extension NaverAdsServices.GFPLog {
   @objc public var version: Swift.String?
   @objc deinit
 }
+@objc @objcMembers public class GFPViewAlignmentInfo : ObjectiveC.NSObject {
+  @objc weak public var view: UIKit.UIView?
+  @objc public var size: CoreFoundation.CGSize
+  @objc public var alignment: NaverAdsServices.GFPAlignment
+  @objc public var horizontalOffset: CoreFoundation.CGFloat
+  @objc public var verticalOffset: CoreFoundation.CGFloat
+  @objc weak public var anchorView: UIKit.UIView?
+  @objc public init(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, horizontalOffset: CoreFoundation.CGFloat = 0, verticalOffset: CoreFoundation.CGFloat = 0, anchorView: UIKit.UIView? = nil)
+  @objc public static func alignment(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, horizontalOffset: CoreFoundation.CGFloat = 0, verticalOffset: CoreFoundation.CGFloat = 0, anchorView: UIKit.UIView? = nil) -> NaverAdsServices.GFPViewAlignmentInfo
+  @objc convenience public init(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, verticalOffset: CoreFoundation.CGFloat, horizontalOffset: CoreFoundation.CGFloat)
+  @objc public static func alignment(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, verticalOffset: CoreFoundation.CGFloat = 0, horizontalOffset: CoreFoundation.CGFloat = 0) -> NaverAdsServices.GFPViewAlignmentInfo
+  @objc convenience public init(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, anchorView: UIKit.UIView)
+  @objc public static func alignment(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment, anchorView: UIKit.UIView? = nil) -> NaverAdsServices.GFPViewAlignmentInfo
+  @objc convenience public init(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment)
+  @objc public static func alignment(view: UIKit.UIView, size: CoreFoundation.CGSize, alignment: NaverAdsServices.GFPAlignment) -> NaverAdsServices.GFPViewAlignmentInfo
+  @objc public func computeFrame() -> CoreFoundation.CGRect
+  @objc deinit
+}
 @objc @_hasMissingDesignatedInitializers public class GFPVastSurvey : ObjectiveC.NSObject {
   @objc deinit
 }

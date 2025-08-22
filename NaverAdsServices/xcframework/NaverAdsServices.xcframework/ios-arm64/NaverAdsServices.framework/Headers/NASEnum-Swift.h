@@ -23,10 +23,12 @@ typedef NS_ENUM(NSInteger, GFPLogLevel) {
 };
 
 typedef NS_OPTIONS(NSInteger, GFPAlignment) {
-    GFPAlignmentLeft = 1,
-    GFPAlignmentTop = 2,
-    GFPAlignmentRight = 3,
-    GFPAlignmentBottom = 4,
+    GFPAlignmentLeft               = (1 << 0), // 0001
+    GFPAlignmentRight              = (1 << 1), // 0010
+    GFPAlignmentTop                = (1 << 2), // 0100
+    GFPAlignmentBottom             = (1 << 3), // 1000
+    GFPAlignmentHorizontalCenter   = (1 << 4), // 0001 0000
+    GFPAlignmentVerticalCenter     = (1 << 5), // 0010 0000
 };
 
 

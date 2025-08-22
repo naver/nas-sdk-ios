@@ -24671,6 +24671,1175 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GFPViewAlignmentInfo",
+        "printedName": "GFPViewAlignmentInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "UIKit.UIView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)view",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4viewSo6UIViewCSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)view",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4viewSo6UIViewCSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setView:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4viewSo6UIViewCSgvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC4viewSo6UIViewCSgvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4viewSo6UIViewCSgvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "size",
+            "printedName": "size",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)size",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4sizeSo6CGSizeVvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)size",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4sizeSo6CGSizeVvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGSize",
+                    "printedName": "CoreFoundation.CGSize",
+                    "usr": "c:@S@CGSize"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setSize:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4sizeSo6CGSizeVvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC4sizeSo6CGSizeVvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4sizeSo6CGSizeVvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "alignment",
+            "printedName": "alignment",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)alignment",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignmentSo12GFPAlignmentVvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAlignment",
+                    "printedName": "NaverAdsServices.GFPAlignment",
+                    "usr": "c:@E@GFPAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)alignment",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignmentSo12GFPAlignmentVvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPAlignment",
+                    "printedName": "NaverAdsServices.GFPAlignment",
+                    "usr": "c:@E@GFPAlignment"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setAlignment:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignmentSo12GFPAlignmentVvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC9alignmentSo12GFPAlignmentVvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignmentSo12GFPAlignmentVvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "horizontalOffset",
+            "printedName": "horizontalOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)horizontalOffset",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC16horizontalOffset12CoreGraphics7CGFloatVvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)horizontalOffset",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC16horizontalOffset12CoreGraphics7CGFloatVvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setHorizontalOffset:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC16horizontalOffset12CoreGraphics7CGFloatVvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC16horizontalOffset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC16horizontalOffset12CoreGraphics7CGFloatVvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "verticalOffset",
+            "printedName": "verticalOffset",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)verticalOffset",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC14verticalOffset12CoreGraphics7CGFloatVvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)verticalOffset",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC14verticalOffset12CoreGraphics7CGFloatVvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CGFloat",
+                    "printedName": "CoreGraphics.CGFloat",
+                    "usr": "s:14CoreFoundation7CGFloatV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setVerticalOffset:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC14verticalOffset12CoreGraphics7CGFloatVvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC14verticalOffset14CoreFoundation7CGFloatVvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC14verticalOffset12CoreGraphics7CGFloatVvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "anchorView",
+            "printedName": "anchorView",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "UIKit.UIView?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(py)anchorView",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC10anchorViewSo6UIViewCSgvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl",
+              "ObjC"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)anchorView",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC10anchorViewSo6UIViewCSgvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "UIKit.UIView?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "UIView",
+                        "printedName": "UIKit.UIView",
+                        "usr": "c:objc(cs)UIView"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)setAnchorView:",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC10anchorViewSo6UIViewCSgvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices20GFPViewAlignmentInfoC10anchorViewSo6UIViewCSgvM",
+                "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC10anchorViewSo6UIViewCSgvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(view:size:alignment:horizontalOffset:verticalOffset:anchorView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)initWithView:size:alignment:horizontalOffset:verticalOffset:anchorView:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4view4size9alignment16horizontalOffset08verticalK010anchorViewACSo6UIViewC_So6CGSizeVSo12GFPAlignmentV12CoreGraphics7CGFloatVArKSgtcfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "alignment",
+            "printedName": "alignment(view:size:alignment:horizontalOffset:verticalOffset:anchorView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(cm)alignmentWithView:size:alignment:horizontalOffset:verticalOffset:anchorView:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignment4view4sizeAD16horizontalOffset08verticalK010anchorViewACSo6UIViewC_So6CGSizeVSo12GFPAlignmentV12CoreGraphics7CGFloatVArKSgtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(view:size:alignment:verticalOffset:horizontalOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)initWithView:size:alignment:verticalOffset:horizontalOffset:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4view4size9alignment14verticalOffset010horizontalK0ACSo6UIViewC_So6CGSizeVSo12GFPAlignmentV12CoreGraphics7CGFloatVAQtcfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "alignment",
+            "printedName": "alignment(view:size:alignment:verticalOffset:horizontalOffset:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGFloat",
+                "printedName": "CoreGraphics.CGFloat",
+                "hasDefaultArg": true,
+                "usr": "s:14CoreFoundation7CGFloatV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(cm)alignmentWithView:size:alignment:verticalOffset:horizontalOffset:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignment4view4sizeAD14verticalOffset010horizontalK0ACSo6UIViewC_So6CGSizeVSo12GFPAlignmentV12CoreGraphics7CGFloatVAQtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(view:size:alignment:anchorView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)initWithView:size:alignment:anchorView:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4view4size9alignment10anchorViewACSo6UIViewC_So6CGSizeVSo12GFPAlignmentVAItcfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "alignment",
+            "printedName": "alignment(view:size:alignment:anchorView:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "UIKit.UIView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UIView",
+                    "printedName": "UIKit.UIView",
+                    "usr": "c:objc(cs)UIView"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(cm)alignmentWithView:size:alignment:anchorView:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignment4view4sizeAD10anchorViewACSo6UIViewC_So6CGSizeVSo12GFPAlignmentVAISgtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(view:size:alignment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)initWithView:size:alignment:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC4view4size9alignmentACSo6UIViewC_So6CGSizeVSo12GFPAlignmentVtcfc",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Function",
+            "name": "alignment",
+            "printedName": "alignment(view:size:alignment:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGSize",
+                "printedName": "CoreFoundation.CGSize",
+                "usr": "c:@S@CGSize"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAlignment",
+                "printedName": "NaverAdsServices.GFPAlignment",
+                "usr": "c:@E@GFPAlignment"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(cm)alignmentWithView:size:alignment:",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC9alignment4view4sizeAdCSo6UIViewC_So6CGSizeVSo12GFPAlignmentVtFZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "computeFrame",
+            "printedName": "computeFrame()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)computeFrame",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC12computeFrameSo6CGRectVyF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPViewAlignmentInfo",
+                "printedName": "NaverAdsServices.GFPViewAlignmentInfo",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo(im)init",
+            "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoCACycfc",
+            "moduleName": "NaverAdsServices",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@NaverAdsServices@objc(cs)GFPViewAlignmentInfo",
+        "mangledName": "$s16NaverAdsServices20GFPViewAlignmentInfoC",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "GFPVastSurvey",
         "printedName": "GFPVastSurvey",
@@ -52777,6 +53946,62 @@
       "offset": 796,
       "length": 112,
       "value": "[\"image\/png\", \"image\/jpeg\", \"image\/jpg\", \"image\/bmp\", \"image\/gif\"]"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 470,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 513,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 657,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 686,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1080,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1109,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1750,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPViewAlignmentInfo.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1781,
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastAd.swift",

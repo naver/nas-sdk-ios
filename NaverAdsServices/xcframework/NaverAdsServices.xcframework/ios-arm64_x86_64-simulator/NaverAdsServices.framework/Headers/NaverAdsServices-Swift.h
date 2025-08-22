@@ -1844,6 +1844,28 @@ SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
 @end
 
 @class UIView;
+
+SWIFT_CLASS("_TtC16NaverAdsServices20GFPViewAlignmentInfo")
+@interface GFPViewAlignmentInfo : NSObject
+@property (nonatomic, weak) UIView * _Nullable view;
+@property (nonatomic) CGSize size;
+@property (nonatomic) GFPAlignment alignment;
+@property (nonatomic) CGFloat horizontalOffset;
+@property (nonatomic) CGFloat verticalOffset;
+@property (nonatomic, weak) UIView * _Nullable anchorView;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment horizontalOffset:(CGFloat)horizontalOffset verticalOffset:(CGFloat)verticalOffset anchorView:(UIView * _Nullable)anchorView OBJC_DESIGNATED_INITIALIZER;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment horizontalOffset:(CGFloat)horizontalOffset verticalOffset:(CGFloat)verticalOffset anchorView:(UIView * _Nullable)anchorView SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment verticalOffset:(CGFloat)verticalOffset horizontalOffset:(CGFloat)horizontalOffset;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment verticalOffset:(CGFloat)verticalOffset horizontalOffset:(CGFloat)horizontalOffset SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment anchorView:(UIView * _Nonnull)anchorView;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment anchorView:(UIView * _Nullable)anchorView SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment SWIFT_WARN_UNUSED_RESULT;
+- (CGRect)computeFrame SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UILabel;
 
 SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")
@@ -3867,6 +3889,28 @@ SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
 @end
 
 @class UIView;
+
+SWIFT_CLASS("_TtC16NaverAdsServices20GFPViewAlignmentInfo")
+@interface GFPViewAlignmentInfo : NSObject
+@property (nonatomic, weak) UIView * _Nullable view;
+@property (nonatomic) CGSize size;
+@property (nonatomic) GFPAlignment alignment;
+@property (nonatomic) CGFloat horizontalOffset;
+@property (nonatomic) CGFloat verticalOffset;
+@property (nonatomic, weak) UIView * _Nullable anchorView;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment horizontalOffset:(CGFloat)horizontalOffset verticalOffset:(CGFloat)verticalOffset anchorView:(UIView * _Nullable)anchorView OBJC_DESIGNATED_INITIALIZER;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment horizontalOffset:(CGFloat)horizontalOffset verticalOffset:(CGFloat)verticalOffset anchorView:(UIView * _Nullable)anchorView SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment verticalOffset:(CGFloat)verticalOffset horizontalOffset:(CGFloat)horizontalOffset;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment verticalOffset:(CGFloat)verticalOffset horizontalOffset:(CGFloat)horizontalOffset SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment anchorView:(UIView * _Nonnull)anchorView;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment anchorView:(UIView * _Nullable)anchorView SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)initWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment;
++ (GFPViewAlignmentInfo * _Nonnull)alignmentWithView:(UIView * _Nonnull)view size:(CGSize)size alignment:(GFPAlignment)alignment SWIFT_WARN_UNUSED_RESULT;
+- (CGRect)computeFrame SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UILabel;
 
 SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")

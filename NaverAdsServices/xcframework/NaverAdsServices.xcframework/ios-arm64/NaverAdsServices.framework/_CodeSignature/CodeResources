@@ -26,11 +26,11 @@
 		</data>
 		<key>Headers/NASEnum-Swift.h</key>
 		<data>
-		pmtW4+5v9j4xCQkhhA+Gw8XYDtM=
+		LbX8X9Ck6y3L7aZrtjl6GJf6itE=
 		</data>
 		<key>Headers/NaverAdsServices-Swift.h</key>
 		<data>
-		/RJfLxpyGJyCk2dy4UZWuUH7Ue8=
+		mED3wSdQCc0P2FAulhaB4dlyzew=
 		</data>
 		<key>Headers/NaverAdsServices.h</key>
 		<data>
@@ -42,11 +42,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		o40122alToF/64gkv7eca60lmLs=
+		QBVVMkbxqvZzkxCLMYiCX3kpBEQ=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mvqluGJL1GOLpdU6MYFI7AwoXeQ=
+		CVs5oKfDAEYbGmA5OEmkWgFNKi0=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -54,11 +54,11 @@
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mvqluGJL1GOLpdU6MYFI7AwoXeQ=
+		CVs5oKfDAEYbGmA5OEmkWgFNKi0=
 		</data>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tyrMG7UbXPXk3ObPHUwG0RIZdRA=
+		1gxCblxTtNj8lTvz6BcBkhdZS68=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,14 +106,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			O+ostn9nddz8MZ7YFpAN1038EPg04W174WXyl1n3/AU=
+			1TOTCZd5WjgHU8txxStKkl9uLIjo67sAZvc26CDxrFQ=
 			</data>
 		</dict>
 		<key>Headers/NaverAdsServices-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uh5nQ4KT5TI3ohZh1skxhhs4abnOYf/kDmUKuFNxm8I=
+			8Z7EOdkO3UJl8Ue80O6FAug32fxWt3iHJlUyJ254dcI=
 			</data>
 		</dict>
 		<key>Headers/NaverAdsServices.h</key>
@@ -127,14 +127,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vqWuoLXUAGhW++0g4/FPAMuA8p1TixUdNBh5dgFdwtw=
+			IbSKQnOkMkZ/SKk7AvoaJu1OftSV6YN5Ou4hRvEdEk4=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wfABSIMOEaA5xKtZuoBHWFbqzqhiOTOd0FBtiVAXqrY=
+			qIpfPOsYuRohdVDRNcx2areJAbYA5Yn2y4Sc75HNOz0=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wfABSIMOEaA5xKtZuoBHWFbqzqhiOTOd0FBtiVAXqrY=
+			qIpfPOsYuRohdVDRNcx2areJAbYA5Yn2y4Sc75HNOz0=
 			</data>
 		</dict>
 		<key>Modules/NaverAdsServices.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8f3S+RMF3hH0Nheoc6Cp2SFXB2rkpnqg32X9bpkc2cY=
+			U1jDWvEWgHBwd5cum4pR6ml+QjVs0eS2W38HstDFHxM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

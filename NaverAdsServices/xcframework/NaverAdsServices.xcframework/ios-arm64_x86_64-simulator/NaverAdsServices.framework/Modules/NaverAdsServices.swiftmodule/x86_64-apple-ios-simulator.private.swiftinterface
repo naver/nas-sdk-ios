@@ -71,6 +71,8 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   @objc public class func isTouchedOnScreenCenter(_ aView: UIKit.UIView) -> Swift.Bool
   @objc public class func isAtLeastHalfViewable(_ aView: UIKit.UIView?) -> Swift.Bool
   @objc public class func exposedPercentage(_ aView: UIKit.UIView?) -> CoreFoundation.CGFloat
+  @objc public class func exposedWidthPercentage(_ aView: UIKit.UIView?) -> CoreFoundation.CGFloat
+  @objc public class func exposedHeightPercentage(_ aView: UIKit.UIView?) -> CoreFoundation.CGFloat
   @objc public class func visibleRectangle(_ aView: UIKit.UIView?) -> CoreFoundation.CGRect
   @objc public class func fillSuperviewWithCenterAlignment(_ aView: UIKit.UIView?)
   @objc(setConstraintWithFrameSize:) public class func setConstraint(_ aView: UIKit.UIView?)
@@ -352,6 +354,20 @@ extension NaverAdsServices.GFPLog {
   @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPDeviceLocInfo : ObjectiveC.NSObject {
+  @objc public var latitude: Swift.String
+  @objc public var longitude: Swift.String
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPLocationUtils : ObjectiveC.NSObject {
+  @objc public static func setup()
+  @objc public static let sharedUtils: NaverAdsServices.GFPLocationUtils
+  @objc public func getLocationInfo() -> NaverAdsServices.GFPDeviceLocInfo?
+  @objc deinit
+}
+extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+}
 @objc @objcMembers public class GFPUADeviceInfo : ObjectiveC.NSObject {
   @objc public var systemVersion: Swift.String
   @objc public var deviceType: Swift.String
@@ -454,8 +470,8 @@ extension NaverAdsServices.GFPLog {
   @objc deinit
 }
 @objc public protocol GFPVastLoaderDelegate {
-  @objc func vastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didLoadVast vast: NaverAdsServices.GFPVast)
-  @objc func vastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didFailWithError error: (any Swift.Error)?)
+  @objc func nasVastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didLoadVast vast: NaverAdsServices.GFPVast)
+  @objc func nasVastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didFailWithError error: (any Swift.Error)?)
 }
 @objc @objcMembers public class GFPVastLoader : ObjectiveC.NSObject {
   @objc public static let kVastTagTimeOutTimeInterval: Swift.Double
@@ -994,11 +1010,6 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPDeviceLocInfo : ObjectiveC.NSObject {
-  @objc public var latitude: Swift.String
-  @objc public var longitude: Swift.String
-  @objc deinit
-}
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPDeviceUtils : ObjectiveC.NSObject {
   @objc public static var preferredLanguageCode: Swift.String? {
     @objc get
@@ -1033,7 +1044,6 @@ extension Swift.String {
   @objc public static var isSKAdNetworkAvaliable: Swift.Bool {
     @objc get
   }
-  @objc public static func getLocationInfo() -> NaverAdsServices.GFPDeviceLocInfo?
   @objc override dynamic public init()
   @objc deinit
 }

@@ -281,6 +281,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import StoreKit;
@@ -403,7 +404,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat nativeScaleF
 + (CGFloat)nativeScaleFactor SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAvaliable;)
 + (BOOL)isSKAdNetworkAvaliable SWIFT_WARN_UNUSED_RESULT;
-+ (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -467,6 +467,23 @@ typedef SWIFT_ENUM(NSInteger, GFPHexCodeType, open) {
   GFPHexCodeTypeRgba = 0,
   GFPHexCodeTypeArgb = 1,
 };
+
+
+SWIFT_CLASS("_TtC16NaverAdsServices16GFPLocationUtils")
+@interface GFPLocationUtils : NSObject
++ (void)setup;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationUtils * _Nonnull sharedUtils;)
++ (GFPLocationUtils * _Nonnull)sharedUtils SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class CLLocationManager;
+
+@interface GFPLocationUtils (SWIFT_EXTENSION(NaverAdsServices)) <CLLocationManagerDelegate>
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+@end
 
 
 SWIFT_CLASS_NAMED("GFPLog")
@@ -1478,8 +1495,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kVast
 
 SWIFT_PROTOCOL("_TtP16NaverAdsServices21GFPVastLoaderDelegate_")
 @protocol GFPVastLoaderDelegate
-- (void)vastLoader:(GFPVastLoader * _Nonnull)vastLoader didLoadVast:(GFPVast * _Nonnull)vast;
-- (void)vastLoader:(GFPVastLoader * _Nonnull)vastLoader didFailWithError:(NSError * _Nullable)error;
+- (void)nasVastLoader:(GFPVastLoader * _Nonnull)vastLoader didLoadVast:(GFPVast * _Nonnull)vast;
+- (void)nasVastLoader:(GFPVastLoader * _Nonnull)vastLoader didFailWithError:(NSError * _Nullable)error;
 @end
 
 
@@ -1877,6 +1894,8 @@ SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")
 + (BOOL)isTouchedOnScreenCenter:(UIView * _Nonnull)aView SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isAtLeastHalfViewable:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (CGFloat)exposedPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)exposedWidthPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)exposedHeightPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (CGRect)visibleRectangle:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (void)fillSuperviewWithCenterAlignment:(UIView * _Nullable)aView;
 + (void)setConstraintWithFrameSize:(UIView * _Nullable)aView;
@@ -2326,6 +2345,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreLocation;
 @import Foundation;
 @import ObjectiveC;
 @import StoreKit;
@@ -2448,7 +2468,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat nativeScaleF
 + (CGFloat)nativeScaleFactor SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAvaliable;)
 + (BOOL)isSKAdNetworkAvaliable SWIFT_WARN_UNUSED_RESULT;
-+ (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -2512,6 +2531,23 @@ typedef SWIFT_ENUM(NSInteger, GFPHexCodeType, open) {
   GFPHexCodeTypeRgba = 0,
   GFPHexCodeTypeArgb = 1,
 };
+
+
+SWIFT_CLASS("_TtC16NaverAdsServices16GFPLocationUtils")
+@interface GFPLocationUtils : NSObject
++ (void)setup;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationUtils * _Nonnull sharedUtils;)
++ (GFPLocationUtils * _Nonnull)sharedUtils SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+- (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class CLLocationManager;
+
+@interface GFPLocationUtils (SWIFT_EXTENSION(NaverAdsServices)) <CLLocationManagerDelegate>
+- (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+@end
 
 
 SWIFT_CLASS_NAMED("GFPLog")
@@ -3523,8 +3559,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kVast
 
 SWIFT_PROTOCOL("_TtP16NaverAdsServices21GFPVastLoaderDelegate_")
 @protocol GFPVastLoaderDelegate
-- (void)vastLoader:(GFPVastLoader * _Nonnull)vastLoader didLoadVast:(GFPVast * _Nonnull)vast;
-- (void)vastLoader:(GFPVastLoader * _Nonnull)vastLoader didFailWithError:(NSError * _Nullable)error;
+- (void)nasVastLoader:(GFPVastLoader * _Nonnull)vastLoader didLoadVast:(GFPVast * _Nonnull)vast;
+- (void)nasVastLoader:(GFPVastLoader * _Nonnull)vastLoader didFailWithError:(NSError * _Nullable)error;
 @end
 
 
@@ -3922,6 +3958,8 @@ SWIFT_CLASS("_TtC16NaverAdsServices12GFPViewUtils")
 + (BOOL)isTouchedOnScreenCenter:(UIView * _Nonnull)aView SWIFT_WARN_UNUSED_RESULT;
 + (BOOL)isAtLeastHalfViewable:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (CGFloat)exposedPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)exposedWidthPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
++ (CGFloat)exposedHeightPercentage:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (CGRect)visibleRectangle:(UIView * _Nullable)aView SWIFT_WARN_UNUSED_RESULT;
 + (void)fillSuperviewWithCenterAlignment:(UIView * _Nullable)aView;
 + (void)setConstraintWithFrameSize:(UIView * _Nullable)aView;

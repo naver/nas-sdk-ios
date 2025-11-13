@@ -367,6 +367,7 @@ extension NaverAdsServices.GFPLog {
 }
 extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDelegate {
   @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didUpdateLocations locations: [CoreLocation.CLLocation])
 }
 @objc @objcMembers public class GFPUADeviceInfo : ObjectiveC.NSObject {
   @objc public var systemVersion: Swift.String

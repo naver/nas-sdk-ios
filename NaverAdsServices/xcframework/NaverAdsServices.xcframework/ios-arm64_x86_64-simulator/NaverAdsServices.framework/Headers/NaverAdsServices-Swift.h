@@ -480,9 +480,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationU
 @end
 
 @class CLLocationManager;
+@class CLLocation;
 
 @interface GFPLocationUtils (SWIFT_EXTENSION(NaverAdsServices)) <CLLocationManagerDelegate>
 - (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
 
 
@@ -2544,9 +2546,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationU
 @end
 
 @class CLLocationManager;
+@class CLLocation;
 
 @interface GFPLocationUtils (SWIFT_EXTENSION(NaverAdsServices)) <CLLocationManagerDelegate>
 - (void)locationManagerDidChangeAuthorization:(CLLocationManager * _Nonnull)manager;
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 @end
 
 

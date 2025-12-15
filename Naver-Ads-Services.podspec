@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Naver-Ads-Services"
-  s.version      = "1.3.1"
+  s.version      = "1.3.2"
   s.summary      = "NaverAdsServices SDK"
   s.description  = <<-DESC
                     NaverAdsServices wiil provide shared functions for NAM, GFP SDK
@@ -11,7 +11,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => "Naver", :text => "Copyright 2022 NAVER Corp." } 
   s.author       = { "Sanghun.han" => "sanghun.han@navercorp.com",
                      "Sodam.kim" => "sodam.k@navercorp.com",
-                     "Dojin.park" => "dojin.park@navercorp.com"
+                     "Dojin.park" => "dojin.park@navercorp.com",
+                     "Sangeun.yoon" => "sangeun.yoon@navercorp.com"
   }
   
   s.ios.deployment_target = "13.0"

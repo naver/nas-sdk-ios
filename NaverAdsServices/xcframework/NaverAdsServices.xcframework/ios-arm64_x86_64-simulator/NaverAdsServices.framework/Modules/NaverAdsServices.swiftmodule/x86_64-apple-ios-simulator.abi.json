@@ -14772,6 +14772,252 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "GFPAtomic",
+        "printedName": "GFPAtomic",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "queue",
+            "printedName": "queue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DispatchQueue",
+                "printedName": "Dispatch.DispatchQueue",
+                "usr": "c:objc(cs)OS_dispatch_queue"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices9GFPAtomicC5queueSo012OS_dispatch_E0Cvp",
+            "mangledName": "$s16NaverAdsServices9GFPAtomicC5queueSo012OS_dispatch_E0Cvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DispatchQueue",
+                    "printedName": "Dispatch.DispatchQueue",
+                    "usr": "c:objc(cs)OS_dispatch_queue"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices9GFPAtomicC5queueSo012OS_dispatch_E0Cvg",
+                "mangledName": "$s16NaverAdsServices9GFPAtomicC5queueSo012OS_dispatch_E0Cvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(wrappedValue:label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAtomic",
+                "printedName": "NaverAdsServices.GFPAtomic<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:16NaverAdsServices9GFPAtomicC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices9GFPAtomicC12wrappedValue5labelACyxGx_SStcfc",
+            "mangledName": "$s16NaverAdsServices9GFPAtomicC12wrappedValue5labelACyxGx_SStcfc",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "wrappedValue",
+            "printedName": "wrappedValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices9GFPAtomicC12wrappedValuexvp",
+            "mangledName": "$s16NaverAdsServices9GFPAtomicC12wrappedValuexvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices9GFPAtomicC12wrappedValuexvg",
+                "mangledName": "$s16NaverAdsServices9GFPAtomicC12wrappedValuexvg",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices9GFPAtomicC12wrappedValuexvs",
+                "mangledName": "$s16NaverAdsServices9GFPAtomicC12wrappedValuexvs",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices9GFPAtomicC12wrappedValuexvM",
+                "mangledName": "$s16NaverAdsServices9GFPAtomicC12wrappedValuexvM",
+                "moduleName": "NaverAdsServices",
+                "genericSig": "<τ_0_0>",
+                "sugared_genericSig": "<T>",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(label:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPAtomic",
+                "printedName": "NaverAdsServices.GFPAtomic<τ_0_0>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ],
+                "usr": "s:16NaverAdsServices9GFPAtomicC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices9GFPAtomicCAAs23ExpressibleByNilLiteralRzlE5labelACyxGSS_tcfc",
+            "mangledName": "$s16NaverAdsServices9GFPAtomicCAAs23ExpressibleByNilLiteralRzlE5labelACyxGSS_tcfc",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0 where τ_0_0 : Swift.ExpressibleByNilLiteral>",
+            "sugared_genericSig": "<T where T : Swift.ExpressibleByNilLiteral>",
+            "declAttributes": [
+              "Convenience"
+            ],
+            "isFromExtension": true,
+            "init_kind": "Convenience"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:16NaverAdsServices9GFPAtomicC",
+        "mangledName": "$s16NaverAdsServices9GFPAtomicC",
+        "moduleName": "NaverAdsServices",
+        "genericSig": "<τ_0_0>",
+        "sugared_genericSig": "<T>",
+        "declAttributes": [
+          "AccessControl",
+          "PropertyWrapper",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -53786,9 +54032,30 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1151,
+      "offset": 1245,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1144,
+      "length": 70,
+      "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.isInitialized\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1278,
+      "length": 76,
+      "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.authorizationStatus\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 1498,
+      "length": 72,
+      "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.currentLocation\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Config\/GFPDeviceInfo.swift",

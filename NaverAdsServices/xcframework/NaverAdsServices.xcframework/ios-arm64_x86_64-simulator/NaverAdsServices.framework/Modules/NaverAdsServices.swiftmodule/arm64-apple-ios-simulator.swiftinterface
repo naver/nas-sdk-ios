@@ -512,6 +512,18 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
   @objc public var apiFramework: Swift.String?
   @objc deinit
 }
+@propertyWrapper public class GFPAtomic<T> {
+  final public let queue: Dispatch.DispatchQueue
+  public init(wrappedValue: T, label: Swift.String)
+  public var wrappedValue: T {
+    get
+    set
+  }
+  @objc deinit
+}
+extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
+  convenience public init(label: Swift.String)
+}
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdParameters : ObjectiveC.NSObject {
   @objc public var metaData: Swift.String?
   public var xmlEncoded: Swift.Bool?

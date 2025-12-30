@@ -409,7 +409,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAv
 
 @class NSURL;
 @class UIImage;
-@class NSData;
 @class NSError;
 
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPDownloadCache")
@@ -418,16 +417,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDownloadC
 + (GFPDownloadCache * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (NSURL * _Nullable)urlToNSURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isInvalidURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (void)updateDataWithURL:(NSURL * _Nonnull)url;
 - (UIImage * _Nullable)imageWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
-- (void)dataWithURL:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(NSData * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
-- (void)dataWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval completion:(void (^ _Nonnull)(NSData * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
-- (void)imageWithURL:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
 - (void)imageWithURL:(NSURL * _Nonnull)url fullCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))fullCompletion;
 - (void)imageWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval fullCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))fullCompletion;
-- (void)imageWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval completion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
 - (void)clearCache;
 @end
 
@@ -2475,7 +2468,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAv
 
 @class NSURL;
 @class UIImage;
-@class NSData;
 @class NSError;
 
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPDownloadCache")
@@ -2484,16 +2476,10 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDownloadC
 + (GFPDownloadCache * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-- (NSURL * _Nullable)urlToNSURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isInvalidURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
 - (void)updateDataWithURL:(NSURL * _Nonnull)url;
 - (UIImage * _Nullable)imageWithURL:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
-- (void)dataWithURL:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(NSData * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
-- (void)dataWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval completion:(void (^ _Nonnull)(NSData * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
-- (void)imageWithURL:(NSURL * _Nonnull)url completion:(void (^ _Nonnull)(UIImage * _Nullable, NSError * _Nullable))completion;
 - (void)imageWithURL:(NSURL * _Nonnull)url fullCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))fullCompletion;
 - (void)imageWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval fullCompletion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))fullCompletion;
-- (void)imageWithURL:(NSURL * _Nonnull)url timeoutInterval:(NSTimeInterval)timeoutInterval completion:(void (^ _Nonnull)(UIImage * _Nullable, NSURL * _Nullable, NSError * _Nullable))completion;
 - (void)clearCache;
 @end
 

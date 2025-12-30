@@ -5,6 +5,7 @@
 import AdSupport
 import CoreLocation
 import CoreTelephony
+import CryptoKit
 import Foundation
 @_exported import NaverAdsServices
 import Network
@@ -239,22 +240,13 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   @objc public func canShowKeywords(_ currentTime: Foundation.TimeInterval) -> Swift.Bool
   @objc deinit
 }
-public typealias ImageDownloadCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
-public typealias DownloadCompletionHandler = (Foundation.Data?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
-public typealias ImageCompletionHandler = (UIKit.UIImage?, Foundation.NSError?) -> Swift.Void
 public typealias ImageFullCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPDownloadCache : ObjectiveC.NSObject {
   @objc public static let sharedInstance: NaverAdsServices.GFPDownloadCache
-  @objc public func urlToNSURL(_ url: Foundation.URL) -> Foundation.NSURL?
-  @objc public func isInvalidURL(_ url: Foundation.URL) -> Swift.Bool
   @objc public func updateDataWithURL(_ url: Foundation.URL)
   @objc public func imageWithURL(_ url: Foundation.URL) -> UIKit.UIImage?
-  @objc public func dataWithURL(_ url: Foundation.URL, completion: @escaping NaverAdsServices.DownloadCompletionHandler)
-  @objc public func dataWithURL(_ url: Foundation.URL, timeoutInterval: Foundation.TimeInterval, completion: @escaping NaverAdsServices.DownloadCompletionHandler)
-  @objc public func imageWithURL(_ url: Foundation.URL, completion: @escaping NaverAdsServices.ImageCompletionHandler)
   @objc public func imageWithURL(_ url: Foundation.URL, fullCompletion: @escaping NaverAdsServices.ImageFullCompletionHandler)
   @objc public func imageWithURL(_ url: Foundation.URL, timeoutInterval: Foundation.TimeInterval, fullCompletion: @escaping NaverAdsServices.ImageFullCompletionHandler)
-  @objc public func imageWithURL(_ url: Foundation.URL, timeoutInterval: Foundation.TimeInterval, completion: @escaping NaverAdsServices.ImageDownloadCompletionHandler)
   @objc public func clearCache()
   @objc deinit
 }
@@ -1060,6 +1052,8 @@ extension Swift.String {
   @objc override dynamic public init()
   @objc deinit
 }
+public typealias GFPFileSaveCompletionHandler = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
+public typealias GFPFileLoadCompletionHandler = (Swift.Bool, Foundation.Data?, (any Swift.Error)?) -> Swift.Void
 @objc extension Foundation.Timer {
   @objc public static let kAttachedCheckDefaultFrequency: Swift.Double
   @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool) -> Foundation.Timer

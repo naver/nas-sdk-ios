@@ -5793,70 +5793,6 @@
           },
           {
             "kind": "Function",
-            "name": "urlToNSURL",
-            "printedName": "urlToNSURL(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Foundation.NSURL?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSURL",
-                    "printedName": "Foundation.NSURL",
-                    "usr": "c:objc(cs)NSURL"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)urlToNSURL:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC10urlToNSURLySo0H0CSg10Foundation3URLVF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isInvalidURL",
-            "printedName": "isInvalidURL(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)isInvalidURL:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC12isInvalidURLySb10Foundation0H0VF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "updateDataWithURL",
             "printedName": "updateDataWithURL(_:)",
             "children": [
@@ -5914,263 +5850,6 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dataWithURL",
-            "printedName": "dataWithURL(_:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Foundation.Data?, Foundation.URL?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Foundation.Data?, Foundation.URL?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.Data?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Data",
-                            "printedName": "Foundation.Data",
-                            "usr": "s:10Foundation4DataV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.URL?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URL",
-                            "printedName": "Foundation.URL",
-                            "usr": "s:10Foundation3URLV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)dataWithURL:completion:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC11dataWithURL_10completiony10Foundation0H0V_yAF4DataVSg_AHSgSo7NSErrorCSgtctF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "dataWithURL",
-            "printedName": "dataWithURL(_:timeoutInterval:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Foundation.Data?, Foundation.URL?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(Foundation.Data?, Foundation.URL?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.Data?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Data",
-                            "printedName": "Foundation.Data",
-                            "usr": "s:10Foundation4DataV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.URL?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URL",
-                            "printedName": "Foundation.URL",
-                            "usr": "s:10Foundation3URLV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)dataWithURL:timeoutInterval:completion:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC11dataWithURL_15timeoutInterval10completiony10Foundation0H0V_SdyAG4DataVSg_AISgSo7NSErrorCSgtctF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "imageWithURL",
-            "printedName": "imageWithURL(_:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UIKit.UIImage?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(UIKit.UIImage?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "UIKit.UIImage?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIImage",
-                            "printedName": "UIKit.UIImage",
-                            "usr": "c:objc(cs)UIImage"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)imageWithURL:completion:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC12imageWithURL_10completiony10Foundation0H0V_ySo7UIImageCSg_So7NSErrorCSgtctF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -6259,6 +5938,7 @@
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment",
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
@@ -6350,100 +6030,6 @@
             "declKind": "Func",
             "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)imageWithURL:timeoutInterval:fullCompletion:",
             "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC12imageWithURL_15timeoutInterval14fullCompletiony10Foundation0H0V_SdySo7UIImageCSg_AISgSo7NSErrorCSgtctF",
-            "moduleName": "NaverAdsServices",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "imageWithURL",
-            "printedName": "imageWithURL(_:timeoutInterval:completion:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(UIKit.UIImage?, Foundation.URL?, Foundation.NSError?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "UIKit.UIImage?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "UIImage",
-                            "printedName": "UIKit.UIImage",
-                            "usr": "c:objc(cs)UIImage"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.URL?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "URL",
-                            "printedName": "Foundation.URL",
-                            "usr": "s:10Foundation3URLV"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSError?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSError",
-                            "printedName": "Foundation.NSError",
-                            "usr": "c:objc(cs)NSError"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDownloadCache(im)imageWithURL:timeoutInterval:completion:",
-            "mangledName": "$s16NaverAdsServices16GFPDownloadCacheC12imageWithURL_15timeoutInterval10completiony10Foundation0H0V_SdySo7UIImageCSg_AISgSo7NSErrorCSgtctF",
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "AccessControl",
@@ -48239,6 +47825,23 @@
       },
       {
         "kind": "Import",
+        "name": "CryptoKit",
+        "printedName": "CryptoKit",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -54728,6 +54331,34 @@
       "offset": 537,
       "length": 6,
       "value": "\"ipv6\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "StringLiteral",
+      "offset": 505,
+      "length": 5,
+      "value": "\"GFP\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 558,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 604,
+      "length": 2,
+      "value": "16"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 645,
+      "length": 2,
+      "value": "64"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/NSTimer+GFPUtils.swift",

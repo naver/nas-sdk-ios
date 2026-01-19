@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Naver-Ads-Services"
-  s.version      = "1.4.0"
+  s.version      = "1.5.0"
   s.summary      = "NaverAdsServices SDK"
   s.description  = <<-DESC
                     NaverAdsServices wiil provide shared functions for NAM, GFP SDK

@@ -520,7 +520,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices27GFPNASLoudnessNormalization")
 @property (nonatomic, copy) NSString * _Nonnull contentEncoding;
 @property (nonatomic, copy) NSString * _Nonnull dataString;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull referDict;
-- (nullable instancetype)initWithLoudnessDict:(NSDictionary<NSString *, NSString *> * _Nullable)loudnessDict OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithLoudnessDict:(NSDictionary<NSString *, id> * _Nullable)loudnessDict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -535,25 +535,41 @@ SWIFT_CLASS("_TtC16NaverAdsServices24GFPNASLoudnessProperties")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+SWIFT_PROTOCOL("_TtP16NaverAdsServices21GFPNASTrackingWrapper_")
+@protocol GFPNASTrackingWrapper
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull viewTrackings;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull errorTrackings;
+@property (nonatomic, readonly, copy) NSString * _Nonnull clickThrough;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull clickTrackings;
+@end
+
+
+SWIFT_PROTOCOL("_TtP16NaverAdsServices21GFPVastXMLPresentable_")
+@protocol GFPVastXMLPresentable
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class GFPVastStaticResource;
+@class GFPVastBaseResource;
 @class GFPVastAdParameters;
 @class GFPVastImpression;
 @class GFPVastTracking;
 @class GFPVastTrackingInfo;
-@protocol NASVastMacroDataSource;
 
 /// Represents a parsed <code><Companion></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices21GFPNASVastCompanionAd")
-@interface GFPNASVastCompanionAd : NSObject
+@interface GFPNASVastCompanionAd : NSObject <GFPVastXMLPresentable>
 /// @sub-element
 /// @optional
 @property (nonatomic, copy) NSArray<GFPVastStaticResource *> * _Nonnull staticResources;
 /// @sub-element
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull iframeResources;
+@property (nonatomic, copy) NSArray<GFPVastBaseResource *> * _Nonnull iframeResources;
 /// @sub-element
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull htmlResources;
+@property (nonatomic, copy) NSArray<GFPVastBaseResource *> * _Nonnull htmlResources;
 /// @sub-element
 /// @optional
 @property (nonatomic, strong) GFPVastAdParameters * _Nullable adParameters;
@@ -658,10 +674,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices21GFPNASVastCompanionAd")
 @property (nonatomic, copy) NSString * _Nullable pxratio;
 @property (nonatomic, readonly, copy) NSString * _Nullable renderingModeType;
 @property (nonatomic, strong) GFPVastTrackingInfo * _Nullable vastTrackingInfo;
-- (BOOL)setUpVastCompanionTrackingInfoWithDataSource:(id <NASVastMacroDataSource> _Nullable)dataSource error:(NSError * _Nullable * _Nullable)error;
 - (float)getBestScoreWithContainerSize:(CGSize)containerSize SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPNASVastCompanionAd (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class GFPVastIcon;
@@ -694,6 +715,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices21GFPNASVastControlInfo")
 - (GFPVastIcon * _Nullable)postAdAlertIcon SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)canShowWithIconType:(enum GFPVastIconType)iconType currentTime:(NSTimeInterval)currentTime SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)canShowKeywords:(NSTimeInterval)currentTime SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<GFPVastIcon *> * _Nonnull)keywordIcons SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -705,7 +727,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices21GFPNasNonLinearRemind")
 @property (nonatomic) NSInteger offset;
 @property (nonatomic) NSTimeInterval duration;
 @property (nonatomic) BOOL isplayOnce;
-- (nullable instancetype)initWithNonLinearDict:(NSDictionary<NSString *, NSString *> * _Nullable)nonLinearDict OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithNonLinearDict:(NSDictionary<NSString *, id> * _Nullable)nonLinearDict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -854,6 +876,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices11GFPURLUtils")
 @end
 
 @class GFPVastAd;
+@class GFPVastMacroHelper;
 
 /// Represents a parsed <code><Vast></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices7GFPVast")
@@ -862,7 +885,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices7GFPVast")
 /// the uris that provides a tracking resource for the error
 /// @sub-element
 /// @required - error and ad both not
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull error;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull errors;
 /// the list of [GFPVastAd]
 /// @sub-element
 /// @required - error and ad both not
@@ -872,23 +895,24 @@ SWIFT_CLASS("_TtC16NaverAdsServices7GFPVast")
 /// @optional
 @property (nonatomic, copy) NSString * _Nullable version;
 - (void)mergeWithOtherWithVast:(GFPVast * _Nullable)vast prevWrapperAd:(GFPVastAd * _Nullable)prevWrapperAd;
+- (void)fireAllVastErrorsWithMacroHelper:(GFPVastMacroHelper * _Nonnull)macroHelper;
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class GFPVastInline;
 @class GFPVastWrapper;
-@class GFPVastMacroHelper;
 @class GFPVastCreative;
 @class GFPVastMediaFiles;
-@class GFPVastExtension;
+@class GFPVastCreativeExtension;
 @class GFPVastNonLinearAds;
 @class GFPVastAdVerification;
 @class GFPVastCompanionAds;
 
 /// Represents a parsed <code><Ad></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices9GFPVastAd")
-@interface GFPVastAd : NSObject
+@interface GFPVastAd : NSObject <GFPVastXMLPresentable>
 /// within the nested elements of an <InLine> ad are all the files and URIs necessary to play
 /// and track the ad. In a chain of <Wrapper> VAST responses, an <InLine> response ends the chain.
 /// @sub-element
@@ -910,35 +934,45 @@ SWIFT_CLASS("_TtC16NaverAdsServices9GFPVastAd")
 @property (nonatomic, copy) NSString * _Nullable id;
 @property (nonatomic, readonly) NSInteger podSequence;
 @property (nonatomic, readonly, copy) NSString * _Nullable adTypeValue;
-/// \param xmlNode the node that have “Ad” key
-///
 @property (nonatomic, strong) GFPVastTrackingInfo * _Nullable vastTrackingInfo;
 @property (nonatomic, strong) GFPNASVastControlInfo * _Nullable vastControlInfo;
 - (void)setUpVastControlInfoWithSkipInfo:(GFPVastAdSkipInfo * _Nullable)skipInfo;
-- (BOOL)setUpVastTrackingInfoWithMacroHelper:(GFPVastMacroHelper * _Nonnull)macroHelper error:(NSError * _Nullable * _Nullable)error;
-- (BOOL)setUpVastCompanionTrackingInfoWithDataSource:(id <NASVastMacroDataSource> _Nullable)dataSource error:(NSError * _Nullable * _Nullable)error;
+- (void)setUpVastTrackingInfoWithMacroHelper:(GFPVastMacroHelper * _Nonnull)macroHelper;
 @property (nonatomic, readonly, strong) GFPVastCreative * _Nullable mediaCreative;
 @property (nonatomic, readonly) double videoDuration;
 @property (nonatomic, readonly, strong) GFPVastMediaFiles * _Nullable mediaFiles;
-@property (nonatomic, readonly, copy) NSArray<GFPVastExtension *> * _Nonnull creativeExtensions;
+@property (nonatomic, readonly, copy) NSArray<GFPVastCreativeExtension *> * _Nonnull creativeExtensions;
 @property (nonatomic, readonly, copy) NSArray<GFPNASLoudnessNormalization *> * _Nonnull loudness;
 @property (nonatomic, readonly, strong) GFPVastNonLinearAds * _Nullable nonLinearAds;
 @property (nonatomic, readonly, copy) NSArray<GFPVastAdVerification *> * _Nonnull adVerifications;
 @property (nonatomic, readonly, copy) NSArray<GFPVastIcon *> * _Nonnull icons;
 @property (nonatomic, readonly, strong) GFPVastCompanionAds * _Nullable companionAds;
+@property (nonatomic, readonly, copy) NSString * _Nullable ctaText;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+@interface GFPVastAd (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><AdParameters></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastAdParameters")
-@interface GFPVastAdParameters : NSObject
+@interface GFPVastAdParameters : NSObject <GFPVastXMLPresentable>
 /// the metadata for the ad
 /// @Value of Node.
 @property (nonatomic, copy) NSString * _Nullable metaData;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastAdParameters (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -964,7 +998,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastAdSkipInfo")
 
 /// Represents a parsed <code><AdSystem></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastAdSystem")
-@interface GFPVastAdSystem : NSObject
+@interface GFPVastAdSystem : NSObject <GFPVastXMLPresentable>
 /// the string that provides the name of the ad server that returned the ad
 /// @Value of Node
 @property (nonatomic, copy) NSString * _Nullable adServerName;
@@ -976,24 +1010,30 @@ SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastAdSystem")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface GFPVastAdSystem (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class GFPVastJavaScriptResource;
 @class GFPVastBaseAdverificationResource;
 
 SWIFT_CLASS("_TtC16NaverAdsServices21GFPVastAdVerification")
-@interface GFPVastAdVerification : NSObject <GFPOMIDInfoPresentable>
+@interface GFPVastAdVerification : NSObject <GFPOMIDInfoPresentable, GFPVastXMLPresentable>
 /// the container for the uri to the JavaScript file used to collect verification data.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastJavaScriptResource *> * _Nullable javaScriptResources;
+@property (nonatomic, copy) NSArray<GFPVastJavaScriptResource *> * _Nonnull javaScriptResources;
 /// A reference to a non-JavaScript or custom-integration resource intended for collecting verification data via the listed apiFramework.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastBaseAdverificationResource *> * _Nullable executableResources;
+@property (nonatomic, copy) NSArray<GFPVastBaseAdverificationResource *> * _Nonnull executableResources;
 /// The verification vendor may provide URIs for tracking events relating to the execution of
 /// their code during the ad session.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastTracking *> * _Nullable trackingEvents;
+@property (nonatomic, copy) NSArray<GFPVastTracking *> * _Nonnull trackingEvents;
 /// the identifier for the verification vendor. The recommended format is [domain]-[useCase], to avoid name
 /// collisions. For example, <code>company.com-omid</code>.
 /// @attribute
@@ -1009,9 +1049,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices21GFPVastAdVerification")
 @end
 
 
+@interface GFPVastAdVerification (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><Advertiser></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastAdvertiser")
-@interface GFPVastAdvertiser : NSObject
+@interface GFPVastAdvertiser : NSObject <GFPVastXMLPresentable>
 /// the name of the advertiser as defined by the ad serving party.
 /// @Value of Node.
 @property (nonatomic, copy) NSString * _Nullable name;
@@ -1024,8 +1070,14 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastAdvertiser")
 @end
 
 
+@interface GFPVastAdvertiser (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 SWIFT_CLASS("_TtC16NaverAdsServices33GFPVastBaseAdverificationResource")
-@interface GFPVastBaseAdverificationResource : NSObject
+@interface GFPVastBaseAdverificationResource : NSObject <GFPVastXMLPresentable>
 /// @Value of Node
 @property (nonatomic, copy) NSString * _Nullable value;
 /// The name of the API framework used to execute the AdVerification code
@@ -1036,10 +1088,16 @@ SWIFT_CLASS("_TtC16NaverAdsServices33GFPVastBaseAdverificationResource")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface GFPVastBaseAdverificationResource (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 enum GFPVastRemindType : NSInteger;
 
 SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastBaseResource")
-@interface GFPVastBaseResource : NSObject
+@interface GFPVastBaseResource : NSObject <GFPVastXMLPresentable>
 @property (nonatomic) enum GFPVastRemindType remindType;
 /// A URI to the iframe creative file to be used for the ad component identified in the parent
 /// element. in StaticResource, IFrameResource
@@ -1050,9 +1108,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastBaseResource")
 @end
 
 
+@interface GFPVastBaseResource (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><Category></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastCategory")
-@interface GFPVastCategory : NSObject
+@interface GFPVastCategory : NSObject <GFPVastXMLPresentable>
 /// @Value of Node.
 /// A string that provides a category code or label that identifies the ad content
 /// category.
@@ -1067,9 +1131,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastCategory")
 @end
 
 
+@interface GFPVastCategory (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><ClosedCaptionFile></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices24GFPVastClosedCaptionFile")
-@interface GFPVastClosedCaptionFile : NSObject
+@interface GFPVastClosedCaptionFile : NSObject <GFPVastXMLPresentable>
 /// A CDATA-wrapped URI to a file providing Closed Caption info for the media file.
 /// @Value of Node.
 @property (nonatomic, copy) NSString * _Nullable content;
@@ -1088,9 +1158,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices24GFPVastClosedCaptionFile")
 @end
 
 
+@interface GFPVastClosedCaptionFile (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><CompanionAds></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastCompanionAds")
-@interface GFPVastCompanionAds : NSObject
+@interface GFPVastCompanionAds : NSObject <GFPVastXMLPresentable>
 /// The list of [CompanionAd].
 /// @sub-element
 /// @optional
@@ -1103,18 +1179,24 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastCompanionAds")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface GFPVastCompanionAds (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class GFPVastUniversalAdId;
 @class GFPVastLinear;
 
 /// Represents a parsed <code><Creative></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastCreative")
-@interface GFPVastCreative : NSObject
+@interface GFPVastCreative : NSObject <GFPVastXMLPresentable>
 /// @sub-element
 /// @required
 @property (nonatomic, strong) GFPVastUniversalAdId * _Nullable universalAdId;
 /// @sub-element
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastExtension *> * _Nonnull creativeExtensions;
+@property (nonatomic, copy) NSArray<GFPVastCreativeExtension *> * _Nonnull creativeExtensions;
 /// @sub-element
 /// @optional
 @property (nonatomic, strong) GFPVastLinear * _Nullable linear;
@@ -1143,20 +1225,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastCreative")
 @end
 
 
-SWIFT_CLASS("_TtC16NaverAdsServices25GFPVastExecutableResource")
-@interface GFPVastExecutableResource : GFPVastBaseAdverificationResource
-/// The type of executable resource provided. The exact value used should be agreed
-/// upon by verification integrators and vendors who are implementing verification in
-/// a custom environment.
-/// @attribute
-/// @required
-@property (nonatomic, copy) NSString * _Nullable type;
+@interface GFPVastCreative (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
-/// Represents a parsed <code><Extension></code> element.
-SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastExtension")
-@interface GFPVastExtension : NSObject
+/// Represents a parsed <code><GFPVastCreativeExtension></code> element.
+SWIFT_CLASS("_TtC16NaverAdsServices24GFPVastCreativeExtension")
+@interface GFPVastCreativeExtension : NSObject <GFPVastXMLPresentable>
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kNASLoudnessNormalization;)
 + (NSString * _Nonnull)kNASLoudnessNormalization SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull kNASNonLinearRemind;)
@@ -1186,16 +1263,73 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 @property (nonatomic) enum GFPExtensionCreativeType creativeType;
 @property (nonatomic, strong) GFPNASLoudnessNormalization * _Nullable loudness;
 @property (nonatomic, strong) GFPNasNonLinearRemind * _Nullable nonLinear;
+@property (nonatomic, copy) NSString * _Nullable ctaText;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+@interface GFPVastCreativeExtension (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC16NaverAdsServices25GFPVastExecutableResource")
+@interface GFPVastExecutableResource : GFPVastBaseAdverificationResource
+/// The type of executable resource provided. The exact value used should be agreed
+/// upon by verification integrators and vendors who are implementing verification in
+/// a custom environment.
+/// @attribute
+/// @required
+@property (nonatomic, copy) NSString * _Nullable type;
+@end
+
+
+@interface GFPVastExecutableResource (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+enum GFPVastExtensionType : NSInteger;
+
+/// Represents a parsed <code><Extension></code> element.
+SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastExtension")
+@interface GFPVastExtension : NSObject <GFPVastXMLPresentable>
+@property (nonatomic, copy) NSString * _Nullable value;
+/// A string that identifies if loudness
+/// @attributes
+/// @optional
+@property (nonatomic, copy) NSString * _Nullable name;
+@property (nonatomic) enum GFPVastExtensionType extensionType;
+@property (nonatomic, copy) NSString * _Nullable ctaText;
+@property (nonatomic, copy) NSArray<GFPVastAdVerification *> * _Nonnull adverifications;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastExtension (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+typedef SWIFT_ENUM(NSInteger, GFPVastExtensionType, open) {
+  GFPVastExtensionTypeNone = 0,
+  GFPVastExtensionTypeGfp = 1,
+  GFPVastExtensionTypeAdverification = 2,
+};
 
 @class GFPVastIconClicks;
 enum GFPVastResourceCode : NSInteger;
 
 /// Represents a parsed <code><Icon></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices11GFPVastIcon")
-@interface GFPVastIcon : NSObject
+@interface GFPVastIcon : NSObject <GFPNASTrackingWrapper, GFPVastXMLPresentable>
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull viewTrackings;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull errorTrackings;
+@property (nonatomic, readonly, copy) NSString * _Nonnull clickThrough;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nonnull clickTrackings;
 /// @sub-elem
 /// @optional
 @property (nonatomic, strong) GFPVastStaticResource * _Nullable staticResource;
@@ -1211,7 +1345,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices11GFPVastIcon")
 /// Content A URI to the industry program page opened when a viewer clicks the icon.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable iconViewTracking;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull iconViewTracking;
 /// The program represented in the icon (e.g. “AdChoices”).
 /// @attributes
 /// @optional
@@ -1277,9 +1411,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices11GFPVastIcon")
 @end
 
 
+@interface GFPVastIcon (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><IconClickFallbackImage></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices29GFPVastIconClickFallbackImage")
-@interface GFPVastIconClickFallbackImage : NSObject
+@interface GFPVastIconClickFallbackImage : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @optional
 @property (nonatomic, copy) NSString * _Nullable altText;
@@ -1291,9 +1431,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices29GFPVastIconClickFallbackImage")
 @end
 
 
+@interface GFPVastIconClickFallbackImage (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><IconClicks></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastIconClicks")
-@interface GFPVastIconClicks : NSObject
+@interface GFPVastIconClicks : NSObject <GFPVastXMLPresentable>
 /// The <IconClickThrough> is used to provide a URI to the industry program page that the
 /// media player opens when the icon is clicked.
 /// Content A URI to the industry program page opened when a viewer clicks the icon.
@@ -1303,7 +1449,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastIconClicks")
 /// <IconClickTracking> is used to track click activity within the icon.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastImpression *> * _Nullable iconClickTracking;
+@property (nonatomic, copy) NSArray<GFPVastImpression *> * _Nonnull iconClickTracking;
 @property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable iconClickTrackingValues;
 /// The <IconClickFallbackImages> element is used to provide information disclosure for
 /// platforms which do not support HTML rendering, by baking the information into an image.
@@ -1315,9 +1461,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastIconClicks")
 /// unless a click-action occurs.
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastIconClickFallbackImage *> * _Nullable IconClickFallbackImages;
+@property (nonatomic, copy) NSArray<GFPVastIconClickFallbackImage *> * _Nonnull iconClickFallbackImages;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastIconClicks (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GFPVastIconType, open) {
@@ -1330,7 +1482,7 @@ typedef SWIFT_ENUM(NSInteger, GFPVastIconType, open) {
 /// Represents a parsed <code><CompanionClickTracking></code> element.
 /// Represents a parsed <code><IconClickTracking></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastImpression")
-@interface GFPVastImpression : NSObject
+@interface GFPVastImpression : NSObject <GFPVastXMLPresentable>
 /// A URI to the tracking resource file to be called when a click corresponding to the
 /// id attribute (if provided) occurs.
 @property (nonatomic, copy) NSString * _Nullable value;
@@ -1342,6 +1494,12 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastImpression")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface GFPVastImpression (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class GFPVastPricing;
 @class GFPVastSurvey;
 @class GFPVastViewbleImpression;
@@ -1349,7 +1507,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastImpression")
 /// Represents a parsed <code><InLine></code> element.
 /// last of chain in vast wrapper . just check inline tag
 SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastInline")
-@interface GFPVastInline : NSObject
+@interface GFPVastInline : NSObject <GFPVastXMLPresentable>
 /// the ad serving party must provide a descriptive name for the system that serves the ad.
 /// @sub-element
 /// @required
@@ -1426,11 +1584,23 @@ SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastInline")
 @end
 
 
+@interface GFPVastInline (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><InteractiveCreativeFile></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices30GFPVastInteractiveCreativeFile")
-@interface GFPVastInteractiveCreativeFile : NSObject
+@interface GFPVastInteractiveCreativeFile : NSObject <GFPVastXMLPresentable>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastInteractiveCreativeFile (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1443,11 +1613,17 @@ SWIFT_CLASS("_TtC16NaverAdsServices25GFPVastJavaScriptResource")
 @property (nonatomic, copy) NSString * _Nullable browserOptional;
 @end
 
+
+@interface GFPVastJavaScriptResource (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class GFPVastVideoClicks;
 
 /// Represents a parsed <code><Linear></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastLinear")
-@interface GFPVastLinear : NSObject
+@interface GFPVastLinear : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @required - inline
 @property (nonatomic, copy) NSString * _Nullable duration;
@@ -1465,7 +1641,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastLinear")
 @property (nonatomic, strong) GFPVastVideoClicks * _Nullable videoClicks;
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastIcon *> * _Nullable icons;
+@property (nonatomic, copy) NSArray<GFPVastIcon *> * _Nonnull icons;
 /// @attributes
 /// @optional
 @property (nonatomic, copy) NSString * _Nullable skipOffset;
@@ -1473,7 +1649,14 @@ SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastLinear")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+
+@interface GFPVastLinear (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @protocol GFPVastLoaderDelegate;
+@protocol NASVastMacroDataSource;
 
 SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastLoader")
 @interface GFPVastLoader : NSObject
@@ -1505,7 +1688,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastMacroHelper")
 
 /// Represents a parsed <code><MediaFile></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastMediaFile")
-@interface GFPVastMediaFile : NSObject
+@interface GFPVastMediaFile : NSObject <GFPVastXMLPresentable>
 /// A CDATA-wrapped URI to a media file.
 /// @Value of Node
 @property (nonatomic, copy) NSString * _Nullable value;
@@ -1554,43 +1737,62 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastMediaFile")
 /// @attributes
 /// @optional
 @property (nonatomic, copy) NSString * _Nullable mediaType;
+- (BOOL)isValidSize SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastMediaFile (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class GFPVastMezzanine;
 
 /// Represents a parsed <code><MediaFiles></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices17GFPVastMediaFiles")
-@interface GFPVastMediaFiles : NSObject
+@interface GFPVastMediaFiles : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @required
-@property (nonatomic, copy) NSArray<GFPVastMediaFile *> * _Nullable mediaFiles;
+@property (nonatomic, copy) NSArray<GFPVastMediaFile *> * _Nonnull mediaFiles;
 /// @sub-elem
 /// @required - in ad-stitched video executions
-@property (nonatomic, copy) NSArray<GFPVastMezzanine *> * _Nullable mezzanine;
+@property (nonatomic, copy) NSArray<GFPVastMezzanine *> * _Nonnull mezzanine;
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastInteractiveCreativeFile *> * _Nullable interactiveCreativeFile;
+@property (nonatomic, copy) NSArray<GFPVastInteractiveCreativeFile *> * _Nonnull interactiveCreativeFile;
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<GFPVastClosedCaptionFile *> * _Nullable closedCaptionFiles;
+@property (nonatomic, copy) NSArray<GFPVastClosedCaptionFile *> * _Nonnull closedCaptionFiles;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastMediaFiles (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
 /// Represents a parsed <code><Mezzanine></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastMezzanine")
-@interface GFPVastMezzanine : NSObject
+@interface GFPVastMezzanine : NSObject <GFPVastXMLPresentable>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+@interface GFPVastMezzanine (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><NonLinearAd></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastNonLinearAd")
-@interface GFPVastNonLinearAd : NSObject
+@interface GFPVastNonLinearAd : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @optional
 /// only in Inline
@@ -1607,14 +1809,12 @@ SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastNonLinearAd")
 /// @optional
 /// only in Inline
 @property (nonatomic, strong) GFPVastAdParameters * _Nullable adParameters;
-/// @sub-elem
-/// @optional
-/// only in Inline
-@property (nonatomic, copy) NSString * _Nullable nonLinearClickThrough;
+@property (nonatomic, readonly, copy) NSString * _Nullable nonLinearClickThroughValue;
 /// @sub-elem
 /// @optional
 /// both in Inline & wrapper
 @property (nonatomic, copy) NSArray<GFPVastImpression *> * _Nonnull nonLinearClickTracking;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable nonLinearClickTrackingValues;
 /// An optional identifier for the creative
 /// @attributes
 /// @optional
@@ -1641,9 +1841,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastNonLinearAd")
 @end
 
 
+@interface GFPVastNonLinearAd (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><NonLinearAds></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastNonLinearAds")
-@interface GFPVastNonLinearAds : NSObject
+@interface GFPVastNonLinearAds : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @required
 @property (nonatomic, copy) NSArray<GFPVastNonLinearAd *> * _Nonnull nonlinear;
@@ -1655,11 +1861,23 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastNonLinearAds")
 @end
 
 
+@interface GFPVastNonLinearAds (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><Pricing></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastPricing")
-@interface GFPVastPricing : NSObject
+@interface GFPVastPricing : NSObject <GFPVastXMLPresentable>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastPricing (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 typedef SWIFT_ENUM(NSInteger, GFPVastRemindType, open) {
@@ -1688,23 +1906,48 @@ SWIFT_CLASS("_TtC16NaverAdsServices21GFPVastStaticResource")
 @end
 
 
+@interface GFPVastStaticResource (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><Survey></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices13GFPVastSurvey")
-@interface GFPVastSurvey : NSObject
+@interface GFPVastSurvey : NSObject <GFPVastXMLPresentable>
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
+@interface GFPVastSurvey (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastToXMLHelper")
+@interface GFPVastToXMLHelper : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 /// Represents a parsed <code><Tracking></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices15GFPVastTracking")
-@interface GFPVastTracking : NSObject
+@interface GFPVastTracking : NSObject <GFPVastXMLPresentable>
 /// A URI to the tracking resource for the event specified using the event attribute.
 /// @Value of Node
 @property (nonatomic, copy) NSString * _Nullable url;
+@property (nonatomic, readonly, copy) NSString * _Nullable urlValue;
 @property (nonatomic, readonly, copy) NSString * _Nonnull eventName;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface GFPVastTracking (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
 
@@ -1712,9 +1955,10 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastTrackingInfo")
 @interface GFPVastTrackingInfo : NSObject
 @property (nonatomic) NSTimeInterval duration;
 @property (nonatomic, copy) NSArray<GFPProgressTrackingEvent *> * _Nonnull progressTrackingEvent;
-@property (nonatomic, copy) NSArray<NSString *> * _Nonnull errorTrackings;
 @property (nonatomic, strong) GFPVastVideoClicks * _Nullable videoClicks;
 - (void)setMacroDataSource:(id <NASVastMacroDataSource> _Nullable)macroDataSource;
+- (NSArray<NSString *> * _Nonnull)errorTrackingsWithErrorCode:(NSInteger)errorCode SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)clickThroughUrl SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)impressionEvent SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)clickTrackings SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)loaded SWIFT_WARN_UNUSED_RESULT;
@@ -1731,6 +1975,9 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastTrackingInfo")
 - (NSArray<NSString *> * _Nonnull)rewind SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)otherAdInteraction SWIFT_WARN_UNUSED_RESULT;
 - (NSArray<NSString *> * _Nonnull)creativeView SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<NSString *> * _Nonnull)close SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<NSString *> * _Nonnull)closeLinear SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)macroExchangedValueWithOriginValue:(NSString * _Nullable)originValue SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1738,7 +1985,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices19GFPVastTrackingInfo")
 
 /// Represents a parsed <code><UniversalAdId></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices20GFPVastUniversalAdId")
-@interface GFPVastUniversalAdId : NSObject
+@interface GFPVastUniversalAdId : NSObject <GFPVastXMLPresentable>
 /// A URI to any resource relating to an integrated survey
 /// @Value of Node
 @property (nonatomic, copy) NSString * _Nullable value;
@@ -1752,9 +1999,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices20GFPVastUniversalAdId")
 @end
 
 
+@interface GFPVastUniversalAdId (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><VideoClicks></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastVideoClicks")
-@interface GFPVastVideoClicks : NSObject
+@interface GFPVastVideoClicks : NSObject <GFPVastXMLPresentable>
 /// a URI to the advertiser’s site that the media player opens when a viewer clicks the ad.
 /// only inline linear
 /// @sub-elem
@@ -1779,18 +2032,24 @@ SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastVideoClicks")
 @end
 
 
+@interface GFPVastVideoClicks (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><ViewbleImpression></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices24GFPVastViewbleImpression")
-@interface GFPVastViewbleImpression : NSObject
+@interface GFPVastViewbleImpression : NSObject <GFPVastXMLPresentable>
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable viewable;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull viewable;
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable notViewable;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull notViewable;
 /// @sub-elem
 /// @optional
-@property (nonatomic, copy) NSArray<NSString *> * _Nullable viewUndeterminded;
+@property (nonatomic, copy) NSArray<NSString *> * _Nonnull viewUndeterminded;
 /// @attributes
 /// @optional
 @property (nonatomic, copy) NSString * _Nullable impressionId;
@@ -1800,9 +2059,15 @@ SWIFT_CLASS("_TtC16NaverAdsServices24GFPVastViewbleImpression")
 @end
 
 
+@interface GFPVastViewbleImpression (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
 /// Represents a parsed <code><Wrapper></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
-@interface GFPVastWrapper : NSObject
+@interface GFPVastWrapper : NSObject <GFPVastXMLPresentable>
 /// list of impresion
 /// @sub-elem
 /// @required
@@ -1854,6 +2119,13 @@ SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
+@interface GFPVastWrapper (SWIFT_EXTENSION(NaverAdsServices))
+- (NSString * _Nonnull)toXMLString SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
+@end
+
 
 @class UIView;
 
@@ -1949,6 +2221,11 @@ SWIFT_PROTOCOL("_TtP16NaverAdsServices22NASVastMacroDataSource_")
 - (NSString * _Nullable)getUniversalAdId SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getPodSequence SWIFT_WARN_UNUSED_RESULT;
 - (NSString * _Nullable)getAssetURI SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getAppBundle SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getBreakPosition SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getOMIDPartner SWIFT_WARN_UNUSED_RESULT;
+- (NSString * _Nullable)getCustomMACROValueWithKey:(NSString * _Nullable)key SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly, copy) NSArray<NSString *> * _Nullable customMACROKeys;
 @end
 
 
@@ -2047,6 +2324,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) double kAttachedChec
 - (void)disableAccessibilityForImageSubviews;
 - (void)disableAccessibilityForSubviews;
 + (UIView * _Nullable)loadWithBundleWithABundle:(NSBundle * _Nullable)aBundle nibName:(NSString * _Nullable)nibName SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+SWIFT_CLASS("_TtC16NaverAdsServices14VASTXMLBuilder")
+@interface VASTXMLBuilder : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif

@@ -24,6 +24,11 @@ import _SwiftConcurrencyShims
   @objc func getUniversalAdId() -> Swift.String?
   @objc func getPodSequence() -> Swift.String?
   @objc func getAssetURI() -> Swift.String?
+  @objc func getAppBundle() -> Swift.String?
+  @objc func getBreakPosition() -> Swift.String?
+  @objc func getOMIDPartner() -> Swift.String?
+  @objc func getCustomMACROValue(key: Swift.String?) -> Swift.String?
+  @objc var customMACROKeys: [Swift.String]? { get }
 }
 public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   case IFA
@@ -41,6 +46,10 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   case PODSEQUENCE
   case ADTYPE
   case ERRORCODE
+  case APIFRAMEWORK
+  case OMIDPARTNER
+  case BREAKPOSITION
+  case APPBUNDLE
   public init?(rawValue: Swift.String)
   public typealias AllCases = [NaverAdsServices.NASVASTMacro]
   public typealias RawValue = Swift.String
@@ -53,6 +62,7 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMacroHelper : ObjectiveC.NSObject {
   @objc weak public var macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?
+  public func fireErrorTrackings(errorArray: [Swift.String], error: NaverAdsServices.GFPVastError)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPTimeUtils : ObjectiveC.NSObject {
@@ -238,6 +248,7 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   @objc public func postAdAlertIcon() -> NaverAdsServices.GFPVastIcon?
   @objc public func canShow(iconType: NaverAdsServices.GFPVastIconType, currentTime: Foundation.TimeInterval) -> Swift.Bool
   @objc public func canShowKeywords(_ currentTime: Foundation.TimeInterval) -> Swift.Bool
+  @objc public func keywordIcons() -> [NaverAdsServices.GFPVastIcon]
   @objc deinit
 }
 public typealias ImageFullCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
@@ -263,6 +274,30 @@ public typealias ImageFullCompletionHandler = (UIKit.UIImage?, Foundation.URL?, 
   @objc public func isLoadProductEnabled() -> Swift.Bool
   @objc public func loadProductWith(_ completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc public func productViewControllerDidFinish(_ viewController: StoreKit.SKStoreProductViewController)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class GFPVastToXMLHelper : ObjectiveC.NSObject {
+  public class func dictToJsonObject()
+  public class func arrToXMLObject(key: Swift.String, arr: [Swift.String], isCDATA: Swift.Bool) -> Swift.String
+  public class func arrToXMLObject(rootKey: Swift.String, key: Swift.String, arr: [Swift.String], isCDATA: Swift.Bool) -> Swift.String
+  public class func vastPresentableArrToXMLObject(arr: [any NaverAdsServices.GFPVastXMLPresentable]) -> Swift.String
+  public class func vastPresentableArrToXMLObject(itemRootKey: Swift.String, arr: [any NaverAdsServices.GFPVastXMLPresentable]) -> Swift.String
+  public class func vastPresentableArrToXMLObject(arrKey: Swift.String, arr: [any NaverAdsServices.GFPVastXMLPresentable]) -> Swift.String
+  public class func vastPresentableArrToXMLObject(arrKey: Swift.String, itemRootKey: Swift.String, arr: [any NaverAdsServices.GFPVastXMLPresentable]) -> Swift.String
+  public class func strToSimpleXML(key: Swift.String, value: Swift.String?) -> Swift.String
+  public class func strToSimpleCDATAXML(key: Swift.String, value: Swift.String?) -> Swift.String
+  public class func getOpenTagValue(key: Swift.String, value: Swift.String) -> Swift.String
+  public class func getOpenTagValue(key: Swift.String, value: Swift.String, attributes: [Swift.String : Swift.String]) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class VASTXMLBuilder : ObjectiveC.NSObject {
+  public func setRootKey(key: Swift.String)
+  public func addAttribute(key: Swift.String, value: Swift.String?)
+  public func addValue(value: Swift.String?)
+  public func addCDATAValue(value: Swift.String?)
+  public func build() -> Swift.String
+  @objc override dynamic public init()
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @objcMembers public class GFPURLUtils : ObjectiveC.NSObject {
@@ -444,24 +479,6 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
   @objc public class func merge(dict1: [Swift.String : [Swift.String]], dict2: [Swift.String : [Swift.String]]) -> [Swift.String : [Swift.String]]
   @objc deinit
 }
-@objc @objcMembers public class GFPVastAdSkipData : ObjectiveC.NSObject {
-  @objc public init(dictionary: [Swift.String : Any])
-  @objc deinit
-}
-@objc @objcMembers public class GFPVastAdSkipInfo : ObjectiveC.NSObject {
-  @objc final public let useVastSkip: Swift.Bool
-  @objc(initWithVastSkippable:data:) public init(vastSkippable: Swift.Bool, data: NaverAdsServices.GFPVastAdSkipData?)
-  @objc public var skipMin: Foundation.TimeInterval {
-    @objc get
-  }
-  @objc public var skipAfter: Foundation.TimeInterval {
-    @objc get
-  }
-  @objc public var isValidSkip: Swift.Bool {
-    @objc get
-  }
-  @objc deinit
-}
 @objc public protocol GFPVastLoaderDelegate {
   @objc func nasVastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didLoadVast vast: NaverAdsServices.GFPVast)
   @objc func nasVastLoader(_ vastLoader: NaverAdsServices.GFPVastLoader, didFailWithError error: (any Swift.Error)?)
@@ -485,11 +502,15 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastVideoClicks : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastVideoClicks : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var clickThrough: NaverAdsServices.GFPVastImpression?
   @objc public var clickTracking: [NaverAdsServices.GFPVastImpression]
   @objc public var customClick: [NaverAdsServices.GFPVastImpression]
   @objc deinit
+}
+extension NaverAdsServices.GFPVastVideoClicks {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPVastExecutableResource : NaverAdsServices.GFPVastBaseAdverificationResource {
   @objc public var type: Swift.String?
@@ -499,10 +520,22 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
   @objc public var browserOptional: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseAdverificationResource : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseAdverificationResource : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var value: Swift.String?
   @objc public var apiFramework: Swift.String?
   @objc deinit
+}
+extension NaverAdsServices.GFPVastBaseAdverificationResource {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+extension NaverAdsServices.GFPVastExecutableResource {
+  @objc override dynamic public func toXMLString() -> Swift.String
+  @objc override dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+extension NaverAdsServices.GFPVastJavaScriptResource {
+  @objc override dynamic public func toXMLString() -> Swift.String
+  @objc override dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
 @propertyWrapper public class GFPAtomic<T> {
   final public let queue: Dispatch.DispatchQueue
@@ -516,24 +549,32 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
 extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   convenience public init(label: Swift.String)
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdParameters : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdParameters : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var metaData: Swift.String?
   public var xmlEncoded: Swift.Bool?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastLinear : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastAdParameters {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastLinear : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var duration: Swift.String?
   @objc public var mediaFiles: NaverAdsServices.GFPVastMediaFiles?
   @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
   @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
   @objc public var videoClicks: NaverAdsServices.GFPVastVideoClicks?
-  @objc public var icons: [NaverAdsServices.GFPVastIcon]?
+  @objc public var icons: [NaverAdsServices.GFPVastIcon]
   @objc public var skipOffset: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCreative : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastLinear {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCreative : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var universalAdId: NaverAdsServices.GFPVastUniversalAdId?
-  @objc public var creativeExtensions: [NaverAdsServices.GFPVastExtension]
+  @objc public var creativeExtensions: [NaverAdsServices.GFPVastCreativeExtension]
   @objc public var linear: NaverAdsServices.GFPVastLinear?
   @objc public var nonLinearAds: NaverAdsServices.GFPVastNonLinearAds?
   @objc public var companionAds: NaverAdsServices.GFPVastCompanionAds?
@@ -543,78 +584,49 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var apiFramework: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class GFPVastInteractiveCreativeFile : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastCreative {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastInteractiveCreativeFile : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCategory : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastInteractiveCreativeFile {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCategory : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var categoryCode: Swift.String?
   @objc public var authority: Swift.String?
   @objc deinit
 }
-@objc public enum GFPExtensionCreativeType : Swift.Int {
+extension NaverAdsServices.GFPVastCategory {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc public enum GFPVastExtensionType : Swift.Int {
   case none = 0
-  case nonLinear = 1
-  case loudness = 2
+  case gfp = 1
+  case adverification = 2
   public init?(rawValue: Swift.Int)
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastExtension : ObjectiveC.NSObject {
-  @objc public static let kNASLoudnessNormalization: Swift.String
-  @objc public static let kNASNonLinearRemind: Swift.String
-  @objc public static let kNASLoudnessEnbaleKey: Swift.String
-  @objc public static let kNASLoudnessVersionKey: Swift.String
-  @objc public static let kNASLoudnessContentKey: Swift.String
-  @objc public static let kNASLoudnessContentTypeKey: Swift.String
-  @objc public static let kNASLoudnessDataKey: Swift.String
-  @objc public static let kNASLoudnessPropertiesKey: Swift.String
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastExtension : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var value: Swift.String?
-  @objc public var type: Swift.String?
   @objc public var name: Swift.String?
-  @objc public var creativeDict: [Swift.String : Any]
-  @objc public var creativeType: NaverAdsServices.GFPExtensionCreativeType
-  @objc public var loudness: NaverAdsServices.GFPNASLoudnessNormalization?
-  @objc public var nonLinear: NaverAdsServices.GFPNasNonLinearRemind?
+  @objc public var extensionType: NaverAdsServices.GFPVastExtensionType
+  @objc public var ctaText: Swift.String?
+  @objc public var adverifications: [NaverAdsServices.GFPVastAdVerification]
   @objc deinit
 }
-@objc public enum GFPNASLoudnessMode : Swift.Int {
-  case gaudio = 0
-  case transparent = 1
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
+extension NaverAdsServices.GFPVastExtension {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
-@objc @objcMembers public class GFPNASLoudnessProperties : ObjectiveC.NSObject {
-  @objc public var targetLoudness: Swift.Float
-  @objc public var mode: NaverAdsServices.GFPNASLoudnessMode
-  @objc public init(propertyDict: [Swift.String : Swift.String])
-  @objc deinit
-}
-@objc @objcMembers public class GFPNASLoudnessNormalization : ObjectiveC.NSObject {
-  @objc public var enabled: Swift.Bool
-  @objc public var version: Swift.String
-  @objc public var contentType: Swift.String
-  @objc public var contentEncoding: Swift.String
-  @objc public var dataString: Swift.String
-  @objc public var referDict: [Swift.String : Any] {
-    @objc get
-  }
-  @objc public init?(loudnessDict: [Swift.String : Swift.String]?)
-  @objc deinit
-}
-@objc @objcMembers public class GFPNasNonLinearRemind : ObjectiveC.NSObject {
-  @objc public var targetID: Swift.String
-  @objc public var offset: Swift.Int
-  @objc public var duration: Foundation.TimeInterval
-  @objc public var isplayOnce: Swift.Bool
-  @objc public init?(nonLinearDict: [Swift.String : Swift.String]?)
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFile : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFile : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var value: Swift.String?
   @objc public var url: Foundation.URL?
   @objc public var deliveryType: Swift.String? {
@@ -633,13 +645,22 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var apiFramework: Swift.String?
   public var fileSize: Swift.Int?
   @objc public var mediaType: Swift.String?
+  @objc public func isValidSize() -> Swift.Bool
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastClosedCaptionFile : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastMediaFile {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastClosedCaptionFile : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var content: Swift.String?
   @objc public var mimeType: Swift.String?
   @objc public var language: Swift.String?
   @objc deinit
+}
+extension NaverAdsServices.GFPVastClosedCaptionFile {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
 @objc public enum GFPVastRemindType : Swift.Int {
   case none = 0
@@ -671,7 +692,7 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc override dynamic public init()
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseResource : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastBaseResource : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var remindType: NaverAdsServices.GFPVastRemindType
   @objc public var content: Swift.String?
   @objc deinit
@@ -680,10 +701,22 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var creativeType: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdSystem : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastBaseResource {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+extension NaverAdsServices.GFPVastStaticResource {
+  @objc override dynamic public func toXMLString() -> Swift.String
+  @objc override dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdSystem : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var adServerName: Swift.String?
   @objc public var version: Swift.String?
   @objc deinit
+}
+extension NaverAdsServices.GFPVastAdSystem {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
 @objc @objcMembers public class GFPViewAlignmentInfo : ObjectiveC.NSObject {
   @objc weak public var view: UIKit.UIView?
@@ -703,17 +736,25 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public func computeFrame() -> CoreFoundation.CGRect
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class GFPVastSurvey : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers public class GFPVastSurvey : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFiles : ObjectiveC.NSObject {
-  @objc public var mediaFiles: [NaverAdsServices.GFPVastMediaFile]?
-  @objc public var mezzanine: [NaverAdsServices.GFPVastMezzanine]?
-  @objc public var interactiveCreativeFile: [NaverAdsServices.GFPVastInteractiveCreativeFile]?
-  @objc public var closedCaptionFiles: [NaverAdsServices.GFPVastClosedCaptionFile]?
+extension NaverAdsServices.GFPVastSurvey {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastMediaFiles : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
+  @objc public var mediaFiles: [NaverAdsServices.GFPVastMediaFile]
+  @objc public var mezzanine: [NaverAdsServices.GFPVastMezzanine]
+  @objc public var interactiveCreativeFile: [NaverAdsServices.GFPVastInteractiveCreativeFile]
+  @objc public var closedCaptionFiles: [NaverAdsServices.GFPVastClosedCaptionFile]
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastInline : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastMediaFiles {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastInline : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var adSystem: NaverAdsServices.GFPVastAdSystem?
   @objc public var adTitle: Swift.String?
   @objc public var impressions: [NaverAdsServices.GFPVastImpression]
@@ -734,12 +775,28 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   public var fallbackOnNoAd: Swift.Bool?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIcon : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastInline {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIcon : ObjectiveC.NSObject, NaverAdsServices.GFPNASTrackingWrapper, NaverAdsServices.GFPVastXMLPresentable {
+  @objc public var viewTrackings: [Swift.String] {
+    @objc get
+  }
+  @objc public var errorTrackings: [Swift.String] {
+    @objc get
+  }
+  @objc public var clickThrough: Swift.String {
+    @objc get
+  }
+  @objc public var clickTrackings: [Swift.String] {
+    @objc get
+  }
   @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
   @objc public var iframeResource: NaverAdsServices.GFPVastBaseResource?
   @objc public var htmlResource: NaverAdsServices.GFPVastBaseResource?
   @objc public var iconClicks: NaverAdsServices.GFPVastIconClicks?
-  @objc public var iconViewTracking: [Swift.String]?
+  @objc public var iconViewTracking: [Swift.String]
   @objc public var program: Swift.String?
   @objc public var width: Swift.String?
   @objc public var height: Swift.String?
@@ -755,15 +812,91 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var resourceCode: NaverAdsServices.GFPVastResourceCode
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastViewbleImpression : ObjectiveC.NSObject {
-  @objc public var viewable: [Swift.String]?
-  @objc public var notViewable: [Swift.String]?
-  @objc public var viewUndeterminded: [Swift.String]?
+extension NaverAdsServices.GFPVastIcon {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc public enum GFPExtensionCreativeType : Swift.Int {
+  case none = 0
+  case nonLinear = 1
+  case loudness = 2
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCreativeExtension : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
+  @objc public static let kNASLoudnessNormalization: Swift.String
+  @objc public static let kNASNonLinearRemind: Swift.String
+  @objc public static let kNASLoudnessEnbaleKey: Swift.String
+  @objc public static let kNASLoudnessVersionKey: Swift.String
+  @objc public static let kNASLoudnessContentKey: Swift.String
+  @objc public static let kNASLoudnessContentTypeKey: Swift.String
+  @objc public static let kNASLoudnessDataKey: Swift.String
+  @objc public static let kNASLoudnessPropertiesKey: Swift.String
+  @objc public var value: Swift.String?
+  @objc public var type: Swift.String?
+  @objc public var name: Swift.String?
+  @objc public var creativeDict: [Swift.String : Any]
+  @objc public var creativeType: NaverAdsServices.GFPExtensionCreativeType
+  @objc public var loudness: NaverAdsServices.GFPNASLoudnessNormalization?
+  @objc public var nonLinear: NaverAdsServices.GFPNasNonLinearRemind?
+  @objc public var ctaText: Swift.String?
+  @objc deinit
+}
+@objc public enum GFPNASLoudnessMode : Swift.Int {
+  case gaudio = 0
+  case transparent = 1
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @objcMembers public class GFPNASLoudnessProperties : ObjectiveC.NSObject {
+  @objc public var targetLoudness: Swift.Float
+  @objc public var mode: NaverAdsServices.GFPNASLoudnessMode
+  @objc public init(propertyDict: [Swift.String : Swift.String])
+  @objc deinit
+}
+@objc @objcMembers public class GFPNASLoudnessNormalization : ObjectiveC.NSObject {
+  @objc public var enabled: Swift.Bool
+  @objc public var version: Swift.String
+  @objc public var contentType: Swift.String
+  @objc public var contentEncoding: Swift.String
+  @objc public var dataString: Swift.String
+  @objc public var referDict: [Swift.String : Any] {
+    @objc get
+  }
+  @objc public init?(loudnessDict: [Swift.String : Any]?)
+  @objc deinit
+}
+@objc @objcMembers public class GFPNasNonLinearRemind : ObjectiveC.NSObject {
+  @objc public var targetID: Swift.String
+  @objc public var offset: Swift.Int
+  @objc public var duration: Foundation.TimeInterval
+  @objc public var isplayOnce: Swift.Bool
+  @objc public init?(nonLinearDict: [Swift.String : Any]?)
+  @objc deinit
+}
+extension NaverAdsServices.GFPVastCreativeExtension {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastViewbleImpression : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
+  @objc public var viewable: [Swift.String]
+  @objc public var notViewable: [Swift.String]
+  @objc public var viewUndeterminded: [Swift.String]
   @objc public var impressionId: Swift.String?
   @objc public func addImpressions(object: NaverAdsServices.GFPVastViewbleImpression?)
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAd : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastViewbleImpression {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAd : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var vastInline: NaverAdsServices.GFPVastInline?
   @objc public var wrapper: NaverAdsServices.GFPVastWrapper?
   @objc public var id: Swift.String?
@@ -778,8 +911,7 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var vastTrackingInfo: NaverAdsServices.GFPVastTrackingInfo?
   @objc public var vastControlInfo: NaverAdsServices.GFPNASVastControlInfo?
   @objc public func setUpVastControlInfo(skipInfo: NaverAdsServices.GFPVastAdSkipInfo?)
-  @objc public func setUpVastTrackingInfo(macroHelper: NaverAdsServices.GFPVastMacroHelper) throws
-  @objc public func setUpVastCompanionTrackingInfo(dataSource: (any NaverAdsServices.NASVastMacroDataSource)?) throws
+  @objc public func setUpVastTrackingInfo(macroHelper: NaverAdsServices.GFPVastMacroHelper)
   @objc public var mediaCreative: NaverAdsServices.GFPVastCreative? {
     @objc get
   }
@@ -789,7 +921,7 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var mediaFiles: NaverAdsServices.GFPVastMediaFiles? {
     @objc get
   }
-  @objc public var creativeExtensions: [NaverAdsServices.GFPVastExtension] {
+  @objc public var creativeExtensions: [NaverAdsServices.GFPVastCreativeExtension] {
     @objc get
   }
   @objc public var loudness: [NaverAdsServices.GFPNASLoudnessNormalization] {
@@ -807,64 +939,141 @@ extension NaverAdsServices.GFPAtomic where T : Swift.ExpressibleByNilLiteral {
   @objc public var companionAds: NaverAdsServices.GFPVastCompanionAds? {
     @objc get
   }
+  @objc public var ctaText: Swift.String? {
+    @objc get
+  }
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class GFPVastMezzanine : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastAd {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastMezzanine : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
+  public var deliveryType: Swift.String? {
+    get
+  }
   @objc deinit
+}
+extension NaverAdsServices.GFPVastMezzanine {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc public protocol GFPVastXMLPresentable {
+  @objc func toXMLString() -> Swift.String
+  @objc func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc public protocol GFPNASTrackingWrapper {
+  @objc var viewTrackings: [Swift.String] { get }
+  @objc var errorTrackings: [Swift.String] { get }
+  @objc var clickThrough: Swift.String { get }
+  @objc var clickTrackings: [Swift.String] { get }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVast : ObjectiveC.NSObject {
   @objc public var firstInlineAd: NaverAdsServices.GFPVastAd? {
     @objc get
   }
-  @objc public var error: [Swift.String]
+  @objc public var errors: [Swift.String]
   @objc public var ads: [NaverAdsServices.GFPVastAd]
   @objc public var version: Swift.String?
+  public var parseError: NaverAdsServices.GFPVastError?
   @objc public func mergeWithOther(vast: NaverAdsServices.GFPVast?, prevWrapperAd: NaverAdsServices.GFPVastAd?)
+  @objc public func fireAllVastErrors(macroHelper: NaverAdsServices.GFPVastMacroHelper)
+  @objc public func toXMLString() -> Swift.String
   @objc deinit
 }
 public enum GFPVastError : Swift.Error {
-  case emptyValue(Swift.String)
   case invalidXML(Swift.String)
-  case invalidValue(Swift.String)
+  case invalidVastValue(Swift.String)
+  case unsupportedVersion(Swift.String)
+  case mediaTrafficError(Swift.String)
+  case medialinearityMisMatch(Swift.String)
+  case mediaDurationMisMatch(Swift.String)
+  case mediaSizeMisMatch(Swift.String)
+  case mediaCategoryNotProvided(Swift.String)
+  case mediaCategoryPolicyViolation(Swift.String)
+  case mediaAdBreakShortened(Swift.String)
+  case wrapperNormalError(Swift.String)
   case wrapperNetworkError(Swift.String)
   case maxRedirectCountReached(Swift.String)
+  case wrapperNotResponseVast(Swift.String)
+  case wrapperInlineTimeOut(Swift.String)
+  case linearNormalError(Swift.String)
+  case mediaFileNotFounded(Swift.String)
+  case mediaFileTimeOut(Swift.String)
+  case mediaFileNotExisted(Swift.String)
+  case mediaFileNotSuppported(Swift.String)
+  case mezzanineNotFound(Swift.String)
+  case mezzanineTimeOut(Swift.String)
+  case interactiveCreativeFileNotRun(Swift.String)
+  case verificationNotRun(Swift.String)
+  case mezzanineNotSupported(Swift.String)
+  case nonlinearNormalError(Swift.String)
+  case nonlinearSizeMisMatch(Swift.String)
+  case nonlinearResourceUnAvailable(Swift.String)
+  case nonlinearResourceNotFound(Swift.String)
+  case companionNormalError(Swift.String)
+  case companionSizeMisMatch(Swift.String)
+  case companionRequiredNotShowed(Swift.String)
+  case companionResourceUnavailable(Swift.String)
+  case companionResourceNotSupported(Swift.String)
+  case undifinedError(Swift.String)
+  case normalVPAIDError(Swift.String)
+  case normalInteractiveCreativeError(Swift.String)
+  public func toErrorCode() -> Swift.Int
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClicks : ObjectiveC.NSObject {
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClicks : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var iconClickThrough: Swift.String?
-  @objc public var iconClickTracking: [NaverAdsServices.GFPVastImpression]?
+  @objc public var iconClickTracking: [NaverAdsServices.GFPVastImpression]
   @objc public var iconClickTrackingValues: [Swift.String]? {
     @objc get
   }
-  @objc public var IconClickFallbackImages: [NaverAdsServices.GFPVastIconClickFallbackImage]?
+  @objc public var iconClickFallbackImages: [NaverAdsServices.GFPVastIconClickFallbackImage]
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdvertiser : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastIconClicks {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdvertiser : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var name: Swift.String?
   @objc public var advertiserId: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAd : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastAdvertiser {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAd : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
   @objc public var iframeResource: NaverAdsServices.GFPVastBaseResource?
   @objc public var htmlResource: NaverAdsServices.GFPVastBaseResource?
   @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
-  @objc public var nonLinearClickThrough: Swift.String?
+  @objc public var nonLinearClickThroughValue: Swift.String? {
+    @objc get
+  }
   @objc public var nonLinearClickTracking: [NaverAdsServices.GFPVastImpression]
+  @objc public var nonLinearClickTrackingValues: [Swift.String]? {
+    @objc get
+  }
   @objc public var ID: Swift.String?
   @objc public var width: Swift.Float
   @objc public var height: Swift.Float
   public var expandedWidth: Swift.Float?
   public var expandedHeight: Swift.Float?
-  public var scaleable: Swift.Bool?
+  public var scalable: Swift.Bool?
   public var maintainAspectRatio: Swift.Bool?
   @objc public var apiFramework: Swift.String?
   @objc public var minSuggestedDuration: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPNASVastCompanionAd : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastNonLinearAd {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPNASVastCompanionAd : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var staticResources: [NaverAdsServices.GFPVastStaticResource]
-  @objc public var iframeResources: [Swift.String]
-  @objc public var htmlResources: [Swift.String]
+  @objc public var iframeResources: [NaverAdsServices.GFPVastBaseResource]
+  @objc public var htmlResources: [NaverAdsServices.GFPVastBaseResource]
   @objc public var adParameters: NaverAdsServices.GFPVastAdParameters?
   @objc public var altText: Swift.String?
   @objc public var companionClickThrough: Swift.String?
@@ -884,11 +1093,15 @@ public enum GFPVastError : Swift.Error {
     @objc get
   }
   @objc public var vastTrackingInfo: NaverAdsServices.GFPVastTrackingInfo?
-  @objc public func setUpVastCompanionTrackingInfo(dataSource: (any NaverAdsServices.NASVastMacroDataSource)?) throws
   @objc public func getBestScore(containerSize: CoreFoundation.CGSize) -> Swift.Float
+  public func isValidate(isWrapperObject: Swift.Bool) -> NaverAdsServices.GFPVastError?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastWrapper : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPNASVastCompanionAd {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastWrapper : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var impressions: [NaverAdsServices.GFPVastImpression]
   @objc public var vastAdTagURI: Swift.String?
   @objc public var adSystem: NaverAdsServices.GFPVastAdSystem?
@@ -903,10 +1116,32 @@ public enum GFPVastError : Swift.Error {
   public var fallbackOnNoAd: Swift.Bool?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdVerification : ObjectiveC.NSObject, NaverAdsServices.GFPOMIDInfoPresentable {
-  @objc public var javaScriptResources: [NaverAdsServices.GFPVastJavaScriptResource]?
-  @objc public var executableResources: [NaverAdsServices.GFPVastBaseAdverificationResource]?
-  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]?
+extension NaverAdsServices.GFPVastWrapper {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @objcMembers public class GFPVastAdSkipInfo : ObjectiveC.NSObject {
+  @objc final public let useVastSkip: Swift.Bool
+  @objc(initWithVastSkippable:data:) public init(vastSkippable: Swift.Bool, data: NaverAdsServices.GFPVastAdSkipData?)
+  @objc public var skipMin: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var skipAfter: Foundation.TimeInterval {
+    @objc get
+  }
+  @objc public var isValidSkip: Swift.Bool {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @objcMembers public class GFPVastAdSkipData : ObjectiveC.NSObject {
+  @objc public init(dictionary: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastAdVerification : ObjectiveC.NSObject, NaverAdsServices.GFPOMIDInfoPresentable, NaverAdsServices.GFPVastXMLPresentable {
+  @objc public var javaScriptResources: [NaverAdsServices.GFPVastJavaScriptResource]
+  @objc public var executableResources: [NaverAdsServices.GFPVastBaseAdverificationResource]
+  @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
   @objc public var vendor: Swift.String?
   @objc public var verificationUrl: Swift.String? {
     @objc get
@@ -918,8 +1153,15 @@ public enum GFPVastError : Swift.Error {
   @objc public func isValid() -> Swift.Bool
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastTracking : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastAdVerification {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastTracking : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var url: Swift.String?
+  @objc public var urlValue: Swift.String? {
+    @objc get
+  }
   @objc public var eventName: Swift.String {
     @objc get
   }
@@ -933,9 +1175,10 @@ public enum GFPVastError : Swift.Error {
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastTrackingInfo : ObjectiveC.NSObject {
   @objc public var duration: Foundation.TimeInterval
   @objc public var progressTrackingEvent: [NaverAdsServices.GFPProgressTrackingEvent]
-  @objc public var errorTrackings: [Swift.String]
   @objc public var videoClicks: NaverAdsServices.GFPVastVideoClicks?
   @objc public func setMacroDataSource(_ macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?)
+  @objc public func errorTrackings(errorCode: Swift.Int) -> [Swift.String]
+  @objc public func clickThroughUrl() -> Swift.String?
   @objc public func impressionEvent() -> [Swift.String]
   @objc public func clickTrackings() -> [Swift.String]
   @objc public func loaded() -> [Swift.String]
@@ -952,37 +1195,68 @@ public enum GFPVastError : Swift.Error {
   @objc public func rewind() -> [Swift.String]
   @objc public func otherAdInteraction() -> [Swift.String]
   @objc public func creativeView() -> [Swift.String]
+  @objc public func close() -> [Swift.String]
+  @objc public func closeLinear() -> [Swift.String]
+  @objc public func macroExchangedValue(originValue: Swift.String?) -> Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAds : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastTracking {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastNonLinearAds : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var nonlinear: [NaverAdsServices.GFPVastNonLinearAd]
   @objc public var trackingEvents: [NaverAdsServices.GFPVastTracking]
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCompanionAds : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastNonLinearAds {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastCompanionAds : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var companionAds: [NaverAdsServices.GFPNASVastCompanionAd]
   @objc public var required: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class GFPVastPricing : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastCompanionAds {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers public class GFPVastPricing : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastUniversalAdId : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastPricing {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastUniversalAdId : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var value: Swift.String?
   @objc public var idRegistry: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastImpression : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastUniversalAdId {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastImpression : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var value: Swift.String?
   @objc public var impressionId: Swift.String?
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClickFallbackImage : ObjectiveC.NSObject {
+extension NaverAdsServices.GFPVastImpression {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClickFallbackImage : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var altText: Swift.String?
   @objc public var staticResource: NaverAdsServices.GFPVastStaticResource?
   public var width: Swift.Float?
   public var height: Swift.Float?
   @objc deinit
+}
+extension NaverAdsServices.GFPVastIconClickFallbackImage {
+  @objc dynamic public func toXMLString() -> Swift.String
+  @objc dynamic public func toXMLStringWith(rootKey: Swift.String?) -> Swift.String
 }
 extension Swift.String {
   public func encodingSubStringFrom(_ aIndex: Swift.Int) -> Swift.String?
@@ -1147,15 +1421,18 @@ extension NaverAdsServices.GFPHexCodeType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPVastIconType : Swift.Equatable {}
 extension NaverAdsServices.GFPVastIconType : Swift.Hashable {}
 extension NaverAdsServices.GFPVastIconType : Swift.RawRepresentable {}
-extension NaverAdsServices.GFPExtensionCreativeType : Swift.Equatable {}
-extension NaverAdsServices.GFPExtensionCreativeType : Swift.Hashable {}
-extension NaverAdsServices.GFPExtensionCreativeType : Swift.RawRepresentable {}
-extension NaverAdsServices.GFPNASLoudnessMode : Swift.Equatable {}
-extension NaverAdsServices.GFPNASLoudnessMode : Swift.Hashable {}
-extension NaverAdsServices.GFPNASLoudnessMode : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPVastExtensionType : Swift.Equatable {}
+extension NaverAdsServices.GFPVastExtensionType : Swift.Hashable {}
+extension NaverAdsServices.GFPVastExtensionType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPVastRemindType : Swift.Equatable {}
 extension NaverAdsServices.GFPVastRemindType : Swift.Hashable {}
 extension NaverAdsServices.GFPVastRemindType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPVastResourceCode : Swift.Equatable {}
 extension NaverAdsServices.GFPVastResourceCode : Swift.Hashable {}
 extension NaverAdsServices.GFPVastResourceCode : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.Equatable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.Hashable {}
+extension NaverAdsServices.GFPExtensionCreativeType : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.Equatable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.Hashable {}
+extension NaverAdsServices.GFPNASLoudnessMode : Swift.RawRepresentable {}

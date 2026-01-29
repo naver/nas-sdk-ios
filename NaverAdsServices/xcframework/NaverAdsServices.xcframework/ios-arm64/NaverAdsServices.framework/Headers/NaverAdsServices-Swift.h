@@ -511,6 +511,7 @@ typedef SWIFT_ENUM(NSInteger, GFPNASLoudnessMode, open) {
   GFPNASLoudnessModeTransparent = 1,
 };
 
+@class GFPNASLoudnessProperties;
 
 SWIFT_CLASS("_TtC16NaverAdsServices27GFPNASLoudnessNormalization")
 @interface GFPNASLoudnessNormalization : NSObject
@@ -519,6 +520,8 @@ SWIFT_CLASS("_TtC16NaverAdsServices27GFPNASLoudnessNormalization")
 @property (nonatomic, copy) NSString * _Nonnull contentType;
 @property (nonatomic, copy) NSString * _Nonnull contentEncoding;
 @property (nonatomic, copy) NSString * _Nonnull dataString;
+@property (nonatomic, strong) GFPNASLoudnessProperties * _Nonnull properties;
+@property (nonatomic, copy) NSDictionary<NSString *, id> * _Nonnull propertiesDict;
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull referDict;
 - (nullable instancetype)initWithLoudnessDict:(NSDictionary<NSString *, id> * _Nullable)loudnessDict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -530,7 +533,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices24GFPNASLoudnessProperties")
 @interface GFPNASLoudnessProperties : NSObject
 @property (nonatomic) float targetLoudness;
 @property (nonatomic) enum GFPNASLoudnessMode mode;
-- (nonnull instancetype)initWithPropertyDict:(NSDictionary<NSString *, NSString *> * _Nonnull)propertyDict OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithPropertyDict:(NSDictionary<NSString *, id> * _Nonnull)propertyDict OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1274,6 +1277,46 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 - (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
+typedef SWIFT_ENUM(NSInteger, GFPVastErrorCode, open) {
+  GFPVastErrorCodeInvalidXML = 100,
+  GFPVastErrorCodeInvalidVastValue = 101,
+  GFPVastErrorCodeUnsupportedVersion = 102,
+  GFPVastErrorCodeMediaTrafficError = 200,
+  GFPVastErrorCodeMedialinearityMisMatch = 201,
+  GFPVastErrorCodeMediaDurationMisMatch = 202,
+  GFPVastErrorCodeMediaSizeMisMatch = 203,
+  GFPVastErrorCodeMediaCategoryNotProvided = 204,
+  GFPVastErrorCodeMediaCategoryPolicyViolation = 205,
+  GFPVastErrorCodeMediaAdBreakShortened = 206,
+  GFPVastErrorCodeWrapperNormalError = 300,
+  GFPVastErrorCodeWrapperNetworkError = 301,
+  GFPVastErrorCodeMaxRedirectCountReached = 302,
+  GFPVastErrorCodeWrapperNotResponseVast = 303,
+  GFPVastErrorCodeWrapperInlineTimeOut = 304,
+  GFPVastErrorCodeLinearNormalError = 400,
+  GFPVastErrorCodeMediaFileNotFounded = 401,
+  GFPVastErrorCodeMediaFileTimeOut = 402,
+  GFPVastErrorCodeMediaFileNotExisted = 403,
+  GFPVastErrorCodeMediaFileNotSuppported = 405,
+  GFPVastErrorCodeMezzanineNotFound = 406,
+  GFPVastErrorCodeMezzanineTimeOut = 407,
+  GFPVastErrorCodeInteractiveCreativeFileNotRun = 409,
+  GFPVastErrorCodeVerificationNotRun = 410,
+  GFPVastErrorCodeMezzanineNotSupported = 411,
+  GFPVastErrorCodeNonlinearNormalError = 500,
+  GFPVastErrorCodeNonlinearSizeMisMatch = 501,
+  GFPVastErrorCodeNonlinearResourceUnAvailable = 502,
+  GFPVastErrorCodeNonlinearResourceNotFound = 503,
+  GFPVastErrorCodeCompanionNormalError = 600,
+  GFPVastErrorCodeCompanionSizeMisMatch = 601,
+  GFPVastErrorCodeCompanionRequiredNotShowed = 602,
+  GFPVastErrorCodeCompanionResourceUnavailable = 603,
+  GFPVastErrorCodeCompanionResourceNotSupported = 604,
+  GFPVastErrorCodeUndifinedError = 900,
+  GFPVastErrorCodeNormalVPAIDError = 901,
+  GFPVastErrorCodeNormalInteractiveCreativeError = 902,
+};
+
 
 SWIFT_CLASS("_TtC16NaverAdsServices25GFPVastExecutableResource")
 @interface GFPVastExecutableResource : GFPVastBaseAdverificationResource
@@ -1790,7 +1833,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPVastMezzanine")
 @end
 
 
-/// Represents a parsed <code><NonLinearAd></code> element.
+/// Represents a parsed <code><NonLinear></code> element.
 SWIFT_CLASS("_TtC16NaverAdsServices18GFPVastNonLinearAd")
 @interface GFPVastNonLinearAd : NSObject <GFPVastXMLPresentable>
 /// @sub-elem

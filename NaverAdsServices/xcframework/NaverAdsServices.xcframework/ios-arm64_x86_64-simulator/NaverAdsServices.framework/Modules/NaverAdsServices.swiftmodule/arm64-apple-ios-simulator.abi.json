@@ -33594,7 +33594,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "Dictionary",
-                "printedName": "[Swift.String : Swift.String]",
+                "printedName": "[Swift.String : Any]",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -33604,9 +33604,8 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
                   }
                 ],
                 "usr": "s:SD"
@@ -33614,7 +33613,7 @@
             ],
             "declKind": "Constructor",
             "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessProperties(im)initWithPropertyDict:",
-            "mangledName": "$s16NaverAdsServices24GFPNASLoudnessPropertiesC12propertyDictACSDyS2SG_tcfc",
+            "mangledName": "$s16NaverAdsServices24GFPNASLoudnessPropertiesC12propertyDictACSDySSypG_tcfc",
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "AccessControl",
@@ -34187,6 +34186,229 @@
                 "declKind": "Accessor",
                 "usr": "s:16NaverAdsServices27GFPNASLoudnessNormalizationC10dataStringSSvM",
                 "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC10dataStringSSvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "properties",
+            "printedName": "properties",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GFPNASLoudnessProperties",
+                "printedName": "NaverAdsServices.GFPNASLoudnessProperties",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessProperties"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(py)properties",
+            "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC10propertiesAA0D10PropertiesCvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNASLoudnessProperties",
+                    "printedName": "NaverAdsServices.GFPNASLoudnessProperties",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessProperties"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(im)properties",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC10propertiesAA0D10PropertiesCvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPNASLoudnessProperties",
+                    "printedName": "NaverAdsServices.GFPNASLoudnessProperties",
+                    "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessProperties"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(im)setProperties:",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC10propertiesAA0D10PropertiesCvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices27GFPNASLoudnessNormalizationC10propertiesAA0D10PropertiesCvM",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC10propertiesAA0D10PropertiesCvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "propertiesDict",
+            "printedName": "propertiesDict",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(py)propertiesDict",
+            "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC14propertiesDictSDySSypGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(im)propertiesDict",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC14propertiesDictSDySSypGvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPNASLoudnessNormalization(im)setPropertiesDict:",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC14propertiesDictSDySSypGvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices27GFPNASLoudnessNormalizationC14propertiesDictSDySSypGvM",
+                "mangledName": "$s16NaverAdsServices27GFPNASLoudnessNormalizationC14propertiesDictSDySSypGvM",
                 "moduleName": "NaverAdsServices",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -38789,6 +39011,1670 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "GFPVastErrorCode",
+        "printedName": "GFPVastErrorCode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "invalidXML",
+            "printedName": "invalidXML",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeInvalidXML",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO10invalidXMLyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "invalidVastValue",
+            "printedName": "invalidVastValue",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeInvalidVastValue",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO16invalidVastValueyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "unsupportedVersion",
+            "printedName": "unsupportedVersion",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeUnsupportedVersion",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO18unsupportedVersionyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "mediaTrafficError",
+            "printedName": "mediaTrafficError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaTrafficError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO012mediaTrafficE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "medialinearityMisMatch",
+            "printedName": "medialinearityMisMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMedialinearityMisMatch",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO22medialinearityMisMatchyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 4
+          },
+          {
+            "kind": "Var",
+            "name": "mediaDurationMisMatch",
+            "printedName": "mediaDurationMisMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaDurationMisMatch",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO21mediaDurationMisMatchyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 5
+          },
+          {
+            "kind": "Var",
+            "name": "mediaSizeMisMatch",
+            "printedName": "mediaSizeMisMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaSizeMisMatch",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO17mediaSizeMisMatchyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 6
+          },
+          {
+            "kind": "Var",
+            "name": "mediaCategoryNotProvided",
+            "printedName": "mediaCategoryNotProvided",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaCategoryNotProvided",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO24mediaCategoryNotProvidedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 7
+          },
+          {
+            "kind": "Var",
+            "name": "mediaCategoryPolicyViolation",
+            "printedName": "mediaCategoryPolicyViolation",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaCategoryPolicyViolation",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO28mediaCategoryPolicyViolationyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 8
+          },
+          {
+            "kind": "Var",
+            "name": "mediaAdBreakShortened",
+            "printedName": "mediaAdBreakShortened",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaAdBreakShortened",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO21mediaAdBreakShortenedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 9
+          },
+          {
+            "kind": "Var",
+            "name": "wrapperNormalError",
+            "printedName": "wrapperNormalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeWrapperNormalError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO013wrapperNormalE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "wrapperNetworkError",
+            "printedName": "wrapperNetworkError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeWrapperNetworkError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO014wrapperNetworkE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
+          },
+          {
+            "kind": "Var",
+            "name": "maxRedirectCountReached",
+            "printedName": "maxRedirectCountReached",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMaxRedirectCountReached",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO23maxRedirectCountReachedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 12
+          },
+          {
+            "kind": "Var",
+            "name": "wrapperNotResponseVast",
+            "printedName": "wrapperNotResponseVast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeWrapperNotResponseVast",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO22wrapperNotResponseVastyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "wrapperInlineTimeOut",
+            "printedName": "wrapperInlineTimeOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeWrapperInlineTimeOut",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO20wrapperInlineTimeOutyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "linearNormalError",
+            "printedName": "linearNormalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeLinearNormalError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO012linearNormalE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "mediaFileNotFounded",
+            "printedName": "mediaFileNotFounded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaFileNotFounded",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO19mediaFileNotFoundedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
+            "name": "mediaFileTimeOut",
+            "printedName": "mediaFileTimeOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaFileTimeOut",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO16mediaFileTimeOutyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 17
+          },
+          {
+            "kind": "Var",
+            "name": "mediaFileNotExisted",
+            "printedName": "mediaFileNotExisted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaFileNotExisted",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO19mediaFileNotExistedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 18
+          },
+          {
+            "kind": "Var",
+            "name": "mediaFileNotSuppported",
+            "printedName": "mediaFileNotSuppported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMediaFileNotSuppported",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO22mediaFileNotSuppportedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 19
+          },
+          {
+            "kind": "Var",
+            "name": "mezzanineNotFound",
+            "printedName": "mezzanineNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMezzanineNotFound",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO17mezzanineNotFoundyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 20
+          },
+          {
+            "kind": "Var",
+            "name": "mezzanineTimeOut",
+            "printedName": "mezzanineTimeOut",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMezzanineTimeOut",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO16mezzanineTimeOutyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 21
+          },
+          {
+            "kind": "Var",
+            "name": "interactiveCreativeFileNotRun",
+            "printedName": "interactiveCreativeFileNotRun",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeInteractiveCreativeFileNotRun",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO29interactiveCreativeFileNotRunyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 22
+          },
+          {
+            "kind": "Var",
+            "name": "verificationNotRun",
+            "printedName": "verificationNotRun",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeVerificationNotRun",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO18verificationNotRunyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 23
+          },
+          {
+            "kind": "Var",
+            "name": "mezzanineNotSupported",
+            "printedName": "mezzanineNotSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeMezzanineNotSupported",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO21mezzanineNotSupportedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 24
+          },
+          {
+            "kind": "Var",
+            "name": "nonlinearNormalError",
+            "printedName": "nonlinearNormalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNonlinearNormalError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO015nonlinearNormalE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 25
+          },
+          {
+            "kind": "Var",
+            "name": "nonlinearSizeMisMatch",
+            "printedName": "nonlinearSizeMisMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNonlinearSizeMisMatch",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO21nonlinearSizeMisMatchyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 26
+          },
+          {
+            "kind": "Var",
+            "name": "nonlinearResourceUnAvailable",
+            "printedName": "nonlinearResourceUnAvailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNonlinearResourceUnAvailable",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO28nonlinearResourceUnAvailableyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 27
+          },
+          {
+            "kind": "Var",
+            "name": "nonlinearResourceNotFound",
+            "printedName": "nonlinearResourceNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNonlinearResourceNotFound",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO25nonlinearResourceNotFoundyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 28
+          },
+          {
+            "kind": "Var",
+            "name": "companionNormalError",
+            "printedName": "companionNormalError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeCompanionNormalError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO015companionNormalE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 29
+          },
+          {
+            "kind": "Var",
+            "name": "companionSizeMisMatch",
+            "printedName": "companionSizeMisMatch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeCompanionSizeMisMatch",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO21companionSizeMisMatchyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 30
+          },
+          {
+            "kind": "Var",
+            "name": "companionRequiredNotShowed",
+            "printedName": "companionRequiredNotShowed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeCompanionRequiredNotShowed",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO26companionRequiredNotShowedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 31
+          },
+          {
+            "kind": "Var",
+            "name": "companionResourceUnavailable",
+            "printedName": "companionResourceUnavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeCompanionResourceUnavailable",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO28companionResourceUnavailableyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 32
+          },
+          {
+            "kind": "Var",
+            "name": "companionResourceNotSupported",
+            "printedName": "companionResourceNotSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeCompanionResourceNotSupported",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO29companionResourceNotSupportedyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 33
+          },
+          {
+            "kind": "Var",
+            "name": "undifinedError",
+            "printedName": "undifinedError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeUndifinedError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO09undifinedE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "fixedbinaryorder": 34
+          },
+          {
+            "kind": "Var",
+            "name": "normalVPAIDError",
+            "printedName": "normalVPAIDError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNormalVPAIDError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO16normalVPAIDErroryA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 35
+          },
+          {
+            "kind": "Var",
+            "name": "normalInteractiveCreativeError",
+            "printedName": "normalInteractiveCreativeError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPVastErrorCode.Type) -> NaverAdsServices.GFPVastErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPVastErrorCode",
+                        "printedName": "NaverAdsServices.GFPVastErrorCode",
+                        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode@GFPVastErrorCodeNormalInteractiveCreativeError",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO025normalInteractiveCreativeE0yA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 36
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPVastErrorCode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPVastErrorCode",
+                    "printedName": "NaverAdsServices.GFPVastErrorCode",
+                    "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices16GFPVastErrorCodeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO8rawValueACSgSi_tcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices16GFPVastErrorCodeO8rawValueSivp",
+            "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO8rawValueSivp",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices16GFPVastErrorCodeO8rawValueSivg",
+                "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO8rawValueSivg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NaverAdsServices@E@GFPVastErrorCode",
+        "mangledName": "$s16NaverAdsServices16GFPVastErrorCodeO",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "GFPVastError",
         "printedName": "GFPVastError",
         "children": [
@@ -40774,6 +42660,200 @@
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "message",
+            "printedName": "message",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices12GFPVastErrorO7messageSSvp",
+            "mangledName": "$s16NaverAdsServices12GFPVastErrorO7messageSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices12GFPVastErrorO7messageSSvg",
+                "mangledName": "$s16NaverAdsServices12GFPVastErrorO7messageSSvg",
+                "moduleName": "NaverAdsServices",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorDomain",
+            "printedName": "errorDomain",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices12GFPVastErrorO11errorDomainSSvpZ",
+            "mangledName": "$s16NaverAdsServices12GFPVastErrorO11errorDomainSSvpZ",
+            "moduleName": "NaverAdsServices",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices12GFPVastErrorO11errorDomainSSvgZ",
+                "mangledName": "$s16NaverAdsServices12GFPVastErrorO11errorDomainSSvgZ",
+                "moduleName": "NaverAdsServices",
+                "static": true,
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorCode",
+            "printedName": "errorCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices12GFPVastErrorO9errorCodeSivp",
+            "mangledName": "$s16NaverAdsServices12GFPVastErrorO9errorCodeSivp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices12GFPVastErrorO9errorCodeSivg",
+                "mangledName": "$s16NaverAdsServices12GFPVastErrorO9errorCodeSivg",
+                "moduleName": "NaverAdsServices",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "errorUserInfo",
+            "printedName": "errorUserInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices12GFPVastErrorO13errorUserInfoSDySSypGvp",
+            "mangledName": "$s16NaverAdsServices12GFPVastErrorO13errorUserInfoSDySSypGvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices12GFPVastErrorO13errorUserInfoSDySSypGvg",
+                "mangledName": "$s16NaverAdsServices12GFPVastErrorO13errorUserInfoSDySSypGvg",
+                "moduleName": "NaverAdsServices",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -40811,6 +42891,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomNSError",
+            "printedName": "CustomNSError",
+            "usr": "s:10Foundation13CustomNSErrorP",
+            "mangledName": "$s10Foundation13CustomNSErrorP"
           }
         ]
       },
@@ -59311,6 +61398,559 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "Dictionary",
+        "printedName": "Dictionary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "stringValue",
+            "printedName": "stringValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE11stringValue6forKeySSSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE11stringValue6forKeySSSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "intValue",
+            "printedName": "intValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE8intValue6forKeySiSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE8intValue6forKeySiSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "floatValue",
+            "printedName": "floatValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Float?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Float",
+                    "printedName": "Swift.Float",
+                    "usr": "s:Sf"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE10floatValue6forKeySfSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE10floatValue6forKeySfSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "doubleValue",
+            "printedName": "doubleValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE11doubleValue6forKeySdSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE11doubleValue6forKeySdSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "boolValue",
+            "printedName": "boolValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE9boolValue6forKeySbSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE9boolValue6forKeySbSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "dictionaryValue",
+            "printedName": "dictionaryValue(forKey:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:SD16NaverAdsServicesSSRszypRs_rlE15dictionaryValue6forKeySDySSypGSgSS_tF",
+            "mangledName": "$sSD16NaverAdsServicesSSRszypRs_rlE15dictionaryValue6forKeySDySSypGSgSS_tF",
+            "moduleName": "NaverAdsServices",
+            "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 == Swift.String, τ_0_1 == Any>",
+            "sugared_genericSig": "<Key, Value where Key == Swift.String, Value == Any>",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:SD",
+        "mangledName": "$sSD",
+        "moduleName": "Swift",
+        "genericSig": "<τ_0_0, τ_0_1 where τ_0_0 : Swift.Hashable>",
+        "sugared_genericSig": "<Key, Value where Key : Swift.Hashable>",
+        "declAttributes": [
+          "EagerMove",
+          "Frozen"
+        ],
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sequence",
+            "printedName": "Sequence",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:ST",
+            "mangledName": "$sST"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Collection",
+            "printedName": "Collection",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Element",
+                "printedName": "Element",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(key: τ_0_0, value: τ_0_1)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_0"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GenericTypeParam",
+                        "printedName": "τ_0_1"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Index",
+                "printedName": "Index",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Index",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Index",
+                    "usr": "s:SD5IndexV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Iterator",
+                "printedName": "Iterator",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Iterator",
+                    "printedName": "Swift.Dictionary<τ_0_0, τ_0_1>.Iterator",
+                    "usr": "s:SD8IteratorV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "SubSequence",
+                "printedName": "SubSequence",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Slice",
+                    "printedName": "Swift.Slice<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:s5SliceV"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Indices",
+                "printedName": "Indices",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DefaultIndices",
+                    "printedName": "Swift.DefaultIndices<[τ_0_0 : τ_0_1]>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[τ_0_0 : τ_0_1]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_0"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GenericTypeParam",
+                            "printedName": "τ_0_1"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:SI"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sl",
+            "mangledName": "$sSl"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ExpressibleByDictionaryLiteral",
+            "printedName": "ExpressibleByDictionaryLiteral",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Key",
+                "printedName": "Key",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_0"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeWitness",
+                "name": "Value",
+                "printedName": "Value",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GenericTypeParam",
+                    "printedName": "τ_0_1"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s30ExpressibleByDictionaryLiteralP",
+            "mangledName": "$ss30ExpressibleByDictionaryLiteralP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_HasCustomAnyHashableRepresentation",
+            "printedName": "_HasCustomAnyHashableRepresentation",
+            "usr": "s:s35_HasCustomAnyHashableRepresentationP",
+            "mangledName": "$ss35_HasCustomAnyHashableRepresentationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDictionary",
+                    "printedName": "Foundation.NSDictionary",
+                    "usr": "c:objc(cs)NSDictionary"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "String",
         "printedName": "String",
         "children": [
@@ -61657,6 +64297,265 @@
       "value": "\"streaming\""
     },
     {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 362,
+      "length": 3,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 394,
+      "length": 3,
+      "value": "101"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 428,
+      "length": 3,
+      "value": "102"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 487,
+      "length": 3,
+      "value": "200"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 525,
+      "length": 3,
+      "value": "201"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 562,
+      "length": 3,
+      "value": "202"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 595,
+      "length": 3,
+      "value": "203"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 635,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 679,
+      "length": 3,
+      "value": "205"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 716,
+      "length": 3,
+      "value": "206"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 766,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 801,
+      "length": 3,
+      "value": "301"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 840,
+      "length": 3,
+      "value": "302"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 878,
+      "length": 3,
+      "value": "303"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 914,
+      "length": 3,
+      "value": "304"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 970,
+      "length": 3,
+      "value": "400"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1005,
+      "length": 3,
+      "value": "401"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1037,
+      "length": 3,
+      "value": "402"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1072,
+      "length": 3,
+      "value": "403"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1110,
+      "length": 3,
+      "value": "405"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1143,
+      "length": 3,
+      "value": "406"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1175,
+      "length": 3,
+      "value": "407"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1220,
+      "length": 3,
+      "value": "409"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1254,
+      "length": 3,
+      "value": "410"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1291,
+      "length": 3,
+      "value": "411"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1346,
+      "length": 3,
+      "value": "500"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1383,
+      "length": 3,
+      "value": "501"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1427,
+      "length": 3,
+      "value": "502"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1468,
+      "length": 3,
+      "value": "503"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1522,
+      "length": 3,
+      "value": "600"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1559,
+      "length": 3,
+      "value": "601"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1601,
+      "length": 3,
+      "value": "602"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1645,
+      "length": 3,
+      "value": "603"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1690,
+      "length": 3,
+      "value": "604"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1732,
+      "length": 3,
+      "value": "900"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1764,
+      "length": 3,
+      "value": "901"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastError.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1810,
+      "length": 3,
+      "value": "902"
+    },
+    {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastCompanionAd.swift",
       "kind": "StringLiteral",
       "offset": 339,
@@ -61676,6 +64575,13 @@
       "offset": 413,
       "length": 12,
       "value": "\"concurrent\""
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/Model\/GFPVastWrapper.swift",
+      "kind": "BooleanLiteral",
+      "offset": 786,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/GFPVastAdSkipInfo.swift",

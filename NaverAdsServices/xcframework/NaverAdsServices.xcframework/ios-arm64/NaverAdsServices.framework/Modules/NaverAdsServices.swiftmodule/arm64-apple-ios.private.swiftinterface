@@ -363,6 +363,14 @@ extension NaverAdsServices.GFPLog {
   @objc(boolWithKey:) dynamic public func bool(key: Any?) -> Swift.Bool
   @objc(isEmpty:) dynamic public class func isEmpty(dict: Foundation.NSDictionary?) -> Swift.Bool
 }
+extension Swift.Dictionary where Key == Swift.String, Value == Any {
+  public func stringValue(forKey key: Swift.String) -> Swift.String?
+  public func intValue(forKey key: Swift.String) -> Swift.Int?
+  public func floatValue(forKey key: Swift.String) -> Swift.Float?
+  public func doubleValue(forKey key: Swift.String) -> Swift.Double?
+  public func boolValue(forKey key: Swift.String) -> Swift.Bool?
+  public func dictionaryValue(forKey key: Swift.String) -> [Swift.String : Any]?
+}
 @objc public protocol GFPErrorCodeProviderDelegate {
   @objc func errorCodeNameDict() -> [Swift.Int : Swift.String]
   @objc func errorDomain() -> Swift.String
@@ -857,7 +865,7 @@ extension NaverAdsServices.GFPVastIcon {
 @objc @objcMembers public class GFPNASLoudnessProperties : ObjectiveC.NSObject {
   @objc public var targetLoudness: Swift.Float
   @objc public var mode: NaverAdsServices.GFPNASLoudnessMode
-  @objc public init(propertyDict: [Swift.String : Swift.String])
+  @objc public init(propertyDict: [Swift.String : Any])
   @objc deinit
 }
 @objc @objcMembers public class GFPNASLoudnessNormalization : ObjectiveC.NSObject {
@@ -866,6 +874,8 @@ extension NaverAdsServices.GFPVastIcon {
   @objc public var contentType: Swift.String
   @objc public var contentEncoding: Swift.String
   @objc public var dataString: Swift.String
+  @objc public var properties: NaverAdsServices.GFPNASLoudnessProperties
+  @objc public var propertiesDict: [Swift.String : Any]
   @objc public var referDict: [Swift.String : Any] {
     @objc get
   }
@@ -981,6 +991,50 @@ extension NaverAdsServices.GFPVastMezzanine {
   @objc public func toXMLString() -> Swift.String
   @objc deinit
 }
+@objc public enum GFPVastErrorCode : Swift.Int {
+  case invalidXML = 100
+  case invalidVastValue = 101
+  case unsupportedVersion = 102
+  case mediaTrafficError = 200
+  case medialinearityMisMatch = 201
+  case mediaDurationMisMatch = 202
+  case mediaSizeMisMatch = 203
+  case mediaCategoryNotProvided = 204
+  case mediaCategoryPolicyViolation = 205
+  case mediaAdBreakShortened = 206
+  case wrapperNormalError = 300
+  case wrapperNetworkError = 301
+  case maxRedirectCountReached = 302
+  case wrapperNotResponseVast = 303
+  case wrapperInlineTimeOut = 304
+  case linearNormalError = 400
+  case mediaFileNotFounded = 401
+  case mediaFileTimeOut = 402
+  case mediaFileNotExisted = 403
+  case mediaFileNotSuppported = 405
+  case mezzanineNotFound = 406
+  case mezzanineTimeOut = 407
+  case interactiveCreativeFileNotRun = 409
+  case verificationNotRun = 410
+  case mezzanineNotSupported = 411
+  case nonlinearNormalError = 500
+  case nonlinearSizeMisMatch = 501
+  case nonlinearResourceUnAvailable = 502
+  case nonlinearResourceNotFound = 503
+  case companionNormalError = 600
+  case companionSizeMisMatch = 601
+  case companionRequiredNotShowed = 602
+  case companionResourceUnavailable = 603
+  case companionResourceNotSupported = 604
+  case undifinedError = 900
+  case normalVPAIDError = 901
+  case normalInteractiveCreativeError = 902
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum GFPVastError : Swift.Error {
   case invalidXML(Swift.String)
   case invalidVastValue(Swift.String)
@@ -1020,6 +1074,20 @@ public enum GFPVastError : Swift.Error {
   case normalVPAIDError(Swift.String)
   case normalInteractiveCreativeError(Swift.String)
   public func toErrorCode() -> Swift.Int
+  public var message: Swift.String {
+    get
+  }
+}
+extension NaverAdsServices.GFPVastError : Foundation.CustomNSError {
+  public static var errorDomain: Swift.String {
+    get
+  }
+  public var errorCode: Swift.Int {
+    get
+  }
+  public var errorUserInfo: [Swift.String : Any] {
+    get
+  }
 }
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPVastIconClicks : ObjectiveC.NSObject, NaverAdsServices.GFPVastXMLPresentable {
   @objc public var iconClickThrough: Swift.String?
@@ -1436,3 +1504,6 @@ extension NaverAdsServices.GFPExtensionCreativeType : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPNASLoudnessMode : Swift.Equatable {}
 extension NaverAdsServices.GFPNASLoudnessMode : Swift.Hashable {}
 extension NaverAdsServices.GFPNASLoudnessMode : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPVastErrorCode : Swift.Equatable {}
+extension NaverAdsServices.GFPVastErrorCode : Swift.Hashable {}
+extension NaverAdsServices.GFPVastErrorCode : Swift.RawRepresentable {}

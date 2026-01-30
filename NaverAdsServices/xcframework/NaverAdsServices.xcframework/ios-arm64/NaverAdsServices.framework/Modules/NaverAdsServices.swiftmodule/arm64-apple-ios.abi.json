@@ -1007,8 +1007,8 @@
           },
           {
             "kind": "Var",
-            "name": "APIFRAMEWORK",
-            "printedName": "APIFRAMEWORK",
+            "name": "APIFRAMEWORKS",
+            "printedName": "APIFRAMEWORKS",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -1038,8 +1038,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:16NaverAdsServices12NASVASTMacroO12APIFRAMEWORKyA2CmF",
-            "mangledName": "$s16NaverAdsServices12NASVASTMacroO12APIFRAMEWORKyA2CmF",
+            "usr": "s:16NaverAdsServices12NASVASTMacroO13APIFRAMEWORKSyA2CmF",
+            "mangledName": "$s16NaverAdsServices12NASVASTMacroO13APIFRAMEWORKSyA2CmF",
             "moduleName": "NaverAdsServices",
             "declAttributes": [
               "RawDocComment"
@@ -63305,28 +63305,28 @@
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/GFPVastMacroHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1364,
-      "length": 14,
-      "value": "\"APIFRAMEWORK\""
+      "offset": 1365,
+      "length": 15,
+      "value": "\"APIFRAMEWORKS\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/GFPVastMacroHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1402,
+      "offset": 1404,
       "length": 13,
       "value": "\"OMIDPARTNER\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/GFPVastMacroHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1441,
+      "offset": 1443,
       "length": 15,
       "value": "\"BREAKPOSITION\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/VAST\/GFPVastMacroHelper.swift",
       "kind": "StringLiteral",
-      "offset": 1478,
+      "offset": 1480,
       "length": 11,
       "value": "\"APPBUNDLE\""
     },

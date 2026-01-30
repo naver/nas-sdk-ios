@@ -46,7 +46,7 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
   case PODSEQUENCE
   case ADTYPE
   case ERRORCODE
-  case APIFRAMEWORK
+  case APIFRAMEWORKS
   case OMIDPARTNER
   case BREAKPOSITION
   case APPBUNDLE

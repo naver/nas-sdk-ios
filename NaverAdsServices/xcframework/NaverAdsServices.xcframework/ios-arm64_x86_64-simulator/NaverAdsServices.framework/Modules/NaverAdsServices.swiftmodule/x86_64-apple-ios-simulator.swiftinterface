@@ -496,7 +496,8 @@ extension NaverAdsServices.GFPLocationUtils : CoreLocation.CLLocationManagerDele
   @objc weak public var delegate: (any NaverAdsServices.GFPVastLoaderDelegate)?
   @objc weak public var macroDataSource: (any NaverAdsServices.NASVastMacroDataSource)?
   @objc public init(maxDirect: Swift.Int, vastTimeout: CoreFoundation.CFTimeInterval, skipInfo: NaverAdsServices.GFPVastAdSkipInfo?, dataSource: (any NaverAdsServices.NASVastMacroDataSource)?)
-  @objc public func loadWith(vastString: Swift.String)
+  @objc(loadWithVastString:) public func loadWith(vastString: Swift.String)
+  @objc(loadWithVastString:saveToDisk:) public func loadWith(vastString: Swift.String, saveToDisk: Swift.Bool)
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPSizeUtils : ObjectiveC.NSObject {
@@ -1396,6 +1397,19 @@ extension Swift.String {
 }
 public typealias GFPFileSaveCompletionHandler = (Swift.Bool, (any Swift.Error)?) -> Swift.Void
 public typealias GFPFileLoadCompletionHandler = (Swift.Bool, Foundation.Data?, (any Swift.Error)?) -> Swift.Void
+@objc public enum GFPFileManagerDataType : Swift.Int {
+  case unknown = 0
+  case image = 1
+  case vast = 2
+  public var prefix: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @objc extension Foundation.Timer {
   @objc public static let kAttachedCheckDefaultFrequency: Swift.Double
   @objc dynamic public class func scheduledTimer(timeInterval: Foundation.TimeInterval, block: @escaping () -> Swift.Void, repeats: Swift.Bool) -> Foundation.Timer
@@ -1507,3 +1521,6 @@ extension NaverAdsServices.GFPNASLoudnessMode : Swift.RawRepresentable {}
 extension NaverAdsServices.GFPVastErrorCode : Swift.Equatable {}
 extension NaverAdsServices.GFPVastErrorCode : Swift.Hashable {}
 extension NaverAdsServices.GFPVastErrorCode : Swift.RawRepresentable {}
+extension NaverAdsServices.GFPFileManagerDataType : Swift.Equatable {}
+extension NaverAdsServices.GFPFileManagerDataType : Swift.Hashable {}
+extension NaverAdsServices.GFPFileManagerDataType : Swift.RawRepresentable {}

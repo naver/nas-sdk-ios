@@ -13483,6 +13483,41 @@
             "usr": "c:@M@NaverAdsServices@objc(cs)GFPVastLoader(im)loadWithVastString:",
             "mangledName": "$s16NaverAdsServices13GFPVastLoaderC8loadWith10vastStringySS_tF",
             "moduleName": "NaverAdsServices",
+            "objc_name": "loadWithVastString:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "loadWith",
+            "printedName": "loadWith(vastString:saveToDisk:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPVastLoader(im)loadWithVastString:saveToDisk:",
+            "mangledName": "$s16NaverAdsServices13GFPVastLoaderC8loadWith10vastString10saveToDiskySS_SbtF",
+            "moduleName": "NaverAdsServices",
+            "objc_name": "loadWithVastString:saveToDisk:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
@@ -57228,6 +57263,309 @@
         "moduleName": "NaverAdsServices"
       },
       {
+        "kind": "TypeDecl",
+        "name": "GFPFileManagerDataType",
+        "printedName": "GFPFileManagerDataType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPFileManagerDataType.Type) -> NaverAdsServices.GFPFileManagerDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPFileManagerDataType",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPFileManagerDataType",
+                        "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                        "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType@GFPFileManagerDataTypeUnknown",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO7unknownyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "image",
+            "printedName": "image",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPFileManagerDataType.Type) -> NaverAdsServices.GFPFileManagerDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPFileManagerDataType",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPFileManagerDataType",
+                        "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                        "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType@GFPFileManagerDataTypeImage",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO5imageyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "vast",
+            "printedName": "vast",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NaverAdsServices.GFPFileManagerDataType.Type) -> NaverAdsServices.GFPFileManagerDataType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPFileManagerDataType",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "GFPFileManagerDataType",
+                        "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                        "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType@GFPFileManagerDataTypeVast",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO4vastyA2CmF",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "prefix",
+            "printedName": "prefix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices22GFPFileManagerDataTypeO6prefixSSvp",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO6prefixSSvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices22GFPFileManagerDataTypeO6prefixSSvg",
+                "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO6prefixSSvg",
+                "moduleName": "NaverAdsServices",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "NaverAdsServices.GFPFileManagerDataType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "GFPFileManagerDataType",
+                    "printedName": "NaverAdsServices.GFPFileManagerDataType",
+                    "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:16NaverAdsServices22GFPFileManagerDataTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:16NaverAdsServices22GFPFileManagerDataTypeO8rawValueSivp",
+            "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO8rawValueSivp",
+            "moduleName": "NaverAdsServices",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices22GFPFileManagerDataTypeO8rawValueSivg",
+                "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO8rawValueSivg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@NaverAdsServices@E@GFPFileManagerDataType",
+        "mangledName": "$s16NaverAdsServices22GFPFileManagerDataTypeO",
+        "moduleName": "NaverAdsServices",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -64648,29 +64986,43 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
-      "kind": "StringLiteral",
+      "kind": "IntegerLiteral",
       "offset": 505,
-      "length": 5,
-      "value": "\"GFP\""
+      "length": 1,
+      "value": "0"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 558,
+      "offset": 524,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 542,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1281,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 604,
+      "offset": 1327,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPFileManagerUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
+      "offset": 1368,
       "length": 2,
       "value": "64"
     },

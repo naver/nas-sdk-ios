@@ -456,6 +456,12 @@ typedef SWIFT_ENUM(NSInteger, GFPExtensionCreativeType, open) {
   GFPExtensionCreativeTypeLoudness = 2,
 };
 
+typedef SWIFT_ENUM(NSInteger, GFPFileManagerDataType, open) {
+  GFPFileManagerDataTypeUnknown = 0,
+  GFPFileManagerDataTypeImage = 1,
+  GFPFileManagerDataTypeVast = 2,
+};
+
 typedef SWIFT_ENUM(NSInteger, GFPHexCodeType, open) {
   GFPHexCodeTypeRgba = 0,
   GFPHexCodeTypeArgb = 1,
@@ -1709,6 +1715,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kVast
 @property (nonatomic, weak) id <NASVastMacroDataSource> _Nullable macroDataSource;
 - (nonnull instancetype)initWithMaxDirect:(NSInteger)maxDirect vastTimeout:(CFTimeInterval)vastTimeout skipInfo:(GFPVastAdSkipInfo * _Nullable)skipInfo dataSource:(id <NASVastMacroDataSource> _Nullable)dataSource OBJC_DESIGNATED_INITIALIZER;
 - (void)loadWithVastString:(NSString * _Nonnull)vastString;
+- (void)loadWithVastString:(NSString * _Nonnull)vastString saveToDisk:(BOOL)saveToDisk;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2841,6 +2848,12 @@ typedef SWIFT_ENUM(NSInteger, GFPExtensionCreativeType, open) {
   GFPExtensionCreativeTypeLoudness = 2,
 };
 
+typedef SWIFT_ENUM(NSInteger, GFPFileManagerDataType, open) {
+  GFPFileManagerDataTypeUnknown = 0,
+  GFPFileManagerDataTypeImage = 1,
+  GFPFileManagerDataTypeVast = 2,
+};
+
 typedef SWIFT_ENUM(NSInteger, GFPHexCodeType, open) {
   GFPHexCodeTypeRgba = 0,
   GFPHexCodeTypeArgb = 1,
@@ -4094,6 +4107,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval kVast
 @property (nonatomic, weak) id <NASVastMacroDataSource> _Nullable macroDataSource;
 - (nonnull instancetype)initWithMaxDirect:(NSInteger)maxDirect vastTimeout:(CFTimeInterval)vastTimeout skipInfo:(GFPVastAdSkipInfo * _Nullable)skipInfo dataSource:(id <NASVastMacroDataSource> _Nullable)dataSource OBJC_DESIGNATED_INITIALIZER;
 - (void)loadWithVastString:(NSString * _Nonnull)vastString;
+- (void)loadWithVastString:(NSString * _Nonnull)vastString saveToDisk:(BOOL)saveToDisk;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

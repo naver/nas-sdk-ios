@@ -10311,6 +10311,99 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "accuracy",
+            "printedName": "accuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceLocInfo(py)accuracy",
+            "mangledName": "$s16NaverAdsServices16GFPDeviceLocInfoC8accuracySdvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceLocInfo(im)accuracy",
+                "mangledName": "$s16NaverAdsServices16GFPDeviceLocInfoC8accuracySdvg",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPDeviceLocInfo(im)setAccuracy:",
+                "mangledName": "$s16NaverAdsServices16GFPDeviceLocInfoC8accuracySdvs",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices16GFPDeviceLocInfoC8accuracySdvM",
+                "mangledName": "$s16NaverAdsServices16GFPDeviceLocInfoC8accuracySdvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -10495,6 +10588,94 @@
                   "ObjC"
                 ],
                 "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "desiredAccuracy",
+            "printedName": "desiredAccuracy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@NaverAdsServices@objc(cs)GFPLocationUtils(py)desiredAccuracy",
+            "mangledName": "$s16NaverAdsServices16GFPLocationUtilsC15desiredAccuracySdvp",
+            "moduleName": "NaverAdsServices",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPLocationUtils(im)desiredAccuracy",
+                "mangledName": "$s16NaverAdsServices16GFPLocationUtilsC15desiredAccuracySdvg",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@NaverAdsServices@objc(cs)GFPLocationUtils(im)setDesiredAccuracy:",
+                "mangledName": "$s16NaverAdsServices16GFPLocationUtilsC15desiredAccuracySdvs",
+                "moduleName": "NaverAdsServices",
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:16NaverAdsServices16GFPLocationUtilsC15desiredAccuracySdvM",
+                "mangledName": "$s16NaverAdsServices16GFPLocationUtilsC15desiredAccuracySdvM",
+                "moduleName": "NaverAdsServices",
+                "implicit": true,
+                "accessorKind": "_modify"
               }
             ]
           },
@@ -63971,29 +64152,36 @@
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
+      "kind": "IntegerLiteral",
+      "offset": 597,
+      "length": 2,
+      "value": "-1"
+    },
+    {
+      "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 1245,
+      "offset": 1520,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1144,
+      "offset": 1419,
       "length": 70,
       "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.isInitialized\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1553,
       "length": 76,
       "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.authorizationStatus\""
     },
     {
       "filePath": "\/Users\/user\/actions-ios-runner\/_work\/nas-sdk-ios\/nas-sdk-ios\/NaverAdsServices\/Utils\/GFPLocationUtils.swift",
       "kind": "StringLiteral",
-      "offset": 1498,
+      "offset": 1773,
       "length": 72,
       "value": "\"com.navercorp.da.gfp.NaverAdsServices.GFPLocationUtils.currentLocation\""
     },

@@ -375,6 +375,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 @interface GFPDeviceLocInfo : NSObject
 @property (nonatomic, copy) NSString * _Nonnull latitude;
 @property (nonatomic, copy) NSString * _Nonnull longitude;
+@property (nonatomic) double accuracy;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -475,6 +476,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationU
 + (GFPLocationUtils * _Nonnull)sharedUtils SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic) CLLocationAccuracy desiredAccuracy;
 - (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 
@@ -2767,6 +2769,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 @interface GFPDeviceLocInfo : NSObject
 @property (nonatomic, copy) NSString * _Nonnull latitude;
 @property (nonatomic, copy) NSString * _Nonnull longitude;
+@property (nonatomic) double accuracy;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2867,6 +2870,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLocationU
 + (GFPLocationUtils * _Nonnull)sharedUtils SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@property (nonatomic) CLLocationAccuracy desiredAccuracy;
 - (GFPDeviceLocInfo * _Nullable)getLocationInfo SWIFT_WARN_UNUSED_RESULT;
 @end
 

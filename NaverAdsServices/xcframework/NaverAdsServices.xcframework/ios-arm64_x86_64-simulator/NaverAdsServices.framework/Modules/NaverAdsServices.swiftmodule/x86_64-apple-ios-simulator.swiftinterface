@@ -392,11 +392,16 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
 @objc @_hasMissingDesignatedInitializers @objcMembers public class GFPDeviceLocInfo : ObjectiveC.NSObject {
   @objc public var latitude: Swift.String
   @objc public var longitude: Swift.String
+  @objc public var accuracy: Swift.Double
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPLocationUtils : ObjectiveC.NSObject {
   @objc public static func setup()
   @objc public static let sharedUtils: NaverAdsServices.GFPLocationUtils
+  @objc public var desiredAccuracy: CoreLocation.CLLocationAccuracy {
+    @objc get
+    @objc set
+  }
   @objc public func getLocationInfo() -> NaverAdsServices.GFPDeviceLocInfo?
   @objc deinit
 }

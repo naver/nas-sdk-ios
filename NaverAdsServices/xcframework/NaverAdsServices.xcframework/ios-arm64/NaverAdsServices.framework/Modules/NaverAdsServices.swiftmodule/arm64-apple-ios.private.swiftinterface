@@ -393,6 +393,7 @@ extension Swift.Dictionary where Key == Swift.String, Value == Any {
   @objc public var latitude: Swift.String
   @objc public var longitude: Swift.String
   @objc public var accuracy: Swift.Double
+  @objc public var timestamp: Swift.Double
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPLocationUtils : ObjectiveC.NSObject {

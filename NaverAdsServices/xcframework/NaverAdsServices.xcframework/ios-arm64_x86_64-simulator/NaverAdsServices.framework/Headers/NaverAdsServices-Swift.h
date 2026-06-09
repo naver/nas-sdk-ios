@@ -376,6 +376,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 @property (nonatomic, copy) NSString * _Nonnull latitude;
 @property (nonatomic, copy) NSString * _Nonnull longitude;
 @property (nonatomic) double accuracy;
+@property (nonatomic) NSTimeInterval timestamp;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -2770,6 +2771,7 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 @property (nonatomic, copy) NSString * _Nonnull latitude;
 @property (nonatomic, copy) NSString * _Nonnull longitude;
 @property (nonatomic) double accuracy;
+@property (nonatomic) NSTimeInterval timestamp;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

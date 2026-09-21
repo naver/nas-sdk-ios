@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NaverAdsServices
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NaverAdsServices
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import AdSupport
 import CoreLocation
@@ -253,6 +253,7 @@ public enum NASVASTMacro : Swift.String, Swift.CaseIterable {
 }
 public typealias ImageFullCompletionHandler = (UIKit.UIImage?, Foundation.URL?, Foundation.NSError?) -> Swift.Void
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class GFPDownloadCache : ObjectiveC.NSObject {
+  @objc public static let requestDidCompleteNotification: Foundation.Notification.Name
   @objc public static let sharedInstance: NaverAdsServices.GFPDownloadCache
   @objc public func updateDataWithURL(_ url: Foundation.URL)
   @objc public func imageWithURL(_ url: Foundation.URL) -> UIKit.UIImage?
@@ -329,6 +330,7 @@ extension NaverAdsServices.GFPLogLevel : Swift.Comparable {
     @objc get
   }
   @objc(logLevelDescWith:) public static func logLevelDescription(logLevel: NaverAdsServices.GFPLogLevel) -> Swift.String
+  @objc(neloLevelStringWith:) public static func neloLevelString(logLevel: NaverAdsServices.GFPLogLevel) -> Swift.String
   @objc(logMessage:method:logLevel:debugMode:) public static func objcLog(_ message: Any, _ method: Any, logLevel: NaverAdsServices.GFPLogLevel, debugMode: Swift.Bool)
   public static func log(_ message: Any, _ method: Any, _ arguments: [Any], logLevel: NaverAdsServices.GFPLogLevel, _ debugMode: Swift.Bool = false)
   @objc deinit
@@ -1374,6 +1376,17 @@ extension Swift.String {
   @objc public static var localeIdentifier: Swift.String? {
     @objc get
   }
+  @objc public static var activeWindowScene: UIKit.UIWindowScene? {
+    @objc get
+  }
+  @objc public static var keyWindow: UIKit.UIWindow? {
+    @objc get
+  }
+  @objc(interfaceOrientationForScene:) public static func interfaceOrientation(for scene: UIKit.UIWindowScene?) -> UIKit.UIInterfaceOrientation
+  @objc public static var interfaceOrientation: UIKit.UIInterfaceOrientation {
+    @objc get
+  }
+  @objc(interfaceOrientationForView:) public static func interfaceOrientation(for view: UIKit.UIView?) -> UIKit.UIInterfaceOrientation
   @objc public static var isStatusBarLandscape: Swift.Bool {
     @objc get
   }
@@ -1395,6 +1408,8 @@ extension Swift.String {
   @objc public static var nativeScaleFactor: CoreFoundation.CGFloat {
     @objc get
   }
+  @objc(screenRectForView:) public static func screenRect(for view: UIKit.UIView?) -> CoreFoundation.CGRect
+  @objc(isLandscapeForView:) public static func isLandscape(for view: UIKit.UIView?) -> Swift.Bool
   @objc public static var isSKAdNetworkAvaliable: Swift.Bool {
     @objc get
   }
@@ -1456,6 +1471,7 @@ public struct GFPWebViewAppEnvironment : Swift.Codable {
   }
   public init(sdkName: Swift.String, sdkVersion: Swift.String, limitAdTracking: Swift.Bool, adId: Swift.String? = nil, nac: Swift.String? = nil, device: NaverAdsServices.GFPWebViewAppEnvDevice? = nil)
   public init?()
+  public init?(view: UIKit.UIView?)
   public func jsonString() -> Swift.String?
   public static var nac: Swift.String? {
     get

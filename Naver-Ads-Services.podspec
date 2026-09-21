@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "Naver-Ads-Services"
-  s.version      = "1.5.8"
+  s.version      = "1.6.0"
   s.summary      = "NaverAdsServices SDK"
   s.description  = <<-DESC
                     NaverAdsServices wiil provide shared functions for NAM, GFP SDK
@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
                      "Sangeun.yoon" => "sangeun.yoon@navercorp.com"
   }
   
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "15.0"
   s.source       = { :git => "https://github.com/naver/nas-sdk-ios", :tag => "#{s.version.to_s}" }
 
   s.vendored_frameworks = "NaverAdsServices/xcframework/NaverAdsServices.xcframework"

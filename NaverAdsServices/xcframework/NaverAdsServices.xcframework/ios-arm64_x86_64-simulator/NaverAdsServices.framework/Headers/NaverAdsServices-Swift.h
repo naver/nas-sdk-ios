@@ -446,6 +446,9 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UIWindowScene;
+@class UIWindow;
+@class UIView;
 SWIFT_CLASS("_TtC16NaverAdsServices14GFPDeviceUtils")
 @interface GFPDeviceUtils : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable preferredLanguageCode;)
@@ -454,6 +457,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)getDeviceCountryCode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable localeIdentifier;)
 + (NSString * _Nullable)localeIdentifier SWIFT_WARN_UNUSED_RESULT;
+/// 포그라운드 활성 윈도우 씬. 활성 씬이 없으면(백그라운드 전환 직후 등) 포그라운드 비활성 씬 > 그 외 연결된 윈도우 씬 순으로 대체한다.
+/// 연결된 윈도우 씬이 하나도 없으면 nil.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIWindowScene * _Nullable activeWindowScene;)
++ (UIWindowScene * _Nullable)activeWindowScene SWIFT_WARN_UNUSED_RESULT;
+/// 활성 윈도우 씬의 키 윈도우 (UIApplication.keyWindow 대체). 키 윈도우가 없으면 씬의 첫 윈도우.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIWindow * _Nullable keyWindow;)
++ (UIWindow * _Nullable)keyWindow SWIFT_WARN_UNUSED_RESULT;
+/// 윈도우 씬의 인터페이스 방향. iOS 16+ 는 effectiveGeometry 기준. 씬이 nil 이면 .unknown.
++ (UIInterfaceOrientation)interfaceOrientationForScene:(UIWindowScene * _Nullable)scene SWIFT_WARN_UNUSED_RESULT;
+/// 활성 윈도우 씬의 인터페이스 방향 (UIApplication.statusBarOrientation 대체).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) UIInterfaceOrientation interfaceOrientation;)
++ (UIInterfaceOrientation)interfaceOrientation SWIFT_WARN_UNUSED_RESULT;
+/// 뷰가 속한 윈도우 씬의 인터페이스 방향. 뷰가 윈도우에 붙어 있지 않으면(또는 nil) 활성 씬 기준으로 판정한다.
++ (UIInterfaceOrientation)interfaceOrientationForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isStatusBarLandscape;)
 + (BOOL)isStatusBarLandscape SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isIPad;)
@@ -468,6 +485,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect screenRect;)
 + (CGRect)screenRect SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat nativeScaleFactor;)
 + (CGFloat)nativeScaleFactor SWIFT_WARN_UNUSED_RESULT;
++ (CGRect)screenRectForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isLandscapeForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAvaliable;)
 + (BOOL)isSKAdNetworkAvaliable SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -478,6 +497,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAv
 @class NSError;
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPDownloadCache")
 @interface GFPDownloadCache : NSObject
+/// 실제 네트워크 요청의 결과를 알린다 (캐시 히트는 발행하지 않는다).
+/// userInfo: “url” = URL, 실패 시 “error” = NSError.
+/// 이 캐시는 소재 다운로드의 유일한 깔때기지만 소비처가 광고 유형마다
+/// 흩어져 있어, 도달성 관측(애드블락 추론)은 여기서 발행하는 노티를
+/// 구독하는 쪽(GFP)이 담당한다.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull requestDidCompleteNotification;)
++ (NSNotificationName _Nonnull)requestDidCompleteNotification SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDownloadCache * _Nonnull sharedInstance;)
 + (GFPDownloadCache * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -560,6 +586,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLog * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull logIdentifier;)
 + (NSString * _Nonnull)logIdentifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)logLevelDescWith:(GFPLogLevel)logLevel SWIFT_WARN_UNUSED_RESULT;
+/// Severity token used for the Nelo payload’s <code>logLevel</code> field. Uppercase and
+/// NELO-canonical, unlike <code>logLevelDescWith:</code> which is for display/console.
++ (NSString * _Nonnull)neloLevelStringWith:(GFPLogLevel)logLevel SWIFT_WARN_UNUSED_RESULT;
 + (void)logMessage:(id _Nonnull)message method:(id _Nonnull)method logLevel:(GFPLogLevel)logLevel debugMode:(BOOL)debugMode;
 @end
 
@@ -2139,7 +2168,6 @@ SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
 - (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIView;
 SWIFT_CLASS("_TtC16NaverAdsServices20GFPViewAlignmentInfo")
 @interface GFPViewAlignmentInfo : NSObject
 @property (nonatomic, weak) UIView * _Nullable view;
@@ -2783,6 +2811,9 @@ SWIFT_CLASS("_TtC16NaverAdsServices16GFPDeviceLocInfo")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class UIWindowScene;
+@class UIWindow;
+@class UIView;
 SWIFT_CLASS("_TtC16NaverAdsServices14GFPDeviceUtils")
 @interface GFPDeviceUtils : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable preferredLanguageCode;)
@@ -2791,6 +2822,20 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nu
 + (NSString * _Nullable)getDeviceCountryCode SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nullable localeIdentifier;)
 + (NSString * _Nullable)localeIdentifier SWIFT_WARN_UNUSED_RESULT;
+/// 포그라운드 활성 윈도우 씬. 활성 씬이 없으면(백그라운드 전환 직후 등) 포그라운드 비활성 씬 > 그 외 연결된 윈도우 씬 순으로 대체한다.
+/// 연결된 윈도우 씬이 하나도 없으면 nil.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIWindowScene * _Nullable activeWindowScene;)
++ (UIWindowScene * _Nullable)activeWindowScene SWIFT_WARN_UNUSED_RESULT;
+/// 활성 윈도우 씬의 키 윈도우 (UIApplication.keyWindow 대체). 키 윈도우가 없으면 씬의 첫 윈도우.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIWindow * _Nullable keyWindow;)
++ (UIWindow * _Nullable)keyWindow SWIFT_WARN_UNUSED_RESULT;
+/// 윈도우 씬의 인터페이스 방향. iOS 16+ 는 effectiveGeometry 기준. 씬이 nil 이면 .unknown.
++ (UIInterfaceOrientation)interfaceOrientationForScene:(UIWindowScene * _Nullable)scene SWIFT_WARN_UNUSED_RESULT;
+/// 활성 윈도우 씬의 인터페이스 방향 (UIApplication.statusBarOrientation 대체).
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) UIInterfaceOrientation interfaceOrientation;)
++ (UIInterfaceOrientation)interfaceOrientation SWIFT_WARN_UNUSED_RESULT;
+/// 뷰가 속한 윈도우 씬의 인터페이스 방향. 뷰가 윈도우에 붙어 있지 않으면(또는 nil) 활성 씬 기준으로 판정한다.
++ (UIInterfaceOrientation)interfaceOrientationForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isStatusBarLandscape;)
 + (BOOL)isStatusBarLandscape SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isIPad;)
@@ -2805,6 +2850,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGRect screenRect;)
 + (CGRect)screenRect SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat nativeScaleFactor;)
 + (CGFloat)nativeScaleFactor SWIFT_WARN_UNUSED_RESULT;
++ (CGRect)screenRectForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
++ (BOOL)isLandscapeForView:(UIView * _Nullable)view SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAvaliable;)
 + (BOOL)isSKAdNetworkAvaliable SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -2815,6 +2862,13 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) BOOL isSKAdNetworkAv
 @class NSError;
 SWIFT_CLASS("_TtC16NaverAdsServices16GFPDownloadCache")
 @interface GFPDownloadCache : NSObject
+/// 실제 네트워크 요청의 결과를 알린다 (캐시 히트는 발행하지 않는다).
+/// userInfo: “url” = URL, 실패 시 “error” = NSError.
+/// 이 캐시는 소재 다운로드의 유일한 깔때기지만 소비처가 광고 유형마다
+/// 흩어져 있어, 도달성 관측(애드블락 추론)은 여기서 발행하는 노티를
+/// 구독하는 쪽(GFP)이 담당한다.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSNotificationName _Nonnull requestDidCompleteNotification;)
++ (NSNotificationName _Nonnull)requestDidCompleteNotification SWIFT_WARN_UNUSED_RESULT;
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPDownloadCache * _Nonnull sharedInstance;)
 + (GFPDownloadCache * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -2897,6 +2951,9 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) GFPLog * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull logIdentifier;)
 + (NSString * _Nonnull)logIdentifier SWIFT_WARN_UNUSED_RESULT;
 + (NSString * _Nonnull)logLevelDescWith:(GFPLogLevel)logLevel SWIFT_WARN_UNUSED_RESULT;
+/// Severity token used for the Nelo payload’s <code>logLevel</code> field. Uppercase and
+/// NELO-canonical, unlike <code>logLevelDescWith:</code> which is for display/console.
++ (NSString * _Nonnull)neloLevelStringWith:(GFPLogLevel)logLevel SWIFT_WARN_UNUSED_RESULT;
 + (void)logMessage:(id _Nonnull)message method:(id _Nonnull)method logLevel:(GFPLogLevel)logLevel debugMode:(BOOL)debugMode;
 @end
 
@@ -4476,7 +4533,6 @@ SWIFT_CLASS("_TtC16NaverAdsServices14GFPVastWrapper")
 - (NSString * _Nonnull)toXMLStringWithRootKey:(NSString * _Nullable)rootKey SWIFT_WARN_UNUSED_RESULT;
 @end
 
-@class UIView;
 SWIFT_CLASS("_TtC16NaverAdsServices20GFPViewAlignmentInfo")
 @interface GFPViewAlignmentInfo : NSObject
 @property (nonatomic, weak) UIView * _Nullable view;
